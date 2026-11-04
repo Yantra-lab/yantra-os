@@ -1,0 +1,26 @@
+{
+  "id": "chess",
+  "name": "Grandmaster's Study",
+  "icon": "K",
+  "tint": "#6BE6E6",
+  "grants": [],
+  "window": {
+    "title": "Grandmaster's Study",
+    "width": 1280,
+    "height": 816
+  },
+  "module": {
+    "path": "apps/chess/app.wasm",
+    "bytes": 577770,
+    "sha256": "42eb5aafbd2f13134f5c334bd90ae0ff04e03a2c465000ac9b70fc6a3fad58f2"
+  },
+  "source": {
+    "path": "apps/chess/app.nim",
+    "lines": 2918,
+    "bytes": 109973,
+    "sha256": "aa5e69f12c5e090b4dc788fe3c78199d1e8bc8c53d67df44cfec9a4a7effc6e0"
+  },
+  "nodes": 7,
+  "document": "app.yantra.json",
+  "generated": "tools/export-json.mjs"
+}

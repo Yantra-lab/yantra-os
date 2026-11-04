@@ -1,0 +1,21 @@
+{
+  "$yantra": "2026.11",
+  "app": "y:@yantra/dna",
+  "name": "Helix DNA",
+  "export_failed": "wasm://wasm/000f168a:1 |  | ",
+  "nodes": {},
+  "provenance": {
+    "source": {
+      "path": "apps/dna/app.nim",
+      "lines": 291,
+      "bytes": 14272,
+      "sha256": "81cc6e77920a5c71b7e8214df979a5adb56bac39c69d97e9884751443bca65b3"
+    },
+    "module": {
+      "path": "apps/dna/app.wasm",
+      "bytes": 247202,
+      "sha256": "58994a92aaab574dd7caf10e7e06c8f9f0a3a517d629c637d4b0b4d8cc01abbb"
+    }
+  },
+  "note": "This module traps in the host, so nothing was read from it. The document records the module it failed on, not a tree."
+}

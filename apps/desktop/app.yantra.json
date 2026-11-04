@@ -1,0 +1,2884 @@
+{
+  "$yantra": "2026.11",
+  "app": "y:@yantra/desktop",
+  "name": "Desktop",
+  "exported": {
+    "by": "tools/export-json.mjs",
+    "from": "apps/desktop/app.wasm, instantiated and stepped 30 frame(s)",
+    "runner": "web/runner/runner.js",
+    "protocol": "v2",
+    "frames_stepped": 30,
+    "note": "L1 structured twin: nodes, parameters and the retained draw commands, read from the running module. Not executable on its own, and not restorable to the Nim source."
+  },
+  "window": {
+    "title": "Yantra",
+    "width": 1280,
+    "height": 800,
+    "bg": "#0C0E14"
+  },
+  "stats": {
+    "nodes": 242,
+    "layers": 0,
+    "layer_draw_calls": 0,
+    "draw_command_bytes": 0
+  },
+  "nodes": {
+    "n0": {
+      "kind": "WINDOW",
+      "params": {
+        "WIDTH": 1280,
+        "HEIGHT": 800,
+        "COLOR": "#0C0E14",
+        "GRADANGLE": -1,
+        "NET": "yantra-lab.github.io",
+        "FRAMELESS": 1,
+        "FULLSCREEN": 1
+      },
+      "text": "Yantra",
+      "children": [
+        "n1",
+        "n241"
+      ]
+    },
+    "n1": {
+      "kind": "ROW",
+      "params": {
+        "COLOR": "#0C0E14",
+        "FLEXGROW": 1,
+        "ALIGNITEMS": 3,
+        "GRADANGLE": -1
+      },
+      "parent": "n0",
+      "children": [
+        "n2",
+        "n74",
+        "n182"
+      ]
+    },
+    "n2": {
+      "kind": "GROUP",
+      "parent": "n1",
+      "children": [
+        "n3"
+      ]
+    },
+    "n3": {
+      "kind": "GROUP",
+      "parent": "n2",
+      "children": [
+        "n4"
+      ]
+    },
+    "n4": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 248,
+        "COLOR": "#0C0E14",
+        "SPACING": 12,
+        "PADTOP": 12,
+        "PADRIGHT": 10,
+        "PADBOTTOM": 12,
+        "PADLEFT": 10,
+        "GRADANGLE": -1,
+        "ENTER": "0.0,-24.0,0.0,1.0,0.0,350,0,5",
+        "NAME": "sidebar"
+      },
+      "parent": "n3",
+      "children": [
+        "n5",
+        "n19",
+        "n22",
+        "n25",
+        "n26",
+        "n27",
+        "n64"
+      ]
+    },
+    "n5": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 42,
+        "SPACING": 8,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n4",
+      "children": [
+        "n6",
+        "n9",
+        "n12"
+      ]
+    },
+    "n6": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 42,
+        "HEIGHT": 42,
+        "RADIUS": 14,
+        "CLIP": 1,
+        "SHADOWX": 0,
+        "SHADOWY": 2,
+        "SHADOWBLUR": 16,
+        "SHADOWCOLOR": "#AFBBFF",
+        "HOVERSCALE": 1.05,
+        "PRESSSCALE": 0.9,
+        "NAME": "logo"
+      },
+      "parent": "n5",
+      "children": [
+        "n7",
+        "n8"
+      ]
+    },
+    "n7": {
+      "kind": "IMAGE",
+      "params": {
+        "WIDTH": 42,
+        "HEIGHT": 42,
+        "SOURCE": "brand/yantra-mark.png",
+        "FIT": 1
+      },
+      "parent": "n6"
+    },
+    "n8": {
+      "kind": "TOOLTIP",
+      "params": {
+        "TEXT": "Yantra  ·  Super+B"
+      },
+      "text": "Yantra  ·  Super+B",
+      "parent": "n6"
+    },
+    "n9": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 0,
+        "FLEXGROW": 1
+      },
+      "parent": "n5",
+      "children": [
+        "n10",
+        "n11"
+      ]
+    },
+    "n10": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Yantra",
+        "FONTSIZE": 16,
+        "FONTWEIGHT": 650,
+        "TEXTCOLOR": "#F1F3F8",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Yantra",
+      "parent": "n9"
+    },
+    "n11": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Workspace",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Workspace",
+      "parent": "n9"
+    },
+    "n12": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 34,
+        "COLOR": "#11141D",
+        "SPACING": 0,
+        "PADRIGHT": 1,
+        "PADLEFT": 1,
+        "RADIUS": 17,
+        "ALIGNITEMS": 1,
+        "GRADANGLE": -1
+      },
+      "parent": "n5",
+      "children": [
+        "n13",
+        "n15",
+        "n17"
+      ]
+    },
+    "n13": {
+      "kind": "ROW",
+      "params": {
+        "WIDTH": 32,
+        "HEIGHT": 32,
+        "RADIUS": 16,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "HOVERFILL": "#000000"
+      },
+      "parent": "n12",
+      "children": [
+        "n14"
+      ]
+    },
+    "n14": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 17,
+        "TEXTCOLOR": "#333B4C",
+        "PATHDATA": "M19 12 H5 M11 6 L5 12 L11 18",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n13"
+    },
+    "n15": {
+      "kind": "ROW",
+      "params": {
+        "WIDTH": 32,
+        "HEIGHT": 32,
+        "RADIUS": 16,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "HOVERFILL": "#000000"
+      },
+      "parent": "n12",
+      "children": [
+        "n16"
+      ]
+    },
+    "n16": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 17,
+        "TEXTCOLOR": "#333B4C",
+        "PATHDATA": "M5 12 H19 M13 6 L19 12 L13 18",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n15"
+    },
+    "n17": {
+      "kind": "ROW",
+      "params": {
+        "WIDTH": 32,
+        "HEIGHT": 32,
+        "RADIUS": 16,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "HOVERFILL": "#000000"
+      },
+      "parent": "n12",
+      "children": [
+        "n18"
+      ]
+    },
+    "n18": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 17,
+        "TEXTCOLOR": "#333B4C",
+        "PATHDATA": "M20 12 A8 8 0 1 1 17.7 6.3 M20 4 V9 H15",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n17"
+    },
+    "n19": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 20,
+        "SPACING": 8,
+        "PADRIGHT": 6,
+        "PADLEFT": 6,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n4",
+      "children": [
+        "n20",
+        "n21"
+      ]
+    },
+    "n20": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "SPACE 01",
+        "FONTSIZE": 11,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#AFBBFF",
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "SPACE 01",
+      "parent": "n19"
+    },
+    "n21": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "0 OPEN",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "0 OPEN",
+      "parent": "n19"
+    },
+    "n22": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 40,
+        "COLOR": "#202634",
+        "SPACING": 6,
+        "PADRIGHT": 4,
+        "PADLEFT": 12,
+        "RADIUS": 12,
+        "ALIGNITEMS": 1,
+        "GRADANGLE": -1
+      },
+      "parent": "n4",
+      "children": [
+        "n23",
+        "n24"
+      ]
+    },
+    "n23": {
+      "kind": "INPUT",
+      "params": {
+        "TEXT": "",
+        "COLOR": "#000000",
+        "FONTSIZE": 14,
+        "PADRIGHT": 0,
+        "PADLEFT": 0,
+        "BORDERWIDTH": 0,
+        "VALUE": "",
+        "PLACEHOLDER": "Search or enter address",
+        "FLEXGROW": 1,
+        "TEXTCOLOR": "#F1F3F8",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "Noto Sans",
+        "FOCUSBORDER": 11516927,
+        "NAME": "address"
+      },
+      "parent": "n22"
+    },
+    "n24": {
+      "kind": "GROUP",
+      "parent": "n22"
+    },
+    "n25": {
+      "kind": "GROUP",
+      "parent": "n4"
+    },
+    "n26": {
+      "kind": "GROUP",
+      "parent": "n4"
+    },
+    "n27": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 2,
+        "FLEXGROW": 1,
+        "SCROLL": 1
+      },
+      "parent": "n4",
+      "children": [
+        "n28",
+        "n29",
+        "n32",
+        "n35",
+        "n63"
+      ]
+    },
+    "n28": {
+      "kind": "GROUP",
+      "parent": "n27"
+    },
+    "n29": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 22,
+        "SPACING": 8,
+        "PADRIGHT": 8,
+        "PADLEFT": 8,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n27",
+      "children": [
+        "n30",
+        "n31"
+      ]
+    },
+    "n30": {
+      "kind": "PANEL",
+      "params": {
+        "HEIGHT": 1,
+        "COLOR": "#333B4C",
+        "FLEXGROW": 1,
+        "GRADANGLE": -1
+      },
+      "parent": "n29"
+    },
+    "n31": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Clear",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 500,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Clear",
+      "parent": "n29"
+    },
+    "n32": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 40,
+        "COLOR": "#AFBBFF",
+        "SPACING": 10,
+        "PADRIGHT": 12,
+        "PADLEFT": 12,
+        "RADIUS": 12,
+        "ALIGNITEMS": 1,
+        "GRADANGLE": -1,
+        "HOVERFILL": "#AFBBFF"
+      },
+      "parent": "n27",
+      "children": [
+        "n33",
+        "n34"
+      ]
+    },
+    "n33": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 15,
+        "TEXTCOLOR": "#AFBBFF",
+        "PATHDATA": "M12 5 V19 M5 12 H19",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n32"
+    },
+    "n34": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "New Tab",
+        "FONTSIZE": 14,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#F1F3F8",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "New Tab",
+      "parent": "n32"
+    },
+    "n35": {
+      "kind": "GROUP",
+      "parent": "n27",
+      "children": [
+        "n36"
+      ]
+    },
+    "n36": {
+      "kind": "GROUP",
+      "parent": "n35",
+      "children": [
+        "n37"
+      ]
+    },
+    "n37": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 3,
+        "PADTOP": 14
+      },
+      "parent": "n36",
+      "children": [
+        "n38",
+        "n39",
+        "n58"
+      ]
+    },
+    "n38": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "YOUR WORKSPACE",
+        "FONTSIZE": 11,
+        "PADBOTTOM": 5,
+        "PADLEFT": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#8C95A8",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "YOUR WORKSPACE",
+      "parent": "n37"
+    },
+    "n39": {
+      "kind": "GROUP",
+      "parent": "n37",
+      "children": [
+        "n40",
+        "n46",
+        "n52"
+      ]
+    },
+    "n40": {
+      "kind": "GROUP",
+      "parent": "n39",
+      "children": [
+        "n41"
+      ]
+    },
+    "n41": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 38,
+        "SPACING": 10,
+        "PADRIGHT": 8,
+        "PADLEFT": 8,
+        "RADIUS": 11,
+        "ALIGNITEMS": 1,
+        "HOVERFILL": "#E7EBFA"
+      },
+      "parent": "n40",
+      "children": [
+        "n42",
+        "n44",
+        "n45"
+      ]
+    },
+    "n42": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 26,
+        "HEIGHT": 26,
+        "COLOR": "#E8C27A",
+        "RADIUS": 7,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "GRADANGLE": -1
+      },
+      "parent": "n41",
+      "children": [
+        "n43"
+      ]
+    },
+    "n43": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 14,
+        "TEXTCOLOR": "#E8C27A",
+        "PATHDATA": "M20 12 A8 8 0 1 1 17.7 6.3 M20 4 V9 H15",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n42"
+    },
+    "n44": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Nocturne Rally",
+        "FONTSIZE": 12,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 500,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Nocturne Rally",
+      "parent": "n41"
+    },
+    "n45": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 13,
+        "TEXTCOLOR": "#8C95A8",
+        "PATHDATA": "M7 17 L17 7 M9 7 H17 V15",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n41"
+    },
+    "n46": {
+      "kind": "GROUP",
+      "parent": "n39",
+      "children": [
+        "n47"
+      ]
+    },
+    "n47": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 38,
+        "SPACING": 10,
+        "PADRIGHT": 8,
+        "PADLEFT": 8,
+        "RADIUS": 11,
+        "ALIGNITEMS": 1,
+        "HOVERFILL": "#E7EBFA"
+      },
+      "parent": "n46",
+      "children": [
+        "n48",
+        "n50",
+        "n51"
+      ]
+    },
+    "n48": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 26,
+        "HEIGHT": 26,
+        "COLOR": "#9A6840",
+        "RADIUS": 7,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "GRADANGLE": -1
+      },
+      "parent": "n47",
+      "children": [
+        "n49"
+      ]
+    },
+    "n49": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 14,
+        "TEXTCOLOR": "#9A6840",
+        "PATHDATA": "M3 4 H21 M5 4 V15 H19 V4 M12 15 V20 M8.5 20 H15.5",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n48"
+    },
+    "n50": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Galerie Nocturne",
+        "FONTSIZE": 12,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 500,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Galerie Nocturne",
+      "parent": "n47"
+    },
+    "n51": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 13,
+        "TEXTCOLOR": "#8C95A8",
+        "PATHDATA": "M7 17 L17 7 M9 7 H17 V15",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n47"
+    },
+    "n52": {
+      "kind": "GROUP",
+      "parent": "n39",
+      "children": [
+        "n53"
+      ]
+    },
+    "n53": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 38,
+        "SPACING": 10,
+        "PADRIGHT": 8,
+        "PADLEFT": 8,
+        "RADIUS": 11,
+        "ALIGNITEMS": 1,
+        "HOVERFILL": "#E7EBFA"
+      },
+      "parent": "n52",
+      "children": [
+        "n54",
+        "n56",
+        "n57"
+      ]
+    },
+    "n54": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 26,
+        "HEIGHT": 26,
+        "COLOR": "#F3A45B",
+        "RADIUS": 7,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "GRADANGLE": -1
+      },
+      "parent": "n53",
+      "children": [
+        "n55"
+      ]
+    },
+    "n55": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 14,
+        "TEXTCOLOR": "#F3A45B",
+        "PATHDATA": "M12 3.5 L14.6 8.8 L20.5 9.6 L16.2 13.7 L17.3 19.5 L12 16.7 L6.7 19.5 L7.8 13.7 L3.5 9.6 L9.4 8.8 Z",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n54"
+    },
+    "n56": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "EMBERDEEP",
+        "FONTSIZE": 12,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 500,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "EMBERDEEP",
+      "parent": "n53"
+    },
+    "n57": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 13,
+        "TEXTCOLOR": "#8C95A8",
+        "PATHDATA": "M7 17 L17 7 M9 7 H17 V15",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n53"
+    },
+    "n58": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 38,
+        "SPACING": 10,
+        "PADRIGHT": 8,
+        "PADLEFT": 8,
+        "RADIUS": 11,
+        "ALIGNITEMS": 1,
+        "HOVERFILL": "#E7EBFA"
+      },
+      "parent": "n37",
+      "children": [
+        "n59",
+        "n61",
+        "n62"
+      ]
+    },
+    "n59": {
+      "kind": "ROW",
+      "params": {
+        "WIDTH": 26,
+        "HEIGHT": 26,
+        "COLOR": "#AFBBFF",
+        "RADIUS": 8,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "GRADANGLE": -1
+      },
+      "parent": "n58",
+      "children": [
+        "n60"
+      ]
+    },
+    "n60": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 14,
+        "TEXTCOLOR": "#AFBBFF",
+        "PATHDATA": "M4 4 H10 V10 H4 Z M14 4 H20 V10 H14 Z M4 14 H10 V20 H4 Z M14 14 H20 V20 H14 Z",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n59"
+    },
+    "n61": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "All applications",
+        "FONTSIZE": 12,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 550,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "All applications",
+      "parent": "n58"
+    },
+    "n62": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "19",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": "#8C95A8",
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "19",
+      "parent": "n58"
+    },
+    "n63": {
+      "kind": "GROUP",
+      "parent": "n27"
+    },
+    "n64": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 40,
+        "SPACING": 2,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n4",
+      "children": [
+        "n65",
+        "n67",
+        "n69",
+        "n71",
+        "n72"
+      ]
+    },
+    "n65": {
+      "kind": "ROW",
+      "params": {
+        "WIDTH": 40,
+        "HEIGHT": 40,
+        "COLOR": "#000000",
+        "RADIUS": 20,
+        "TRANSDURATION": 200,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "GRADANGLE": -1,
+        "HOVERFILL": "#E7EBFA",
+        "PRESSSCALE": 0.9
+      },
+      "parent": "n64",
+      "children": [
+        "n66"
+      ]
+    },
+    "n66": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 18,
+        "TEXTCOLOR": "#ACB3C3",
+        "PATHDATA": "M3 7 A2 2 0 0 1 5 5 H9.5 L11.5 7 H19 A2 2 0 0 1 21 9 V17 A2 2 0 0 1 19 19 H5 A2 2 0 0 1 3 17 Z",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n65"
+    },
+    "n67": {
+      "kind": "ROW",
+      "params": {
+        "WIDTH": 40,
+        "HEIGHT": 40,
+        "COLOR": "#000000",
+        "RADIUS": 20,
+        "TRANSDURATION": 200,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "GRADANGLE": -1,
+        "HOVERFILL": "#E7EBFA",
+        "PRESSSCALE": 0.9
+      },
+      "parent": "n64",
+      "children": [
+        "n68"
+      ]
+    },
+    "n68": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 18,
+        "TEXTCOLOR": "#ACB3C3",
+        "PATHDATA": "M4 4 H10 V10 H4 Z M14 4 H20 V10 H14 Z M4 14 H10 V20 H4 Z M14 14 H20 V20 H14 Z",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n67"
+    },
+    "n69": {
+      "kind": "ROW",
+      "params": {
+        "WIDTH": 40,
+        "HEIGHT": 40,
+        "COLOR": "#000000",
+        "RADIUS": 20,
+        "TRANSDURATION": 200,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "GRADANGLE": -1,
+        "HOVERFILL": "#E7EBFA",
+        "PRESSSCALE": 0.9
+      },
+      "parent": "n64",
+      "children": [
+        "n70"
+      ]
+    },
+    "n70": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 18,
+        "TEXTCOLOR": "#ACB3C3",
+        "PATHDATA": "M4 6 H13 M17 6 H20 M15 4 V8 M4 12 H7 M11 12 H20 M9 10 V14 M4 18 H15 M19 18 H20 M17 16 V20",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n69"
+    },
+    "n71": {
+      "kind": "SPACER",
+      "params": {
+        "FLEXGROW": 1
+      },
+      "parent": "n64"
+    },
+    "n72": {
+      "kind": "ROW",
+      "params": {
+        "WIDTH": 40,
+        "HEIGHT": 40,
+        "COLOR": "#000000",
+        "RADIUS": 20,
+        "TRANSDURATION": 200,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "GRADANGLE": -1,
+        "HOVERFILL": "#E7EBFA",
+        "PRESSSCALE": 0.9
+      },
+      "parent": "n64",
+      "children": [
+        "n73"
+      ]
+    },
+    "n73": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 18,
+        "TEXTCOLOR": "#ACB3C3",
+        "PATHDATA": "M12 5 V19 M5 12 H19",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n72"
+    },
+    "n74": {
+      "kind": "STACK",
+      "params": {
+        "RADIUS": 22,
+        "FLEXGROW": 1,
+        "MARGINTOP": 10,
+        "MARGINRIGHT": 0,
+        "MARGINBOTTOM": 10,
+        "MARGINLEFT": 0,
+        "CLIP": 1,
+        "NAME": "screen"
+      },
+      "parent": "n1",
+      "children": [
+        "n75",
+        "n76",
+        "n171",
+        "n172",
+        "n175",
+        "n176",
+        "n177",
+        "n178",
+        "n179",
+        "n180",
+        "n181"
+      ]
+    },
+    "n75": {
+      "kind": "PANEL",
+      "params": {
+        "ABSOLUTE": 1,
+        "INSETTOP": 0,
+        "INSETRIGHT": 0,
+        "INSETBOTTOM": 0,
+        "INSETLEFT": 0,
+        "NAME": "wallpaper",
+        "SHADER": "uniform float2 size;\nuniform float time;\nfloat hash(float2 p) { return fract(sin(dot(p, float2(12.9898, 78.233))) * 43758.5453); }\nhalf4 main(float2 fragCoord) {\n  float2 uv = fragCoord / size;\n  float t = time * 0.012;\n  // Aura: two distant pools of light, restrained enough for interface text to stay crisp.\n  float2 pa = uv - float2(0.13 + 0.025 * sin(t), 0.92);\n  float2 pb = uv - float2(0.90, 0.02 + 0.035 * cos(t));\n  pa.x *= size.x / size.y;\n  pb.x *= size.x / size.y;\n  float a = exp(-4.6 * dot(pa, pa));\n  float b = exp(-5.8 * dot(pb, pb));\n  float3 col = mix(float3(0.048, 0.054, 0.077), float3(0.029, 0.035, 0.052), uv.y);\n  col += float3(0.27, 0.30, 0.58) * a * 0.34;\n  col += float3(0.38, 0.20, 0.12) * b * 0.24;\n  float vignette = smoothstep(0.24, 0.78, length((uv - 0.5) * float2(1.05, 0.92)));\n  col *= 1.0 - 0.34 * vignette;\n  // The Yantra horizon: a thin planetary arc, cyan at the left into champagne\n  // at the right. It lives below the tools instead of adding another panel.\n  float hx = (uv.x - 0.5) * 2.0;\n  float horizonY = 0.99 - 0.14 * (1.0 - hx * hx);\n  float hd = uv.y - horizonY;\n  float core = exp(-hd * hd * 9000.0);\n  float halo = exp(-hd * hd * 380.0);\n  float3 light = mix(float3(0.24, 0.64, 0.98), float3(1.0, 0.61, 0.25),\n                      smoothstep(0.10, 0.90, uv.x));\n  col += light * (core * 0.42 + halo * 0.034);\n  col += (hash(fragCoord) - 0.5) * 0.006;\n  return half4(half3(col), 1);\n}\n"
+      },
+      "parent": "n74"
+    },
+    "n76": {
+      "kind": "GROUP",
+      "parent": "n74",
+      "children": [
+        "n77"
+      ]
+    },
+    "n77": {
+      "kind": "GROUP",
+      "parent": "n76",
+      "children": [
+        "n78"
+      ]
+    },
+    "n78": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 18,
+        "PADTOP": 28,
+        "PADRIGHT": 28,
+        "PADBOTTOM": 28,
+        "PADLEFT": 28,
+        "ABSOLUTE": 1,
+        "INSETTOP": 0,
+        "INSETRIGHT": 0,
+        "INSETBOTTOM": 0,
+        "INSETLEFT": 0,
+        "SCROLL": 1,
+        "ENTER": "0.0,0.0,0.0,1.0,0.0,260,0,5",
+        "NAME": "home"
+      },
+      "parent": "n77",
+      "children": [
+        "n79"
+      ]
+    },
+    "n79": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 24,
+        "FLEXGROW": 1,
+        "ALIGNITEMS": 0
+      },
+      "parent": "n78",
+      "children": [
+        "n80",
+        "n143"
+      ]
+    },
+    "n80": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 24,
+        "PADTOP": 18,
+        "FLEXGROW": 1
+      },
+      "parent": "n79",
+      "children": [
+        "n81",
+        "n87",
+        "n106",
+        "n139"
+      ]
+    },
+    "n81": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 12
+      },
+      "parent": "n80",
+      "children": [
+        "n82",
+        "n85",
+        "n86"
+      ]
+    },
+    "n82": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 9,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n81",
+      "children": [
+        "n83",
+        "n84"
+      ]
+    },
+    "n83": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 6,
+        "HEIGHT": 6,
+        "COLOR": "#AFBBFF",
+        "RADIUS": 3,
+        "GRADANGLE": -1
+      },
+      "parent": "n82"
+    },
+    "n84": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "GOOD AFTERNOON  /  SPACE 01",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#AFBBFF",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "GOOD AFTERNOON  /  SPACE 01",
+      "parent": "n82"
+    },
+    "n85": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "A quieter way\nto make things.",
+        "FONTSIZE": 42,
+        "FONTWEIGHT": 500,
+        "TEXTCOLOR": "#F1F3F8",
+        "FONTFAMILY": "Noto Sans",
+        "LINEHEIGHT": 1.08,
+        "MAXLINES": 2
+      },
+      "text": "A quieter way\nto make things.",
+      "parent": "n81"
+    },
+    "n86": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Your tools, your tabs, and whatever comes next — in one place.",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 2
+      },
+      "text": "Your tools, your tabs, and whatever comes next — in one place.",
+      "parent": "n81"
+    },
+    "n87": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 10
+      },
+      "parent": "n80",
+      "children": [
+        "n88",
+        "n95",
+        "n96"
+      ]
+    },
+    "n88": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 56,
+        "COLOR": "#202634",
+        "SPACING": 10,
+        "PADRIGHT": 6,
+        "PADLEFT": 20,
+        "RADIUS": 28,
+        "ALIGNITEMS": 1,
+        "GRADANGLE": -1
+      },
+      "parent": "n87",
+      "children": [
+        "n89",
+        "n90",
+        "n91"
+      ]
+    },
+    "n89": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 20,
+        "TEXTCOLOR": "#ACB3C3",
+        "PATHDATA": "M11 4 A7 7 0 1 1 11 18 A7 7 0 1 1 11 4 Z M16.5 16.5 L21 21",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n88"
+    },
+    "n90": {
+      "kind": "INPUT",
+      "params": {
+        "TEXT": "",
+        "COLOR": "#000000",
+        "FONTSIZE": 16,
+        "PADRIGHT": 0,
+        "PADLEFT": 0,
+        "BORDERWIDTH": 0,
+        "VALUE": "",
+        "PLACEHOLDER": "Search apps, commands, or open a y: address",
+        "FLEXGROW": 1,
+        "TEXTCOLOR": "#F1F3F8",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "Noto Sans",
+        "FOCUSBORDER": 11516927,
+        "FOCUSAT": "home"
+      },
+      "parent": "n88"
+    },
+    "n91": {
+      "kind": "GROUP",
+      "parent": "n88",
+      "children": [
+        "n92"
+      ]
+    },
+    "n92": {
+      "kind": "GROUP",
+      "parent": "n91",
+      "children": [
+        "n93"
+      ]
+    },
+    "n93": {
+      "kind": "ROW",
+      "params": {
+        "WIDTH": 44,
+        "HEIGHT": 44,
+        "COLOR": "#AFBBFF",
+        "RADIUS": 22,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "GRADANGLE": -1
+      },
+      "parent": "n92",
+      "children": [
+        "n94"
+      ]
+    },
+    "n94": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 18,
+        "TEXTCOLOR": "#141A33",
+        "PATHDATA": "M5 12 H19 M13 6 L19 12 L13 18",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n93"
+    },
+    "n95": {
+      "kind": "GROUP",
+      "parent": "n87"
+    },
+    "n96": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 8,
+        "WRAP": 1
+      },
+      "parent": "n87",
+      "children": [
+        "n97",
+        "n100",
+        "n103"
+      ]
+    },
+    "n97": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 38,
+        "COLOR": "#AFBBFF",
+        "SPACING": 8,
+        "PADRIGHT": 13,
+        "PADLEFT": 13,
+        "RADIUS": 12,
+        "BORDERCOLOR": "#AFBBFF",
+        "BORDERWIDTH": 1,
+        "ALIGNITEMS": 1,
+        "GRADANGLE": -1,
+        "HOVERFILL": "#AFBBFF",
+        "HOVERBORDER": -1632650241
+      },
+      "parent": "n96",
+      "children": [
+        "n98",
+        "n99"
+      ]
+    },
+    "n98": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 15,
+        "TEXTCOLOR": "#AFBBFF",
+        "PATHDATA": "M4 4 H10 V10 H4 Z M14 4 H20 V10 H14 Z M4 14 H10 V20 H4 Z M14 14 H20 V20 H14 Z",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n97"
+    },
+    "n99": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Explore apps",
+        "FONTSIZE": 12,
+        "FONTWEIGHT": 550,
+        "TEXTCOLOR": "#F1F3F8",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Explore apps",
+      "parent": "n97"
+    },
+    "n100": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 38,
+        "COLOR": "#AFBBFF",
+        "SPACING": 8,
+        "PADRIGHT": 13,
+        "PADLEFT": 13,
+        "RADIUS": 12,
+        "BORDERCOLOR": "#AFBBFF",
+        "BORDERWIDTH": 1,
+        "ALIGNITEMS": 1,
+        "GRADANGLE": -1,
+        "HOVERFILL": "#AFBBFF",
+        "HOVERBORDER": -1632650241
+      },
+      "parent": "n96",
+      "children": [
+        "n101",
+        "n102"
+      ]
+    },
+    "n101": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 15,
+        "TEXTCOLOR": "#AFBBFF",
+        "PATHDATA": "M12 5 V19 M5 12 H19",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n100"
+    },
+    "n102": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "New tab",
+        "FONTSIZE": 12,
+        "FONTWEIGHT": 550,
+        "TEXTCOLOR": "#F1F3F8",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "New tab",
+      "parent": "n100"
+    },
+    "n103": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 38,
+        "COLOR": "#AFBBFF",
+        "SPACING": 8,
+        "PADRIGHT": 13,
+        "PADLEFT": 13,
+        "RADIUS": 12,
+        "BORDERCOLOR": "#AFBBFF",
+        "BORDERWIDTH": 1,
+        "ALIGNITEMS": 1,
+        "GRADANGLE": -1,
+        "HOVERFILL": "#AFBBFF",
+        "HOVERBORDER": -1632650241
+      },
+      "parent": "n96",
+      "children": [
+        "n104",
+        "n105"
+      ]
+    },
+    "n104": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 15,
+        "TEXTCOLOR": "#AFBBFF",
+        "PATHDATA": "M12 3 L13.8 8.2 L19 10 L13.8 11.8 L12 17 L10.2 11.8 L5 10 L10.2 8.2 Z M18.5 16 L19.2 17.8 L21 18.5 L19.2 19.2 L18.5 21 L17.8 19.2 L16 18.5 L17.8 17.8 Z",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n103"
+    },
+    "n105": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Ask Yantra",
+        "FONTSIZE": 12,
+        "FONTWEIGHT": 550,
+        "TEXTCOLOR": "#F1F3F8",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Ask Yantra",
+      "parent": "n103"
+    },
+    "n106": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 12,
+        "PADTOP": 4
+      },
+      "parent": "n80",
+      "children": [
+        "n107",
+        "n110"
+      ]
+    },
+    "n107": {
+      "kind": "ROW",
+      "params": {
+        "ALIGNITEMS": 1
+      },
+      "parent": "n106",
+      "children": [
+        "n108",
+        "n109"
+      ]
+    },
+    "n108": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "YOUR TOOLS",
+        "FONTSIZE": 11,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "YOUR TOOLS",
+      "parent": "n107"
+    },
+    "n109": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "19 INSTALLED",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#8C95A8",
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "19 INSTALLED",
+      "parent": "n107"
+    },
+    "n110": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 10,
+        "WRAP": 1
+      },
+      "parent": "n106",
+      "children": [
+        "n111"
+      ]
+    },
+    "n111": {
+      "kind": "GROUP",
+      "parent": "n110",
+      "children": [
+        "n112",
+        "n121",
+        "n130"
+      ]
+    },
+    "n112": {
+      "kind": "GROUP",
+      "parent": "n111",
+      "children": [
+        "n113"
+      ]
+    },
+    "n113": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 176,
+        "HEIGHT": 134,
+        "COLOR": "#232937",
+        "SPACING": 7,
+        "PADTOP": 16,
+        "PADRIGHT": 16,
+        "PADBOTTOM": 16,
+        "PADLEFT": 16,
+        "RADIUS": 18,
+        "BORDERCOLOR": "#5A6478",
+        "BORDERWIDTH": 1,
+        "GRADANGLE": -1,
+        "HOVERFILL": "#2C3446",
+        "HOVERBORDER": -1934640129,
+        "HOVERY": -2
+      },
+      "parent": "n112",
+      "children": [
+        "n114",
+        "n119",
+        "n120"
+      ]
+    },
+    "n114": {
+      "kind": "ROW",
+      "params": {
+        "ALIGNITEMS": 1
+      },
+      "parent": "n113",
+      "children": [
+        "n115",
+        "n117",
+        "n118"
+      ]
+    },
+    "n115": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 36,
+        "HEIGHT": 36,
+        "COLOR": "#E8C27A",
+        "RADIUS": 10,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "GRADANGLE": -1
+      },
+      "parent": "n114",
+      "children": [
+        "n116"
+      ]
+    },
+    "n116": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 19,
+        "TEXTCOLOR": "#E8C27A",
+        "PATHDATA": "M20 12 A8 8 0 1 1 17.7 6.3 M20 4 V9 H15",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n115"
+    },
+    "n117": {
+      "kind": "SPACER",
+      "params": {
+        "FLEXGROW": 1
+      },
+      "parent": "n114"
+    },
+    "n118": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 15,
+        "TEXTCOLOR": "#8C95A8",
+        "PATHDATA": "M7 17 L17 7 M9 7 H17 V15",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n114"
+    },
+    "n119": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Nocturne Rally",
+        "FONTSIZE": 16,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#F1F3F8",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Nocturne Rally",
+      "parent": "n113"
+    },
+    "n120": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Three laps. One perfect line.",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans",
+        "LINEHEIGHT": 1.25,
+        "MAXLINES": 2
+      },
+      "text": "Three laps. One perfect line.",
+      "parent": "n113"
+    },
+    "n121": {
+      "kind": "GROUP",
+      "parent": "n111",
+      "children": [
+        "n122"
+      ]
+    },
+    "n122": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 176,
+        "HEIGHT": 134,
+        "COLOR": "#232937",
+        "SPACING": 7,
+        "PADTOP": 16,
+        "PADRIGHT": 16,
+        "PADBOTTOM": 16,
+        "PADLEFT": 16,
+        "RADIUS": 18,
+        "BORDERCOLOR": "#5A6478",
+        "BORDERWIDTH": 1,
+        "GRADANGLE": -1,
+        "HOVERFILL": "#2C3446",
+        "HOVERBORDER": -1934640129,
+        "HOVERY": -2
+      },
+      "parent": "n121",
+      "children": [
+        "n123",
+        "n128",
+        "n129"
+      ]
+    },
+    "n123": {
+      "kind": "ROW",
+      "params": {
+        "ALIGNITEMS": 1
+      },
+      "parent": "n122",
+      "children": [
+        "n124",
+        "n126",
+        "n127"
+      ]
+    },
+    "n124": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 36,
+        "HEIGHT": 36,
+        "COLOR": "#9A6840",
+        "RADIUS": 10,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "GRADANGLE": -1
+      },
+      "parent": "n123",
+      "children": [
+        "n125"
+      ]
+    },
+    "n125": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 19,
+        "TEXTCOLOR": "#9A6840",
+        "PATHDATA": "M3 4 H21 M5 4 V15 H19 V4 M12 15 V20 M8.5 20 H15.5",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n124"
+    },
+    "n126": {
+      "kind": "SPACER",
+      "params": {
+        "FLEXGROW": 1
+      },
+      "parent": "n123"
+    },
+    "n127": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 15,
+        "TEXTCOLOR": "#8C95A8",
+        "PATHDATA": "M7 17 L17 7 M9 7 H17 V15",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n123"
+    },
+    "n128": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Galerie Nocturne",
+        "FONTSIZE": 16,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#F1F3F8",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Galerie Nocturne",
+      "parent": "n122"
+    },
+    "n129": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Great art, given room to breathe",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans",
+        "LINEHEIGHT": 1.25,
+        "MAXLINES": 2
+      },
+      "text": "Great art, given room to breathe",
+      "parent": "n122"
+    },
+    "n130": {
+      "kind": "GROUP",
+      "parent": "n111",
+      "children": [
+        "n131"
+      ]
+    },
+    "n131": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 176,
+        "HEIGHT": 134,
+        "COLOR": "#232937",
+        "SPACING": 7,
+        "PADTOP": 16,
+        "PADRIGHT": 16,
+        "PADBOTTOM": 16,
+        "PADLEFT": 16,
+        "RADIUS": 18,
+        "BORDERCOLOR": "#5A6478",
+        "BORDERWIDTH": 1,
+        "GRADANGLE": -1,
+        "HOVERFILL": "#2C3446",
+        "HOVERBORDER": -1934640129,
+        "HOVERY": -2
+      },
+      "parent": "n130",
+      "children": [
+        "n132",
+        "n137",
+        "n138"
+      ]
+    },
+    "n132": {
+      "kind": "ROW",
+      "params": {
+        "ALIGNITEMS": 1
+      },
+      "parent": "n131",
+      "children": [
+        "n133",
+        "n135",
+        "n136"
+      ]
+    },
+    "n133": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 36,
+        "HEIGHT": 36,
+        "COLOR": "#F3A45B",
+        "RADIUS": 10,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "GRADANGLE": -1
+      },
+      "parent": "n132",
+      "children": [
+        "n134"
+      ]
+    },
+    "n134": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 19,
+        "TEXTCOLOR": "#F3A45B",
+        "PATHDATA": "M12 3.5 L14.6 8.8 L20.5 9.6 L16.2 13.7 L17.3 19.5 L12 16.7 L6.7 19.5 L7.8 13.7 L3.5 9.6 L9.4 8.8 Z",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n133"
+    },
+    "n135": {
+      "kind": "SPACER",
+      "params": {
+        "FLEXGROW": 1
+      },
+      "parent": "n132"
+    },
+    "n136": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 15,
+        "TEXTCOLOR": "#8C95A8",
+        "PATHDATA": "M7 17 L17 7 M9 7 H17 V15",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n132"
+    },
+    "n137": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "EMBERDEEP",
+        "FONTSIZE": 16,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#F1F3F8",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "EMBERDEEP",
+      "parent": "n131"
+    },
+    "n138": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Light the cave, breathe, go deeper",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans",
+        "LINEHEIGHT": 1.25,
+        "MAXLINES": 2
+      },
+      "text": "Light the cave, breathe, go deeper",
+      "parent": "n131"
+    },
+    "n139": {
+      "kind": "GROUP",
+      "parent": "n80",
+      "children": [
+        "n140"
+      ]
+    },
+    "n140": {
+      "kind": "GROUP",
+      "parent": "n139",
+      "children": [
+        "n141",
+        "n142"
+      ]
+    },
+    "n141": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 1,
+        "COLOR": "#ACB3C3",
+        "MARGINTOP": 2,
+        "MARGINBOTTOM": 2,
+        "GRADANGLE": -1
+      },
+      "parent": "n140"
+    },
+    "n142": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Nothing open in this space. Start with a tool, or search for anything.",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Nothing open in this space. Start with a tool, or search for anything.",
+      "parent": "n140"
+    },
+    "n143": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 228,
+        "SPACING": 14,
+        "PADTOP": 18
+      },
+      "parent": "n79",
+      "children": [
+        "n144",
+        "n157"
+      ]
+    },
+    "n144": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 228,
+        "COLOR": "#232937",
+        "SPACING": 16,
+        "PADTOP": 22,
+        "PADRIGHT": 22,
+        "PADBOTTOM": 22,
+        "PADLEFT": 22,
+        "RADIUS": 24,
+        "BORDERCOLOR": "#5A6478",
+        "BORDERWIDTH": 1,
+        "GRADANGLE": -1
+      },
+      "parent": "n143",
+      "children": [
+        "n145",
+        "n149",
+        "n150",
+        "n154"
+      ]
+    },
+    "n145": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 2
+      },
+      "parent": "n144",
+      "children": [
+        "n146",
+        "n147",
+        "n148"
+      ]
+    },
+    "n146": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "LOCAL TIME",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#AFBBFF",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "LOCAL TIME",
+      "parent": "n145"
+    },
+    "n147": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "12:14",
+        "FONTSIZE": 58,
+        "FONTWEIGHT": 400,
+        "TEXTCOLOR": "#F1F3F8",
+        "FONTFAMILY": "Noto Sans",
+        "LINEHEIGHT": 1.1
+      },
+      "text": "12:14",
+      "parent": "n145"
+    },
+    "n148": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Thursday, 6 November",
+        "FONTSIZE": 12,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 2
+      },
+      "text": "Thursday, 6 November",
+      "parent": "n145"
+    },
+    "n149": {
+      "kind": "PANEL",
+      "params": {
+        "HEIGHT": 1,
+        "COLOR": "#ACB3C3",
+        "GRADANGLE": -1
+      },
+      "parent": "n144"
+    },
+    "n150": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 8
+      },
+      "parent": "n144",
+      "children": [
+        "n151",
+        "n152",
+        "n153"
+      ]
+    },
+    "n151": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "SPACE 01",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#E7BD91",
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "SPACE 01",
+      "parent": "n150"
+    },
+    "n152": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "0 active windows",
+        "FONTSIZE": 14,
+        "FONTWEIGHT": 550,
+        "TEXTCOLOR": "#F1F3F8",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "0 active windows",
+      "parent": "n150"
+    },
+    "n153": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "0 windows across your desktop",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 2
+      },
+      "text": "0 windows across your desktop",
+      "parent": "n150"
+    },
+    "n154": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 34,
+        "COLOR": "#AFBBFF",
+        "SPACING": 8,
+        "PADRIGHT": 12,
+        "PADLEFT": 12,
+        "RADIUS": 11,
+        "ALIGNITEMS": 1,
+        "GRADANGLE": -1
+      },
+      "parent": "n144",
+      "children": [
+        "n155",
+        "n156"
+      ]
+    },
+    "n155": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 14,
+        "TEXTCOLOR": "#AFBBFF",
+        "PATHDATA": "M4 4 H10 V10 H4 Z M14 4 H20 V10 H14 Z M4 14 H10 V20 H4 Z M14 14 H20 V20 H14 Z",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n154"
+    },
+    "n156": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Manage this space",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#F1F3F8",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Manage this space",
+      "parent": "n154"
+    },
+    "n157": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 228,
+        "COLOR": "#11141D",
+        "SPACING": 5,
+        "PADTOP": 18,
+        "PADRIGHT": 18,
+        "PADBOTTOM": 18,
+        "PADLEFT": 18,
+        "RADIUS": 18,
+        "BORDERCOLOR": "#5A6478",
+        "BORDERWIDTH": 1,
+        "GRADANGLE": -1
+      },
+      "parent": "n143",
+      "children": [
+        "n158",
+        "n159",
+        "n162",
+        "n165",
+        "n168"
+      ]
+    },
+    "n158": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "AT YOUR FINGERTIPS",
+        "FONTSIZE": 11,
+        "PADBOTTOM": 7,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "AT YOUR FINGERTIPS",
+      "parent": "n157"
+    },
+    "n159": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 30,
+        "SPACING": 12,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n157",
+      "children": [
+        "n160",
+        "n161"
+      ]
+    },
+    "n160": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Search everything",
+        "FONTSIZE": 11,
+        "FLEXGROW": 1,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Search everything",
+      "parent": "n159"
+    },
+    "n161": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "SUPER D",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#AFBBFF",
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "SUPER D",
+      "parent": "n159"
+    },
+    "n162": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 30,
+        "SPACING": 12,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n157",
+      "children": [
+        "n163",
+        "n164"
+      ]
+    },
+    "n163": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Open a new tab",
+        "FONTSIZE": 11,
+        "FLEXGROW": 1,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Open a new tab",
+      "parent": "n162"
+    },
+    "n164": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "SUPER N",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#AFBBFF",
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "SUPER N",
+      "parent": "n162"
+    },
+    "n165": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 30,
+        "SPACING": 12,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n157",
+      "children": [
+        "n166",
+        "n167"
+      ]
+    },
+    "n166": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Switch spaces",
+        "FONTSIZE": 11,
+        "FLEXGROW": 1,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Switch spaces",
+      "parent": "n165"
+    },
+    "n167": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "SUPER 1–9",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#AFBBFF",
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "SUPER 1–9",
+      "parent": "n165"
+    },
+    "n168": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 30,
+        "SPACING": 12,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n157",
+      "children": [
+        "n169",
+        "n170"
+      ]
+    },
+    "n169": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Fold the sidebar",
+        "FONTSIZE": 11,
+        "FLEXGROW": 1,
+        "TEXTCOLOR": "#ACB3C3",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Fold the sidebar",
+      "parent": "n168"
+    },
+    "n170": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "SUPER B",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#AFBBFF",
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "SUPER B",
+      "parent": "n168"
+    },
+    "n171": {
+      "kind": "GROUP",
+      "parent": "n74"
+    },
+    "n172": {
+      "kind": "COLUMN",
+      "params": {
+        "PADTOP": 10,
+        "PADRIGHT": 10,
+        "PADBOTTOM": 10,
+        "PADLEFT": 10,
+        "ABSOLUTE": 1,
+        "INSETTOP": 0,
+        "INSETRIGHT": 0,
+        "INSETBOTTOM": 0,
+        "INSETLEFT": 0
+      },
+      "parent": "n74",
+      "children": [
+        "n173"
+      ]
+    },
+    "n173": {
+      "kind": "STACK",
+      "params": {
+        "FLEXGROW": 1,
+        "NAME": "area"
+      },
+      "parent": "n172",
+      "children": [
+        "n174"
+      ]
+    },
+    "n174": {
+      "kind": "GROUP",
+      "parent": "n173"
+    },
+    "n175": {
+      "kind": "GROUP",
+      "parent": "n74"
+    },
+    "n176": {
+      "kind": "GROUP",
+      "parent": "n74"
+    },
+    "n177": {
+      "kind": "GROUP",
+      "parent": "n74"
+    },
+    "n178": {
+      "kind": "GROUP",
+      "parent": "n74"
+    },
+    "n179": {
+      "kind": "GROUP",
+      "parent": "n74"
+    },
+    "n180": {
+      "kind": "GROUP",
+      "parent": "n74"
+    },
+    "n181": {
+      "kind": "GROUP",
+      "parent": "n74"
+    },
+    "n182": {
+      "kind": "GROUP",
+      "parent": "n1",
+      "children": [
+        "n183"
+      ]
+    },
+    "n183": {
+      "kind": "GROUP",
+      "parent": "n182",
+      "children": [
+        "n184"
+      ]
+    },
+    "n184": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 56,
+        "COLOR": "#0C0E14",
+        "SPACING": 12,
+        "PADTOP": 16,
+        "PADBOTTOM": 16,
+        "ALIGNITEMS": 1,
+        "GRADANGLE": -1,
+        "NAME": "dock"
+      },
+      "parent": "n183",
+      "children": [
+        "n185",
+        "n188",
+        "n223",
+        "n224",
+        "n225",
+        "n234",
+        "n239"
+      ]
+    },
+    "n185": {
+      "kind": "ROW",
+      "params": {
+        "WIDTH": 44,
+        "HEIGHT": 44,
+        "RADIUS": 22,
+        "TRANSDURATION": 200,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "GRADFROM": 11516927,
+        "GRADTO": 15187345,
+        "GRADANGLE": 135,
+        "SHADOWX": 0,
+        "SHADOWY": 3,
+        "SHADOWBLUR": 14,
+        "SHADOWCOLOR": -1934640129,
+        "HOVERSCALE": 1.06,
+        "PRESSSCALE": 0.92,
+        "NAME": "agentBtn"
+      },
+      "parent": "n184",
+      "children": [
+        "n186",
+        "n187"
+      ]
+    },
+    "n186": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 20,
+        "TEXTCOLOR": "#141A33",
+        "PATHDATA": "M12 3 L13.8 8.2 L19 10 L13.8 11.8 L12 17 L10.2 11.8 L5 10 L10.2 8.2 Z M18.5 16 L19.2 17.8 L21 18.5 L19.2 19.2 L18.5 21 L17.8 19.2 L16 18.5 L17.8 17.8 Z",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n185"
+    },
+    "n187": {
+      "kind": "TOOLTIP",
+      "params": {
+        "TEXT": "Agent  ·  Super+A"
+      },
+      "text": "Agent  ·  Super+A",
+      "parent": "n185"
+    },
+    "n188": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 40,
+        "HEIGHT": 184,
+        "COLOR": "#171B25",
+        "RADIUS": 20,
+        "TRANSDURATION": 350,
+        "GRADANGLE": -1,
+        "NAME": "workspaces"
+      },
+      "parent": "n184",
+      "children": [
+        "n189",
+        "n200",
+        "n201"
+      ]
+    },
+    "n189": {
+      "kind": "GROUP",
+      "parent": "n188",
+      "children": [
+        "n190",
+        "n192",
+        "n194",
+        "n196",
+        "n198"
+      ]
+    },
+    "n190": {
+      "kind": "GROUP",
+      "parent": "n189",
+      "children": [
+        "n191"
+      ]
+    },
+    "n191": {
+      "kind": "GROUP",
+      "parent": "n190"
+    },
+    "n192": {
+      "kind": "GROUP",
+      "parent": "n189",
+      "children": [
+        "n193"
+      ]
+    },
+    "n193": {
+      "kind": "GROUP",
+      "parent": "n192"
+    },
+    "n194": {
+      "kind": "GROUP",
+      "parent": "n189",
+      "children": [
+        "n195"
+      ]
+    },
+    "n195": {
+      "kind": "GROUP",
+      "parent": "n194"
+    },
+    "n196": {
+      "kind": "GROUP",
+      "parent": "n189",
+      "children": [
+        "n197"
+      ]
+    },
+    "n197": {
+      "kind": "GROUP",
+      "parent": "n196"
+    },
+    "n198": {
+      "kind": "GROUP",
+      "parent": "n189",
+      "children": [
+        "n199"
+      ]
+    },
+    "n199": {
+      "kind": "GROUP",
+      "parent": "n198"
+    },
+    "n200": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 32,
+        "HEIGHT": 32,
+        "COLOR": "#AFBBFF",
+        "RADIUS": 16,
+        "TRANSDURATION": 350,
+        "ABSOLUTE": 1,
+        "INSETTOP": 4,
+        "INSETLEFT": 4,
+        "GRADANGLE": -1,
+        "NAME": "spaceIndicator"
+      },
+      "parent": "n188"
+    },
+    "n201": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 4,
+        "PADTOP": 4,
+        "PADRIGHT": 4,
+        "PADBOTTOM": 4,
+        "PADLEFT": 4
+      },
+      "parent": "n188",
+      "children": [
+        "n202"
+      ]
+    },
+    "n202": {
+      "kind": "GROUP",
+      "parent": "n201",
+      "children": [
+        "n203",
+        "n207",
+        "n211",
+        "n215",
+        "n219"
+      ]
+    },
+    "n203": {
+      "kind": "GROUP",
+      "parent": "n202",
+      "children": [
+        "n204"
+      ]
+    },
+    "n204": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 32,
+        "HEIGHT": 32,
+        "SPACING": 3,
+        "PADTOP": 8,
+        "RADIUS": 16,
+        "TRANSDURATION": 350,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n203",
+      "children": [
+        "n205",
+        "n206"
+      ]
+    },
+    "n205": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "1",
+        "FONTSIZE": 14,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#141A33",
+        "FONTFAMILY": "Noto Sans",
+        "LINEHEIGHT": 1
+      },
+      "text": "1",
+      "parent": "n204"
+    },
+    "n206": {
+      "kind": "GROUP",
+      "parent": "n204"
+    },
+    "n207": {
+      "kind": "GROUP",
+      "parent": "n202",
+      "children": [
+        "n208"
+      ]
+    },
+    "n208": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 32,
+        "HEIGHT": 32,
+        "SPACING": 3,
+        "PADTOP": 8,
+        "RADIUS": 16,
+        "TRANSDURATION": 350,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n207",
+      "children": [
+        "n209",
+        "n210"
+      ]
+    },
+    "n209": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "2",
+        "FONTSIZE": 14,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#8C95A8",
+        "FONTFAMILY": "Noto Sans",
+        "LINEHEIGHT": 1
+      },
+      "text": "2",
+      "parent": "n208"
+    },
+    "n210": {
+      "kind": "GROUP",
+      "parent": "n208"
+    },
+    "n211": {
+      "kind": "GROUP",
+      "parent": "n202",
+      "children": [
+        "n212"
+      ]
+    },
+    "n212": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 32,
+        "HEIGHT": 32,
+        "SPACING": 3,
+        "PADTOP": 8,
+        "RADIUS": 16,
+        "TRANSDURATION": 350,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n211",
+      "children": [
+        "n213",
+        "n214"
+      ]
+    },
+    "n213": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "3",
+        "FONTSIZE": 14,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#8C95A8",
+        "FONTFAMILY": "Noto Sans",
+        "LINEHEIGHT": 1
+      },
+      "text": "3",
+      "parent": "n212"
+    },
+    "n214": {
+      "kind": "GROUP",
+      "parent": "n212"
+    },
+    "n215": {
+      "kind": "GROUP",
+      "parent": "n202",
+      "children": [
+        "n216"
+      ]
+    },
+    "n216": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 32,
+        "HEIGHT": 32,
+        "SPACING": 3,
+        "PADTOP": 8,
+        "RADIUS": 16,
+        "TRANSDURATION": 350,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n215",
+      "children": [
+        "n217",
+        "n218"
+      ]
+    },
+    "n217": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "4",
+        "FONTSIZE": 14,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#8C95A8",
+        "FONTFAMILY": "Noto Sans",
+        "LINEHEIGHT": 1
+      },
+      "text": "4",
+      "parent": "n216"
+    },
+    "n218": {
+      "kind": "GROUP",
+      "parent": "n216"
+    },
+    "n219": {
+      "kind": "GROUP",
+      "parent": "n202",
+      "children": [
+        "n220"
+      ]
+    },
+    "n220": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 32,
+        "HEIGHT": 32,
+        "SPACING": 3,
+        "PADTOP": 8,
+        "RADIUS": 16,
+        "TRANSDURATION": 350,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n219",
+      "children": [
+        "n221",
+        "n222"
+      ]
+    },
+    "n221": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "5",
+        "FONTSIZE": 14,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#8C95A8",
+        "FONTFAMILY": "Noto Sans",
+        "LINEHEIGHT": 1
+      },
+      "text": "5",
+      "parent": "n220"
+    },
+    "n222": {
+      "kind": "GROUP",
+      "parent": "n220"
+    },
+    "n223": {
+      "kind": "SPACER",
+      "params": {
+        "FLEXGROW": 1
+      },
+      "parent": "n184"
+    },
+    "n224": {
+      "kind": "GROUP",
+      "parent": "n184"
+    },
+    "n225": {
+      "kind": "GROUP",
+      "parent": "n184",
+      "children": [
+        "n226"
+      ]
+    },
+    "n226": {
+      "kind": "GROUP",
+      "parent": "n225",
+      "children": [
+        "n227"
+      ]
+    },
+    "n227": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 40,
+        "COLOR": "#000000",
+        "SPACING": 3,
+        "PADTOP": 6,
+        "PADBOTTOM": 6,
+        "RADIUS": 20,
+        "TRANSDURATION": 200,
+        "ALIGNITEMS": 1,
+        "GRADANGLE": -1,
+        "HOVERFILL": "#E7EBFA",
+        "NAME": "barClock"
+      },
+      "parent": "n226",
+      "children": [
+        "n228",
+        "n229",
+        "n230",
+        "n231",
+        "n232",
+        "n233"
+      ]
+    },
+    "n228": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 16,
+        "TEXTCOLOR": "#E7BD91",
+        "PATHDATA": "M12 3 A9 9 0 1 1 12 21 A9 9 0 1 1 12 3 Z M12 7 V12 L15.5 14",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n227"
+    },
+    "n229": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Thu",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 500,
+        "TEXTCOLOR": "#E7BD91",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Thu",
+      "parent": "n227"
+    },
+    "n230": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "6",
+        "FONTSIZE": 16,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#E7BD91",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "6",
+      "parent": "n227"
+    },
+    "n231": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 22,
+        "HEIGHT": 1,
+        "COLOR": "#333B4C",
+        "MARGINTOP": 2,
+        "MARGINBOTTOM": 2,
+        "GRADANGLE": -1
+      },
+      "parent": "n227"
+    },
+    "n232": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "12",
+        "FONTSIZE": 16,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#F1F3F8",
+        "FONTFAMILY": "Noto Sans",
+        "NAME": "clockH"
+      },
+      "text": "12",
+      "parent": "n227"
+    },
+    "n233": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "14",
+        "FONTSIZE": 16,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": "#F1F3F8",
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "14",
+      "parent": "n227"
+    },
+    "n234": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 40,
+        "COLOR": "#171B25",
+        "SPACING": 10,
+        "PADTOP": 10,
+        "PADBOTTOM": 10,
+        "RADIUS": 20,
+        "TRANSDURATION": 200,
+        "ALIGNITEMS": 1,
+        "GRADANGLE": -1,
+        "HOVERFILL": "#202634",
+        "PRESSSCALE": 0.95,
+        "NAME": "status"
+      },
+      "parent": "n184",
+      "children": [
+        "n235",
+        "n236",
+        "n237",
+        "n238"
+      ]
+    },
+    "n235": {
+      "kind": "GROUP",
+      "parent": "n234"
+    },
+    "n236": {
+      "kind": "GROUP",
+      "parent": "n234"
+    },
+    "n237": {
+      "kind": "GROUP",
+      "parent": "n234"
+    },
+    "n238": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 16,
+        "TEXTCOLOR": "#F1F3F8",
+        "PATHDATA": "M4 6 H13 M17 6 H20 M15 4 V8 M4 12 H7 M11 12 H20 M9 10 V14 M4 18 H15 M19 18 H20 M17 16 V20",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n234"
+    },
+    "n239": {
+      "kind": "ROW",
+      "params": {
+        "WIDTH": 40,
+        "HEIGHT": 40,
+        "COLOR": "#000000",
+        "RADIUS": 20,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1,
+        "GRADANGLE": -1,
+        "HOVERFILL": "#E7EBFA",
+        "PRESSSCALE": 0.9,
+        "NAME": "session"
+      },
+      "parent": "n184",
+      "children": [
+        "n240"
+      ]
+    },
+    "n240": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 18,
+        "TEXTCOLOR": "#FF9D96",
+        "PATHDATA": "M12 3 V12 M7.5 6.2 A8 8 0 1 0 16.5 6.2",
+        "STROKEWIDTH": 1.8
+      },
+      "parent": "n239"
+    },
+    "n241": {
+      "kind": "GROUP",
+      "parent": "n0"
+    }
+  },
+  "provenance": {
+    "source": {
+      "path": "apps/desktop/app.nim",
+      "lines": 2405,
+      "bytes": 118545,
+      "sha256": "42b39cf2a2cc0f6c2010077720e8619190d31d228398d347113699aa23e57e54"
+    },
+    "module": {
+      "path": "apps/desktop/app.wasm",
+      "bytes": 1262498,
+      "sha256": "e32e294e3af9d1ab2415afde63defed8aa20eba88b6a800303c3731f7886d545"
+    },
+    "build": "./tools/build-wasm.sh apps/desktop/app.nim apps/desktop/app.wasm --release"
+  },
+  "verify": {
+    "command": "node tools/verify-wasm.mjs apps/desktop",
+    "proves": "the module instantiates with no keys and no GPU, and builds a live UI tree",
+    "does_not_prove": "pixel equality against any reference render"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "kart",
+  "name": "Nocturne Rally",
+  "icon": "K",
+  "tint": "#E8C27A",
+  "grants": [],
+  "window": {
+    "title": "Nocturne Rally",
+    "width": 1280,
+    "height": 816,
+    "bg": "#070A12"
+  },
+  "module": {
+    "path": "apps/kart/app.wasm",
+    "bytes": 132255,
+    "sha256": "920cb811956260c83aa18e253850a630fec2ce2fe6710c5f557580747cdfa81e"
+  },
+  "source": {
+    "path": "apps/kart/app.nim",
+    "lines": 648,
+    "bytes": 29011,
+    "sha256": "2b5f3ac37f76615dc0c8129c70978ff33e355f55643298f60b7b20e44fab831c"
+  },
+  "nodes": 10,
+  "document": "app.yantra.json",
+  "generated": "tools/export-json.mjs"
+}

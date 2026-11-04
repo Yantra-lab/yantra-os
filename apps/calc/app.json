@@ -1,0 +1,26 @@
+{
+  "id": "calc",
+  "name": "Calculator",
+  "icon": "=",
+  "tint": "#FF9F0A",
+  "grants": [],
+  "window": {
+    "title": "Calc",
+    "width": null,
+    "height": null
+  },
+  "module": {
+    "path": "apps/calc/app.wasm",
+    "bytes": 188962,
+    "sha256": "ad8192081c9873ba091462d62f4d7284826fd7f1c431a81f8def7335ddb5d666"
+  },
+  "source": {
+    "path": "apps/calc/app.nim",
+    "lines": 222,
+    "bytes": 8100,
+    "sha256": "f80a3cc971e553cc5851e397d344815e78d93b24d41c9ae42e4905aaa43cf152"
+  },
+  "nodes": 40,
+  "document": "app.yantra.json",
+  "generated": "tools/export-json.mjs"
+}

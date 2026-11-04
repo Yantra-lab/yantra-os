@@ -1,0 +1,14 @@
+app	lines	wasm_bytes	wasm_files_bytes	wasm_sha256	png	w	h	png_bytes	png_unique_colours	capability
+typewriter	268	438505	438505	c7263e15789ac68366f8c59a30205876b4a99c180f9129866902a62c6a3bfbfa	proofs/typewriter.png	1280	816	160776	7508	A typewriter: real Foley, paper, carriage
+notes	97	212039	212039	6ba2baf60532313c6bc617f53a68d7087d9dd9a3bbbee36e855908d6a1eaad1d	proofs/notes.png	1200	800	206554	1919	Notes as records: permissions, search, bound fields
+todo	167	227216	227216	9c6645b4d5aafc01293f20ae66128f9b985da7c83f6c9b26b595d00507e9ad06	proofs/todo.png	1000	760	82756	1609	Tasks as records: checks, filters, tick writes the row
+calc	208	207944	207944	174292e706f8e43892cbf013ecf416771dba418ea75e8c12f0b4bdbcd8fb8da0	proofs/calc.png	420	640	27803	1108	Arithmetic with precedence and a history of records
+chess	649	303779	303779	36a3a68f44de2ab69cfe5680f74d7ef7fb58734c424b6afef93711bf8f12d432	proofs/chess.png	1280	816	143940	8078	A typed move generator and a full board
+gallery	225	212826	212826	115944bcbb8a5a3eb1331b6d82ff86ac48f1cf41208ec716b70a10f1b4f9a9aa	proofs/gallery.png	1280	816	215332	13045	A gallery: paintings, frames, a walk
+gallery3d	128	182808	182808	826a0f84bf01feaab43ff2b503007d12eb1747368ccff2358dd6151cb34c0511	proofs/gallery3d.png	1280	816	895011	42081	A 3D hall: Scene3D, camera, textured planes
+dna	291	247202	247202	58994a92aaab574dd7caf10e7e06c8f9f0a3a517d629c637d4b0b4d8cc01abbb	proofs/dna.png	1280	816	213188	11543	The helix as maths: projection, depth sort, base pairs
+descent	372	320352	320352	777ed9e97d4960c0e45978b6d168da62dc9f16d1760b3687e1b92228ef5792b8	proofs/descent.png	1280	816	151374	4778	Gradient descent, running: the picture is the algorithm
+editor	326	227220	227220	ada6aa618b281869e78bb7114dccb54dc44736105d8b16287cfbfb449a1d612e	proofs/editor.png	1280	816	97526	2362	An editor: typed tokeniser, records, save
+desktop	2366	1258642	1258642	8ee7c8a3b18120815181ccecee6ad1afca5d18f3bcbe21dbb7a1fc5a10331b4e	proofs/desktop.png	1280	800	654031	16994	The shell: an Arc sidebar, a Caelestia bar, a shader wallpaper, windows that float or tile
+calligraphy	266	200028	200028	63047a0334d142f2b8987ffc5581ef05e1317b27010728f47450442aa4f1e0f9	proofs/calligraphy.png	1280	816	127675	3650	Brush and ink: state-built Draw strokes
+minipaint	234	263223	263223	b4a07462557776aa4348416fa09fec9c1b40f2a51b3eca03bf2f1e7d8bbf8f69	proofs/minipaint.png	1200	800	65148	3069	A paint app that accumulates real shapes

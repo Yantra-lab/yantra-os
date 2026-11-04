@@ -1,0 +1,21 @@
+{
+  "$yantra": "2026.11",
+  "app": "y:@yantra/descent",
+  "name": "Descent",
+  "export_failed": "wasm://wasm/00138d82:1 |  | ",
+  "nodes": {},
+  "provenance": {
+    "source": {
+      "path": "apps/descent/app.nim",
+      "lines": 372,
+      "bytes": 18528,
+      "sha256": "4889a68dd6c33a133f3257112f9f65de86925a3a5c4aabe969f23fa842de215e"
+    },
+    "module": {
+      "path": "apps/descent/app.wasm",
+      "bytes": 320352,
+      "sha256": "777ed9e97d4960c0e45978b6d168da62dc9f16d1760b3687e1b92228ef5792b8"
+    }
+  },
+  "note": "This module traps in the host, so nothing was read from it. The document records the module it failed on, not a tree."
+}

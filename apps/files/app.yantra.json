@@ -1,0 +1,81 @@
+{
+  "$yantra": "2026.11",
+  "app": "y:@yantra/files",
+  "name": "Yantra File Manager",
+  "exported": {
+    "by": "tools/export-json.mjs",
+    "from": "apps/files/app.wasm, instantiated and stepped 30 frame(s)",
+    "runner": "web/runner/runner.js",
+    "protocol": "v2",
+    "frames_stepped": 30,
+    "note": "L1 structured twin: nodes, parameters and the retained draw commands, read from the running module. Not executable on its own, and not restorable to the Nim source."
+  },
+  "window": {
+    "title": "Yantra File Manager",
+    "width": 1100,
+    "height": 720
+  },
+  "stats": {
+    "nodes": 3,
+    "layers": 0,
+    "layer_draw_calls": 0,
+    "draw_command_bytes": 10959
+  },
+  "nodes": {
+    "n0": {
+      "kind": "WINDOW",
+      "params": {
+        "WIDTH": 1100,
+        "HEIGHT": 720
+      },
+      "text": "Yantra File Manager",
+      "children": [
+        "n1"
+      ]
+    },
+    "n1": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 1100,
+        "HEIGHT": 720
+      },
+      "parent": "n0",
+      "children": [
+        "n2"
+      ]
+    },
+    "n2": {
+      "kind": "CANVAS",
+      "params": {
+        "WIDTH": 1100,
+        "HEIGHT": 720,
+        "CANVASWIDTH": 1100,
+        "CANVASHEIGHT": 720
+      },
+      "parent": "n1",
+      "draw_bytes": 10959,
+      "draw_sha256": "c1a971bdf5c823ea220db86a91329c4e10fab4a72936255dd1ce5f379b5235ef",
+      "draw": "R 0.00 0.00 1100.00 720.00 0.00 4278651150;R 0.00 0.00 1100.00 40.00 0.00 4279375135;E 20.00 20.00 4.00 4.00 4293445754;T 12.00 10.48 14.00 4293445754 700 यंत्र FILE MANAGER  ·  /apps/calc;R 788.00 8.00 88.00 28.00 8.00 4293445754;T 809.32 13.84 12.00 4278651150 600 app.nim;R 884.00 8.00 88.00 28.00 8.00 4279638823;T 902.08 13.84 12.00 4293520886 600 app.json;R 980.00 8.00 88.00 28.00 8.00 4279638823;T 1007.80 13.84 12.00 4293520886 600 Split;R 0.00 40.00 308.00 680.00 0.00 4279375135;R 8.00 48.00 292.00 28.00 8.00 4280693066;E 20.00 62.00 4.00 4.00 4294942474;T 28.00 53.84 12.00 4293445754 600 Calculator;T 244.00 54.52 11.00 4294942474 600 SUTRA;R 8.00 80.00 292.00 28.00 8.00 4279638823;E 20.00 94.00 4.00 4.00 4285261542;T 28.00 85.84 12.00 4293520886 400 Grandmaster's Study;T 244.00 86.52 11.00 4285261542 600 SUTRA;R 8.00 112.00 292.00 28.00 8.00 4279638823;E 20.00 126.00 4.00 4.00 4292392814;T 28.00 117.84 12.00 4293520886 400 Infinite Coastline;T 244.00 118.52 11.00 4292392814 600 SUTRA;R 8.00 144.00 292.00 28.00 8.00 4279638823;E 20.00 158.00 4.00 4.00 4294924860;T 28.00 149.84 12.00 4293520886 400 Descent;T 244.00 150.52 11.00 4294924860 600 SUTRA;R 8.00 176.00 292.00 28.00 8.00 4279638823;E 20.00 190.00 4.00 4.00 4279286145;T 28.00 181.84 12.00 4293520886 400 Helix DNA;T 244.00 182.52 11.00 4279286145 600 SUTRA;R 8.00 208.00 292.00 28.00 8.00 4279638823;E 20.00 222.00 4.00 4.00 4294942474;T 28.00 213.84 12.00 4293520886 400 Yantra Studio IDE;T 244.00 214.52 11.00 4294942474 600 SUTRA;R 8.00 240.00 292.00 28.00 8.00 4279638823;E 20.00 254.00 4.00 4.00 4287532691;T 28.00 245.84 12.00 4293520886 400 Yantra File Manager;T 244.00 246.52 11.00 4287532691 600 SUTRA;R 8.00 272.00 292.00 28.00 8.00 4279638823;E 20.00 286.00 4.00 4.00 4288309312;T 28.00 277.84 12.00 4293520886 400 Galerie Nocturne;T 244.00 278.52 11.00 4288309312 600 SUTRA;R 8.00 304.00 292.00 28.00 8.00 4279638823;E 20.00 318.00 4.00 4.00 4291404362;T 28.00 309.84 12.00 4293520886 400 Night Gallery;T 244.00 310.52 11.00 4291404362 600 SUTRA;R 8.00 336.00 292.00 28.00 8.00 4279638823;E 20.00 350.00 4.00 4.00 4294242278;T 28.00 341.84 12.00 4293520886 400 Sumi;T 244.00 342.52 11.00 4294242278 600 SUTRA;R 8.00 368.00 292.00 28.00 8.00 4279638823;E 20.00 382.00 4.00 4.00 4293444218;T 28.00 373.84 12.00 4293520886 400 Nocturne Rally;T 244.00 374.52 11.00 4293444218 600 NIM;R 8.00 400.00 292.00 28.00 8.00 4279638823;E 20.00 414.00 4.00 4.00 4294956554;T 28.00 405.84 12.00 4293520886 400 Notes;T 244.00 406.52 11.00 4294956554 600 SUTRA;R 8.00 432.00 292.00 28.00 8.00 4279638823;E 20.00 446.00 4.00 4.00 4293511303;T 28.00 437.84 12.00 4293520886 400 Ocean;T 244.00 438.52 11.00 4293511303 600 SUTRA;R 8.00 464.00 292.00 28.00 8.00 4279638823;E 20.00 478.00 4.00 4.00 4291404362;T 28.00 469.84 12.00 4293520886 400 Orrery;T 244.00 470.52 11.00 4291404362 600 NIM;R 8.00 496.00 292.00 28.00 8.00 4279638823;E 20.00 510.00 4.00 4.00 4293944386;T 28.00 501.84 12.00 4293520886 400 Raster / Form;T 244.00 502.52 11.00 4293944386 600 SUTRA;R 8.00 528.00 292.00 28.00 8.00 4279638823;E 20.00 542.00 4.00 4.00 4278879487;T 28.00 533.84 12.00 4293520886 400 Todos;T 244.00 534.52 11.00 4278879487 600 SUTRA;R 8.00 560.00 292.00 28.00 8.00 4279638823;E 20.00 574.00 4.00 4.00 4294234232;T 28.00 565.84 12.00 4293520886 400 Marlowe 44 Typewriter;T 244.00 566.52 11.00 4294234232 600 SUTRA;R 320.00 48.00 768.00 648.00 8.00 4279111961;N 332.00 62.52 11.00 4288324533 400 DejaVu Sans Mono;1;N 364.00 62.46 13.00 4287403176 400 DejaVu Sans Mono;## calc/app.nim — a starter view, on the SDK's vocabulary.;N 332.00 82.52 11.00 4288324533 400 DejaVu Sans Mono;2;N 364.00 82.46 13.00 4287403176 400 DejaVu Sans Mono;## The mirror bridge has not published this app's source yet, so this is the;N 332.00 102.52 11.00 4288324533 400 DejaVu Sans Mono;3;N 364.00 102.46 13.00 4287403176 400 DejaVu Sans Mono;## starter the tree would give it: a window, a column, one line of text.;N 332.00 122.52 11.00 4288324533 400 D…",
+      "draw_truncated": true
+    }
+  },
+  "provenance": {
+    "source": {
+      "path": "apps/files/app.nim",
+      "lines": 349,
+      "bytes": 15441,
+      "sha256": "5c0c21e09b6584db20be4cd3d5e3ecde52498f2de7ddb175726dc00dba233b1f"
+    },
+    "module": {
+      "path": "apps/files/app.wasm",
+      "bytes": 117201,
+      "sha256": "ef0c798f054d53b77442e03e9dba150d64671b21d1a18a887e1d4f036ef5f437"
+    },
+    "build": "./tools/build-wasm.sh apps/files/app.nim apps/files/app.wasm --release"
+  },
+  "verify": {
+    "command": "node tools/verify-wasm.mjs apps/files",
+    "proves": "the module instantiates with no keys and no GPU, and builds a live UI tree",
+    "does_not_prove": "pixel equality against any reference render"
+  }
+}

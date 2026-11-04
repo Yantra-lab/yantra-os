@@ -1,0 +1,26 @@
+{
+  "id": "gallery",
+  "name": "Galerie Nocturne",
+  "icon": "G",
+  "tint": "#9A6840",
+  "grants": [],
+  "window": {
+    "title": "Gallery",
+    "width": null,
+    "height": null
+  },
+  "module": {
+    "path": "apps/gallery/app.wasm",
+    "bytes": 197473,
+    "sha256": "0668f5b530d48494ecb470947bfa1382490e560322bc88f445361be7af77ce0a"
+  },
+  "source": {
+    "path": "apps/gallery/app.nim",
+    "lines": 212,
+    "bytes": 13256,
+    "sha256": "e0341fab847453bda496a900fc2d9fe73d9feaedeb3d9859913249b1f8d54e6d"
+  },
+  "nodes": 99,
+  "document": "app.yantra.json",
+  "generated": "tools/export-json.mjs"
+}

@@ -1,0 +1,13 @@
+Yantra release binaries — latest only, one per platform (owner: no archives, no folders)
+
+yantra-linux-x64    built here from commit 6f3894c9 by yantra-os/tools/build-all.sh
+                    (-d:release --threads:on, Nim 2.2.4 + clang 14). Runs standalone.
+yantra-windows-x64.exe  built from windows/current-native e43f1035 (carried — the Windows link
+                    needs an engine fix, see LANGUAGE-GAPS). NEEDS the 135 *.dll beside it.
+yantra-android-arm64.apk  built from the live host (host/host.nim 1,601 lines) by
+                    tools/build-android.sh; arm64-v8a, signed, minSdk 28, 20 app modules inside.
+135 Windows DLLs   the closure yantra-windows-x64.exe imports (Skia, SDL3, wasmtime, Filament,
+                    FFmpeg, Jolt, curl, the MS VC++ runtime). Shipped flat so the .exe runs from
+                    this folder with no zip and no sub-directory.
+
+Every file here is listed in SHA256SUMS; verify with: sha256sum -c SHA256SUMS

@@ -1,0 +1,26 @@
+{
+  "id": "editor",
+  "name": "Yantra Studio IDE",
+  "icon": "E",
+  "tint": "#FF9F0A",
+  "grants": [],
+  "window": {
+    "title": "Editor",
+    "width": null,
+    "height": null
+  },
+  "module": {
+    "path": "apps/editor/app.wasm",
+    "bytes": 282767,
+    "sha256": "eb1db547661a3f5fc1987937994f5cf77f9c715596b8d9baa5e42276276789e0"
+  },
+  "source": {
+    "path": "apps/editor/app.nim",
+    "lines": 487,
+    "bytes": 20864,
+    "sha256": "163291504b2498c43063ed66c4234695606bb9d4265edf25285e77f289c8ad4e"
+  },
+  "nodes": 512,
+  "document": "app.yantra.json",
+  "generated": "tools/export-json.mjs"
+}

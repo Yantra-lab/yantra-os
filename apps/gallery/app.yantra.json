@@ -1,0 +1,1361 @@
+{
+  "$yantra": "2026.11",
+  "app": "y:@yantra/gallery",
+  "name": "Galerie Nocturne",
+  "exported": {
+    "by": "tools/export-json.mjs",
+    "from": "apps/gallery/app.wasm, instantiated and stepped 30 frame(s)",
+    "runner": "web/runner/runner.js",
+    "protocol": "v2",
+    "frames_stepped": 30,
+    "note": "L1 structured twin: nodes, parameters and the retained draw commands, read from the running module. Not executable on its own, and not restorable to the Nim source."
+  },
+  "window": {
+    "title": "Gallery",
+    "width": null,
+    "height": null
+  },
+  "stats": {
+    "nodes": 99,
+    "layers": 0,
+    "layer_draw_calls": 0,
+    "draw_command_bytes": 13391
+  },
+  "nodes": {
+    "n0": {
+      "kind": "WINDOW",
+      "text": "Gallery",
+      "children": [
+        "n1"
+      ]
+    },
+    "n1": {
+      "kind": "COLUMN",
+      "parent": "n0",
+      "children": [
+        "n2"
+      ]
+    },
+    "n2": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 1280,
+        "HEIGHT": 816,
+        "COLOR": -15265010
+      },
+      "parent": "n1",
+      "children": [
+        "n3",
+        "n4",
+        "n7",
+        "n8",
+        "n11",
+        "n12",
+        "n18",
+        "n19",
+        "n32",
+        "n35",
+        "n38",
+        "n40",
+        "n41",
+        "n42"
+      ]
+    },
+    "n3": {
+      "kind": "CANVAS",
+      "params": {
+        "WIDTH": 1280,
+        "HEIGHT": 816
+      },
+      "parent": "n2",
+      "draw_bytes": 464,
+      "draw_sha256": "9a71590855a96280fa2350f95993d02c2cb6730c5119070ceb64e5457831f391",
+      "draw": "U 0.00 0.00 1280.00 816.00 0.00 640.00 0.00 640.00 816.00 4280557078 4278979079;W 0.00 0.00 1280.00 816.00 0.00 250.00 120.00 620.00 1358944672 16767392;W 0.00 0.00 1280.00 816.00 0.00 900.00 300.00 520.00 687859646 16771006;U 0.00 698.00 1280.00 118.00 0.00 640.00 698.00 640.00 816.00 4279373578 4278650373;G 0.00 698.00 1280.00 698.00 1506977896 1.20;G 0.00 104.00 1280.00 104.00 869443688 1.00;W 0.00 0.00 1280.00 816.00 0.00 640.00 372.00 820.00 0 2584151299;"
+    },
+    "n4": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 10,
+        "ALIGNITEMS": 1,
+        "INSETTOP": 30,
+        "INSETLEFT": 56
+      },
+      "parent": "n2",
+      "children": [
+        "n5",
+        "n6"
+      ]
+    },
+    "n5": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 7,
+        "HEIGHT": 7,
+        "COLOR": -2971544
+      },
+      "parent": "n4"
+    },
+    "n6": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "GALERIE NOCTURNE",
+        "FONTSIZE": 12,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -527642,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "GALERIE NOCTURNE",
+      "parent": "n4"
+    },
+    "n7": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "ART, AFTER HOURS",
+        "FONTSIZE": 9,
+        "TEXTCOLOR": -6516094,
+        "INSETTOP": 52,
+        "INSETLEFT": 56,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "ART, AFTER HOURS",
+      "parent": "n2"
+    },
+    "n8": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 420,
+        "SPACING": 6,
+        "ALIGNITEMS": 2,
+        "INSETTOP": 31,
+        "INSETRIGHT": 56
+      },
+      "parent": "n2",
+      "children": [
+        "n9",
+        "n10"
+      ]
+    },
+    "n9": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "THE NIGHT COLLECTION",
+        "FONTSIZE": 11,
+        "ALIGN": 2,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -3752791,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "THE NIGHT COLLECTION",
+      "parent": "n8"
+    },
+    "n10": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "EIGHT WORKS · ROOM 01",
+        "FONTSIZE": 9,
+        "ALIGN": 2,
+        "TEXTCOLOR": -6516094,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "EIGHT WORKS · ROOM 01",
+      "parent": "n8"
+    },
+    "n11": {
+      "kind": "PANEL",
+      "params": {
+        "HEIGHT": 1,
+        "COLOR": -12963290,
+        "INSETTOP": 88,
+        "INSETRIGHT": 56,
+        "INSETLEFT": 56
+      },
+      "parent": "n2"
+    },
+    "n12": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -14410475,
+        "PADTOP": 5,
+        "PADRIGHT": 5,
+        "PADBOTTOM": 5,
+        "PADLEFT": 5,
+        "RADIUS": 2,
+        "INSETTOP": 112,
+        "INSETLEFT": 60
+      },
+      "parent": "n2",
+      "children": [
+        "n13"
+      ]
+    },
+    "n13": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -725021,
+        "PADTOP": 13,
+        "PADRIGHT": 13,
+        "PADBOTTOM": 13,
+        "PADLEFT": 13,
+        "RADIUS": 1
+      },
+      "parent": "n12",
+      "children": [
+        "n14"
+      ]
+    },
+    "n14": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -1844021,
+        "PADTOP": 2,
+        "PADRIGHT": 2,
+        "PADBOTTOM": 2,
+        "PADLEFT": 2
+      },
+      "parent": "n13",
+      "children": [
+        "n15"
+      ]
+    },
+    "n15": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 352,
+        "HEIGHT": 440
+      },
+      "parent": "n14",
+      "children": [
+        "n16",
+        "n17"
+      ]
+    },
+    "n16": {
+      "kind": "CANVAS",
+      "params": {
+        "WIDTH": 352,
+        "HEIGHT": 440
+      },
+      "parent": "n15"
+    },
+    "n17": {
+      "kind": "IMAGE",
+      "params": {
+        "WIDTH": 352,
+        "HEIGHT": 440,
+        "SOURCE": "art/ravi-varma.jpg",
+        "FIT": 0
+      },
+      "parent": "n15"
+    },
+    "n18": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 400,
+        "HEIGHT": 3,
+        "COLOR": -2971544,
+        "OPACITY": 0.75,
+        "INSETTOP": 112,
+        "INSETLEFT": 60
+      },
+      "parent": "n2"
+    },
+    "n19": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 696,
+        "SPACING": 12,
+        "INSETTOP": 120,
+        "INSETLEFT": 528
+      },
+      "parent": "n2",
+      "children": [
+        "n20",
+        "n24",
+        "n25",
+        "n26",
+        "n27",
+        "n28",
+        "n29",
+        "n30",
+        "n31"
+      ]
+    },
+    "n20": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 12,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n19",
+      "children": [
+        "n21",
+        "n22",
+        "n23"
+      ]
+    },
+    "n21": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "WORK 01 / 08",
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -2971544,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "WORK 01 / 08",
+      "parent": "n20"
+    },
+    "n22": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 26,
+        "HEIGHT": 1,
+        "COLOR": -12963290
+      },
+      "parent": "n20"
+    },
+    "n23": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "ON VIEW",
+        "FONTSIZE": 9,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -6516094,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "ON VIEW",
+      "parent": "n20"
+    },
+    "n24": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "There Comes Papa",
+        "FONTSIZE": 42,
+        "FONTWEIGHT": 500,
+        "TEXTCOLOR": -527642,
+        "FONTFAMILY": "Noto Serif Display",
+        "LINEHEIGHT": 1.06,
+        "MAXLINES": 2
+      },
+      "text": "There Comes Papa",
+      "parent": "n19"
+    },
+    "n25": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Raja Ravi Varma · 1893",
+        "FONTSIZE": 17,
+        "FONTWEIGHT": 500,
+        "TEXTCOLOR": -3752791,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Raja Ravi Varma · 1893",
+      "parent": "n19"
+    },
+    "n26": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 48,
+        "HEIGHT": 2,
+        "COLOR": -2971544
+      },
+      "parent": "n19"
+    },
+    "n27": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "ABOUT THE WORK",
+        "FONTSIZE": 9,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -2971544,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "ABOUT THE WORK",
+      "parent": "n19"
+    },
+    "n28": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "A mother lifts her child toward the father coming home. Ravi Varma's oils were shown at the 1893 World's Columbian Exposition in Chicago, where they won awards and carried Indian subjects to an international public.",
+        "FONTSIZE": 15,
+        "TEXTCOLOR": -3752791,
+        "FONTFAMILY": "Noto Sans",
+        "LINEHEIGHT": 1.55,
+        "MAXLINES": 4
+      },
+      "text": "A mother lifts her child toward the father coming home. Ravi Varma's oils were shown at the 1893 World's Columbian Exposition in Chicago, where they won awards and carried Indian subjects to an international public.",
+      "parent": "n19"
+    },
+    "n29": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Oil on canvas",
+        "FONTSIZE": 12,
+        "TEXTCOLOR": -6516094,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Oil on canvas",
+      "parent": "n19"
+    },
+    "n30": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 696,
+        "HEIGHT": 1,
+        "COLOR": -12963290
+      },
+      "parent": "n19"
+    },
+    "n31": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Public domain · source scan: Wikimedia Commons.",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -6516094,
+        "FONTFAMILY": "Noto Sans",
+        "LINEHEIGHT": 1.45,
+        "MAXLINES": 2
+      },
+      "text": "Public domain · source scan: Wikimedia Commons.",
+      "parent": "n19"
+    },
+    "n32": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 12,
+        "INSETTOP": 566,
+        "INSETLEFT": 528
+      },
+      "parent": "n2",
+      "children": [
+        "n33",
+        "n34"
+      ]
+    },
+    "n33": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "← Previous",
+        "WIDTH": 164,
+        "HEIGHT": 46,
+        "COLOR": -14541804,
+        "FONTSIZE": 13,
+        "RADIUS": 2,
+        "BORDERCOLOR": -12963290,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -3752791,
+        "FONTFAMILY": "DejaVu Sans"
+      },
+      "text": "← Previous",
+      "parent": "n32"
+    },
+    "n34": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Next →",
+        "WIDTH": 164,
+        "HEIGHT": 46,
+        "COLOR": -2971544,
+        "FONTSIZE": 13,
+        "RADIUS": 2,
+        "BORDERCOLOR": -2971544,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -15265010,
+        "FONTFAMILY": "DejaVu Sans"
+      },
+      "text": "Next →",
+      "parent": "n32"
+    },
+    "n35": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 300,
+        "SPACING": 7,
+        "ALIGNITEMS": 2,
+        "INSETTOP": 570,
+        "INSETRIGHT": 60
+      },
+      "parent": "n2",
+      "children": [
+        "n36",
+        "n37"
+      ]
+    },
+    "n36": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "NEXT IN THE ROOM",
+        "FONTSIZE": 9,
+        "ALIGN": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -6516094,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "NEXT IN THE ROOM",
+      "parent": "n35"
+    },
+    "n37": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "The Great Wave off Kanagawa",
+        "FONTSIZE": 12,
+        "ALIGN": 2,
+        "TEXTCOLOR": -3752791,
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 2
+      },
+      "text": "The Great Wave off Kanagawa",
+      "parent": "n35"
+    },
+    "n38": {
+      "kind": "PANEL",
+      "params": {
+        "HEIGHT": 184,
+        "COLOR": -15593460,
+        "INSETTOP": 632,
+        "INSETRIGHT": 0,
+        "INSETLEFT": 0
+      },
+      "parent": "n2",
+      "children": [
+        "n39"
+      ]
+    },
+    "n39": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 1280,
+        "HEIGHT": 1,
+        "COLOR": -12963290
+      },
+      "parent": "n38"
+    },
+    "n40": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "THE CONTACT SHEET",
+        "FONTSIZE": 9,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -3752791,
+        "INSETTOP": 648,
+        "INSETLEFT": 56,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "THE CONTACT SHEET",
+      "parent": "n2"
+    },
+    "n41": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "SELECT A NUMBER TO OPEN A WORK",
+        "FONTSIZE": 9,
+        "TEXTCOLOR": -6516094,
+        "INSETTOP": 648,
+        "INSETRIGHT": 56,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "SELECT A NUMBER TO OPEN A WORK",
+      "parent": "n2"
+    },
+    "n42": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 11,
+        "INSETTOP": 672,
+        "INSETLEFT": 56
+      },
+      "parent": "n2",
+      "children": [
+        "n43",
+        "n50",
+        "n57",
+        "n64",
+        "n71",
+        "n78",
+        "n85",
+        "n92"
+      ]
+    },
+    "n43": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 136,
+        "SPACING": 5,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n42",
+      "children": [
+        "n44",
+        "n48",
+        "n49"
+      ]
+    },
+    "n44": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -725021,
+        "PADTOP": 3,
+        "PADRIGHT": 3,
+        "PADBOTTOM": 3,
+        "PADLEFT": 3,
+        "RADIUS": 1,
+        "BORDERCOLOR": -2971544,
+        "BORDERWIDTH": 1
+      },
+      "parent": "n43",
+      "children": [
+        "n45"
+      ]
+    },
+    "n45": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n44",
+      "children": [
+        "n46",
+        "n47"
+      ]
+    },
+    "n46": {
+      "kind": "CANVAS",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n45"
+    },
+    "n47": {
+      "kind": "IMAGE",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80,
+        "SOURCE": "art/ravi-varma.jpg",
+        "FIT": 0
+      },
+      "parent": "n45"
+    },
+    "n48": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "01",
+        "WIDTH": 72,
+        "HEIGHT": 20,
+        "COLOR": -2971544,
+        "FONTSIZE": 9,
+        "RADIUS": 1,
+        "BORDERCOLOR": -2971544,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -15265010,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "01",
+      "parent": "n43"
+    },
+    "n49": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "There Comes Papa",
+        "WIDTH": 136,
+        "FONTSIZE": 9,
+        "ALIGN": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -527642,
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 1
+      },
+      "text": "There Comes Papa",
+      "parent": "n43"
+    },
+    "n50": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 136,
+        "SPACING": 5,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n42",
+      "children": [
+        "n51",
+        "n55",
+        "n56"
+      ]
+    },
+    "n51": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -14541804,
+        "PADTOP": 3,
+        "PADRIGHT": 3,
+        "PADBOTTOM": 3,
+        "PADLEFT": 3,
+        "RADIUS": 1,
+        "BORDERCOLOR": -13883872,
+        "BORDERWIDTH": 1
+      },
+      "parent": "n50",
+      "children": [
+        "n52"
+      ]
+    },
+    "n52": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n51",
+      "children": [
+        "n53",
+        "n54"
+      ]
+    },
+    "n53": {
+      "kind": "CANVAS",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n52"
+    },
+    "n54": {
+      "kind": "IMAGE",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80,
+        "SOURCE": "art/hokusai.jpg",
+        "FIT": 0
+      },
+      "parent": "n52"
+    },
+    "n55": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "02",
+        "WIDTH": 72,
+        "HEIGHT": 20,
+        "COLOR": -14541804,
+        "FONTSIZE": 9,
+        "RADIUS": 1,
+        "BORDERCOLOR": -12963290,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -3752791,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "02",
+      "parent": "n50"
+    },
+    "n56": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "The Great Wave off Kanagawa",
+        "WIDTH": 136,
+        "FONTSIZE": 9,
+        "ALIGN": 1,
+        "FONTWEIGHT": 400,
+        "TEXTCOLOR": -6516094,
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 1
+      },
+      "text": "The Great Wave off Kanagawa",
+      "parent": "n50"
+    },
+    "n57": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 136,
+        "SPACING": 5,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n42",
+      "children": [
+        "n58",
+        "n62",
+        "n63"
+      ]
+    },
+    "n58": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -14541804,
+        "PADTOP": 3,
+        "PADRIGHT": 3,
+        "PADBOTTOM": 3,
+        "PADLEFT": 3,
+        "RADIUS": 1,
+        "BORDERCOLOR": -13883872,
+        "BORDERWIDTH": 1
+      },
+      "parent": "n57",
+      "children": [
+        "n59"
+      ]
+    },
+    "n59": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n58",
+      "children": [
+        "n60",
+        "n61"
+      ]
+    },
+    "n60": {
+      "kind": "CANVAS",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n59"
+    },
+    "n61": {
+      "kind": "IMAGE",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80,
+        "SOURCE": "art/vermeer.jpg",
+        "FIT": 0
+      },
+      "parent": "n59"
+    },
+    "n62": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "03",
+        "WIDTH": 72,
+        "HEIGHT": 20,
+        "COLOR": -14541804,
+        "FONTSIZE": 9,
+        "RADIUS": 1,
+        "BORDERCOLOR": -12963290,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -3752791,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "03",
+      "parent": "n57"
+    },
+    "n63": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "The Milkmaid",
+        "WIDTH": 136,
+        "FONTSIZE": 9,
+        "ALIGN": 1,
+        "FONTWEIGHT": 400,
+        "TEXTCOLOR": -6516094,
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 1
+      },
+      "text": "The Milkmaid",
+      "parent": "n57"
+    },
+    "n64": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 136,
+        "SPACING": 5,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n42",
+      "children": [
+        "n65",
+        "n69",
+        "n70"
+      ]
+    },
+    "n65": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -14541804,
+        "PADTOP": 3,
+        "PADRIGHT": 3,
+        "PADBOTTOM": 3,
+        "PADLEFT": 3,
+        "RADIUS": 1,
+        "BORDERCOLOR": -13883872,
+        "BORDERWIDTH": 1
+      },
+      "parent": "n64",
+      "children": [
+        "n66"
+      ]
+    },
+    "n66": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n65",
+      "children": [
+        "n67",
+        "n68"
+      ]
+    },
+    "n67": {
+      "kind": "CANVAS",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n66",
+      "draw_bytes": 8926,
+      "draw_sha256": "49d2c2b41144e69536cf9fd2fc202f81edf8979318b725089ed5ef74083ed8c4",
+      "draw": "R 0 0 64 80 0 0xFF0B2740;U 0 0 64 80 0 0 0 0 80 0xFF2A5C7A 0xFF0A1B28;W 0 0 64 80 0 32 26 48 0x557FC4D8 0x002A5C7A;M 0 17; L 7 27; L 14 38; L 21 49; L 28 61; L 34 72; L 41 80; L 48 80; L 54 80; L 60 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; S 0xEEEAF6F2 2.6;E 64 80 2 2 0x99F1FAEE;M 25 50; L 24 63; L 25 77; L 26 80; L 27 80; L 28 80; L 29 80; L 30 80; L 31 80; L 33 80; L 34 80; L 35 80; L 37 80; L 38 80; L 39 80; L 41 80; L 42 80; L 44 80; L 46 80; L 48 80; L 50 80; L 52 80; L 54 80; L 57 80; L 60 80; S 0xCCBFE3E8 1.7;M 50 3; L 59 9; L 64 14; L 64 19; L 64 25; L 64 31; L 64 38; L 64 45; L 64 52; L 64 61; L 64 69; L 64 78; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; S 0xAAA8DADC 1.7;M 11 36; L 20 39; L 30 42; L 40 43; L 49 42; L 57 41; L 64 39; L 64 36; L 64 33; L 64 30; L 64 26; L 64 23; L 64 18; L 64 14; L 64 10; L 64 5; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; S 0x887FD0D8 1.7;E 64 0 2 2 0x99F1FAEE;M 36 69; L 41 64; L 47 60; L 52 56; L 58 51; L 63 47; L 64 42; L 64 37; L 64 32; L 64 27; L 64 22; L 64 16; L 64 11; L 64 5; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; S 0xEEEAF6F2 2.6;M 61 22; L 64 19; L 64 17; L 64 15; L 64 13; L 64 11; L 64 9; L 64 7; L 64 5; L 64 4; L 64 2; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; S 0xCCBFE3E8 1.7;M 22 55; L 30 53; L 39 54; L 49 56; L 59 59; L 64 63; L 64 68; L 64 73; L 64 78; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; S 0xAAA8DADC 1.7;E 64 80 2 2 0x99F1FAEE;M 47 8; L 52 20; L 60 30; L 64 40; L 64 48; L 64 56; L 64 63; L 64 70; L 64 76; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; S 0x887FD0D8 1.7;M 8 41; L 13 53; L 20 64; L 28 74; L 37 80; L 47 80; L 57 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; S 0xEEEAF6F2 2.6;M 33 74; L 42 77; L 52 79; L 61 79; L 64 78; L 64 77; L 64 76; L 64 75; L 64 74; L 64 73; L 64 73; L 64 72; L 64 72; L 64 71; L 64 71; L 64 70; L 64 70; L 64 69; L 64 69; L 64 69; L 64 69; L 64 68; L 64 68; L 64 68; L 64 68; S 0xCCBFE3E8 1.7;E 64 68 2 2 0x99F1FAEE;M 58 27; L 64 29; L 64 31; L 64 33; L 64 36; L 64 38; L 64 41; L 64 43; L 64 46; L 64 48; L 64 51; L 64 53; L 64 56; L 64 58; L 64 60; L 64 63; L 64 65; L 64 67; L 64 69; L 64 71; L 64 72; L 64 74; L 64 75; L 64 77; L 64 78; S 0xAAA8DADC 1.7;M 19 60; L 28 62; L 38 65; L 48 69; L 58 76; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; S 0x887FD0D8 1.7;M 44 13; L 53 17; L 63 25; L 64 34; L 64 44; L 64 55; L 64 67; L 64 79; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; S 0xEEEAF6F2 2.6;E 64 80 2 2 0x99F1FAEE;M 5 46; L 14 51; L 24 58; L 32 68; L 40 79; L 46 80; L 51 80; L 57 80; L 62 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; S 0xCCBFE3E8 1.7;M 30 79; L 39 80; L 48 80; L 58 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; L 64 80; S 0xAAA8DADC 1.7;M 55 32; L 60 27; L 64 22; L 64 18; L 64 13; L 64 9; L 64 4; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; L 64 0; …",
+      "draw_truncated": true
+    },
+    "n68": {
+      "kind": "IMAGE",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80,
+        "SOURCE": "",
+        "FIT": 0
+      },
+      "parent": "n66"
+    },
+    "n69": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "04",
+        "WIDTH": 72,
+        "HEIGHT": 20,
+        "COLOR": -14541804,
+        "FONTSIZE": 9,
+        "RADIUS": 1,
+        "BORDERCOLOR": -12963290,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -3752791,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "04",
+      "parent": "n64"
+    },
+    "n70": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Wind over Water",
+        "WIDTH": 136,
+        "FONTSIZE": 9,
+        "ALIGN": 1,
+        "FONTWEIGHT": 400,
+        "TEXTCOLOR": -6516094,
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 1
+      },
+      "text": "Wind over Water",
+      "parent": "n64"
+    },
+    "n71": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 136,
+        "SPACING": 5,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n42",
+      "children": [
+        "n72",
+        "n76",
+        "n77"
+      ]
+    },
+    "n72": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -14541804,
+        "PADTOP": 3,
+        "PADRIGHT": 3,
+        "PADBOTTOM": 3,
+        "PADLEFT": 3,
+        "RADIUS": 1,
+        "BORDERCOLOR": -13883872,
+        "BORDERWIDTH": 1
+      },
+      "parent": "n71",
+      "children": [
+        "n73"
+      ]
+    },
+    "n73": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n72",
+      "children": [
+        "n74",
+        "n75"
+      ]
+    },
+    "n74": {
+      "kind": "CANVAS",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n73"
+    },
+    "n75": {
+      "kind": "IMAGE",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80,
+        "SOURCE": "art/sher-gil.jpg",
+        "FIT": 0
+      },
+      "parent": "n73"
+    },
+    "n76": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "05",
+        "WIDTH": 72,
+        "HEIGHT": 20,
+        "COLOR": -14541804,
+        "FONTSIZE": 9,
+        "RADIUS": 1,
+        "BORDERCOLOR": -12963290,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -3752791,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "05",
+      "parent": "n71"
+    },
+    "n77": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Three Girls",
+        "WIDTH": 136,
+        "FONTSIZE": 9,
+        "ALIGN": 1,
+        "FONTWEIGHT": 400,
+        "TEXTCOLOR": -6516094,
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 1
+      },
+      "text": "Three Girls",
+      "parent": "n71"
+    },
+    "n78": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 136,
+        "SPACING": 5,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n42",
+      "children": [
+        "n79",
+        "n83",
+        "n84"
+      ]
+    },
+    "n79": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -14541804,
+        "PADTOP": 3,
+        "PADRIGHT": 3,
+        "PADBOTTOM": 3,
+        "PADLEFT": 3,
+        "RADIUS": 1,
+        "BORDERCOLOR": -13883872,
+        "BORDERWIDTH": 1
+      },
+      "parent": "n78",
+      "children": [
+        "n80"
+      ]
+    },
+    "n80": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n79",
+      "children": [
+        "n81",
+        "n82"
+      ]
+    },
+    "n81": {
+      "kind": "CANVAS",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n80"
+    },
+    "n82": {
+      "kind": "IMAGE",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80,
+        "SOURCE": "art/van-gogh.jpg",
+        "FIT": 0
+      },
+      "parent": "n80"
+    },
+    "n83": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "06",
+        "WIDTH": 72,
+        "HEIGHT": 20,
+        "COLOR": -14541804,
+        "FONTSIZE": 9,
+        "RADIUS": 1,
+        "BORDERCOLOR": -12963290,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -3752791,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "06",
+      "parent": "n78"
+    },
+    "n84": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Wheat Field with Cypresses",
+        "WIDTH": 136,
+        "FONTSIZE": 9,
+        "ALIGN": 1,
+        "FONTWEIGHT": 400,
+        "TEXTCOLOR": -6516094,
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 1
+      },
+      "text": "Wheat Field with Cypresses",
+      "parent": "n78"
+    },
+    "n85": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 136,
+        "SPACING": 5,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n42",
+      "children": [
+        "n86",
+        "n90",
+        "n91"
+      ]
+    },
+    "n86": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -14541804,
+        "PADTOP": 3,
+        "PADRIGHT": 3,
+        "PADBOTTOM": 3,
+        "PADLEFT": 3,
+        "RADIUS": 1,
+        "BORDERCOLOR": -13883872,
+        "BORDERWIDTH": 1
+      },
+      "parent": "n85",
+      "children": [
+        "n87"
+      ]
+    },
+    "n87": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n86",
+      "children": [
+        "n88",
+        "n89"
+      ]
+    },
+    "n88": {
+      "kind": "CANVAS",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n87",
+      "draw_bytes": 4001,
+      "draw_sha256": "e592225b1c73a254166914a0ce7fb09d3b12a3e320f96934572320da5de86247",
+      "draw": "R 0 0 64 80 0 0xFFF3EDDE;M 0 1; L 3 2; L 7 2; L 10 2; L 14 2; L 17 2; L 21 2; L 24 3; L 28 3; L 32 3; L 35 3; L 39 3; L 42 2; L 46 2; L 49 2; L 53 2; L 56 2; L 60 1; L 64 1; S 0xFF24180F 1;M 0 5; L 3 6; L 7 6; L 10 6; L 14 6; L 17 6; L 21 6; L 24 6; L 28 6; L 32 6; L 35 6; L 39 6; L 42 6; L 46 5; L 49 5; L 53 5; L 56 5; L 60 4; L 64 4; S 0xFF24180F 1;M 0 9; L 3 10; L 7 10; L 10 10; L 14 10; L 17 10; L 21 10; L 24 10; L 28 9; L 32 9; L 35 9; L 39 9; L 42 8; L 46 8; L 49 8; L 53 8; L 56 8; L 60 8; L 64 7; S 0xFF24180F 1;M 0 12; L 3 13; L 7 13; L 10 13; L 14 13; L 17 13; L 21 13; L 24 13; L 28 12; L 32 12; L 35 12; L 39 12; L 42 11; L 46 11; L 49 11; L 53 11; L 56 11; L 60 11; L 64 11; S 0xFF24180F 1;M 0 16; L 3 17; L 7 17; L 10 16; L 14 16; L 17 16; L 21 16; L 24 15; L 28 15; L 32 15; L 35 15; L 39 15; L 42 15; L 46 15; L 49 15; L 53 15; L 56 15; L 60 15; L 64 15; S 0xFF24180F 1;M 0 19; L 3 20; L 7 20; L 10 19; L 14 19; L 17 19; L 21 19; L 24 19; L 28 18; L 32 18; L 35 18; L 39 18; L 42 18; L 46 18; L 49 18; L 53 19; L 56 19; L 60 19; L 64 19; S 0xFF24180F 1;M 0 23; L 3 23; L 7 22; L 10 22; L 14 22; L 17 22; L 21 22; L 24 22; L 28 22; L 32 22; L 35 22; L 39 22; L 42 22; L 46 22; L 49 23; L 53 23; L 56 23; L 60 23; L 64 23; S 0xFF24180F 1;M 0 27; L 3 26; L 7 26; L 10 26; L 14 25; L 17 25; L 21 25; L 24 26; L 28 26; L 32 26; L 35 26; L 39 26; L 42 26; L 46 27; L 49 27; L 53 27; L 56 27; L 60 28; L 64 28; S 0xFF24180F 1;M 0 30; L 3 29; L 7 29; L 10 29; L 14 29; L 17 29; L 21 29; L 24 30; L 28 30; L 32 30; L 35 30; L 39 31; L 42 31; L 46 31; L 49 31; L 53 31; L 56 31; L 60 32; L 64 32; S 0xFF24180F 1;M 0 34; L 3 33; L 7 33; L 10 33; L 14 33; L 17 33; L 21 34; L 24 34; L 28 34; L 32 34; L 35 35; L 39 35; L 42 35; L 46 35; L 49 35; L 53 35; L 56 35; L 60 35; L 64 35; S 0xFF24180F 1;M 0 38; L 3 37; L 7 37; L 10 37; L 14 38; L 17 38; L 21 38; L 24 38; L 28 38; L 32 39; L 35 39; L 39 39; L 42 39; L 46 39; L 49 39; L 53 39; L 56 39; L 60 39; L 64 39; S 0xFF24180F 1;M 0 41; L 3 41; L 7 41; L 10 42; L 14 42; L 17 42; L 21 42; L 24 42; L 28 43; L 32 43; L 35 43; L 39 43; L 42 43; L 46 42; L 49 42; L 53 42; L 56 42; L 60 42; L 64 42; S 0xFF24180F 1;M 0 45; L 3 46; L 7 46; L 10 46; L 14 46; L 17 46; L 21 46; L 24 46; L 28 46; L 32 46; L 35 46; L 39 46; L 42 46; L 46 46; L 49 45; L 53 45; L 56 45; L 60 45; L 64 44; S 0xFF24180F 1;M 0 49; L 3 50; L 7 50; L 10 50; L 14 50; L 17 50; L 21 50; L 24 50; L 28 50; L 32 49; L 35 49; L 39 49; L 42 49; L 46 49; L 49 48; L 53 48; L 56 48; L 60 48; L 64 48; S 0xFF24180F 1;M 0 52; L 3 54; L 7 54; L 10 53; L 14 53; L 17 53; L 21 53; L 24 53; L 28 53; L 32 52; L 35 52; L 39 52; L 42 52; L 46 52; L 49 51; L 53 51; L 56 51; L 60 51; L 64 51; S 0xFF24180F 1;M 0 56; L 3 57; L 7 57; L 10 57; L 14 56; L 17 56; L 21 56; L 24 56; L 28 56; L 32 55; L 35 55; L 39 55; L 42 55; L 46 55; L 49 55; L 53 55; L 56 55; L 60 55; L 64 55; S 0xFF24180F 1;M 0 60; L 3 60; L 7 60; L 10 60; L 14 59; L 17 59; L 21 59; L 24 59; L 28 59; L 32 58; L 35 58; L 39 58; L 42 58; L 46 58; L 49 58; L 53 58; L 56 58; L 60 59; L 64 59; S 0xFF24180F 1;M 0 63; L 3 63; L 7 63; L 10 63; L 14 62; L 17 62; L 21 62; L 24 62; L 28 62; L 32 62; L 35 62; L 39 62; L 42 62; L 46 62; L 49 62; L 53 62; L 56 63; L 60 63; L 64 63; S 0xFF24180F 1;M 0 67; L 3 66; L 7 66; L 10 66; L 14 66; L 17 65; L 21 65; L 24 65; L 28 66; L 32 66; L 35 66; L 39 66; L 42 66; L 46 66; L 49 67; L 53 67; L 56 67; L 60 67; L 64 67; S 0xFF24180F 1;M 0 70; L 3 69; L 7 69; L 10 69; L 14 69; L 17 69; L 21 69; L 24 69; L 28 70; L 32 70; L 35 70; L 39 70; L 42 70; L 46 71; L 49 71; L 53 71; L 56 71; L 60 71; L 64 72; S 0xFF24180F 1;M 0 74; L 3 73; L 7 73; L 10 73; L 14 73; L 17 73; L 21 73; L 24 74; L 28 74; L 32 74; L 35 74; L 39 75; L 42 75; L 46 75; L 49 75; L 53 75; L 56 75; L 60 75; L 64 75; S 0xFF24180F 1;M 0 78; L 3 77; L 7 77; L 10 77; L 14 77; L 17 78; L 21 78; L 24 78; L 28 78; L 32 78; L 35 79; L 39 79; L 42 79; L 46 79; L 49 79; L 53 79; L 56 79; L 60 79; L 64 79; S 0xFF24180F 1…",
+      "draw_truncated": true
+    },
+    "n89": {
+      "kind": "IMAGE",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80,
+        "SOURCE": "",
+        "FIT": 0
+      },
+      "parent": "n87"
+    },
+    "n90": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "07",
+        "WIDTH": 72,
+        "HEIGHT": 20,
+        "COLOR": -14541804,
+        "FONTSIZE": 9,
+        "RADIUS": 1,
+        "BORDERCOLOR": -12963290,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -3752791,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "07",
+      "parent": "n85"
+    },
+    "n91": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Vibration",
+        "WIDTH": 136,
+        "FONTSIZE": 9,
+        "ALIGN": 1,
+        "FONTWEIGHT": 400,
+        "TEXTCOLOR": -6516094,
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 1
+      },
+      "text": "Vibration",
+      "parent": "n85"
+    },
+    "n92": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 136,
+        "SPACING": 5,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n42",
+      "children": [
+        "n93",
+        "n97",
+        "n98"
+      ]
+    },
+    "n93": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -14541804,
+        "PADTOP": 3,
+        "PADRIGHT": 3,
+        "PADBOTTOM": 3,
+        "PADLEFT": 3,
+        "RADIUS": 1,
+        "BORDERCOLOR": -13883872,
+        "BORDERWIDTH": 1
+      },
+      "parent": "n92",
+      "children": [
+        "n94"
+      ]
+    },
+    "n94": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n93",
+      "children": [
+        "n95",
+        "n96"
+      ]
+    },
+    "n95": {
+      "kind": "CANVAS",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80
+      },
+      "parent": "n94"
+    },
+    "n96": {
+      "kind": "IMAGE",
+      "params": {
+        "WIDTH": 64,
+        "HEIGHT": 80,
+        "SOURCE": "art/monet.jpg",
+        "FIT": 0
+      },
+      "parent": "n94"
+    },
+    "n97": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "08",
+        "WIDTH": 72,
+        "HEIGHT": 20,
+        "COLOR": -14541804,
+        "FONTSIZE": 9,
+        "RADIUS": 1,
+        "BORDERCOLOR": -12963290,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -3752791,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "08",
+      "parent": "n92"
+    },
+    "n98": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Water Lilies",
+        "WIDTH": 136,
+        "FONTSIZE": 9,
+        "ALIGN": 1,
+        "FONTWEIGHT": 400,
+        "TEXTCOLOR": -6516094,
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 1
+      },
+      "text": "Water Lilies",
+      "parent": "n92"
+    }
+  },
+  "provenance": {
+    "source": {
+      "path": "apps/gallery/app.nim",
+      "lines": 212,
+      "bytes": 13256,
+      "sha256": "e0341fab847453bda496a900fc2d9fe73d9feaedeb3d9859913249b1f8d54e6d"
+    },
+    "module": {
+      "path": "apps/gallery/app.wasm",
+      "bytes": 197473,
+      "sha256": "0668f5b530d48494ecb470947bfa1382490e560322bc88f445361be7af77ce0a"
+    },
+    "build": "./tools/build-wasm.sh apps/gallery/app.nim apps/gallery/app.wasm --release"
+  },
+  "verify": {
+    "command": "node tools/verify-wasm.mjs apps/gallery",
+    "proves": "the module instantiates with no keys and no GPU, and builds a live UI tree",
+    "does_not_prove": "pixel equality against any reference render"
+  }
+}

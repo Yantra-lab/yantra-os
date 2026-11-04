@@ -1,0 +1,467 @@
+{
+  "$yantra": "2026.11",
+  "app": "y:@yantra/emberdeep",
+  "name": "EMBERDEEP",
+  "exported": {
+    "by": "tools/export-json.mjs",
+    "from": "apps/emberdeep/app.wasm, instantiated and stepped 30 frame(s)",
+    "runner": "web/runner/runner.js",
+    "protocol": "v2",
+    "frames_stepped": 30,
+    "note": "L1 structured twin: nodes, parameters and the retained draw commands, read from the running module. Not executable on its own, and not restorable to the Nim source."
+  },
+  "window": {
+    "title": "EMBERDEEP",
+    "width": 1280,
+    "height": 816,
+    "bg": "#080A10"
+  },
+  "stats": {
+    "nodes": 18,
+    "layers": 0,
+    "layer_draw_calls": 0,
+    "draw_command_bytes": 6347
+  },
+  "nodes": {
+    "n0": {
+      "kind": "WINDOW",
+      "params": {
+        "WIDTH": 1280,
+        "HEIGHT": 816,
+        "COLOR": "#080A10",
+        "GRADANGLE": -1
+      },
+      "text": "EMBERDEEP",
+      "children": [
+        "n1"
+      ]
+    },
+    "n1": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 1280,
+        "HEIGHT": 816,
+        "COLOR": "#080A10",
+        "GRADANGLE": -1
+      },
+      "parent": "n0",
+      "children": [
+        "n2",
+        "n3",
+        "n4",
+        "n5",
+        "n6",
+        "n7",
+        "n8",
+        "n9",
+        "n10",
+        "n11",
+        "n12",
+        "n13",
+        "n14",
+        "n15",
+        "n16",
+        "n17"
+      ]
+    },
+    "n2": {
+      "kind": "CANVAS",
+      "params": {
+        "WIDTH": 1280,
+        "HEIGHT": 816,
+        "CANVASWIDTH": 1280,
+        "CANVASHEIGHT": 816
+      },
+      "parent": "n1",
+      "draw_bytes": 6347,
+      "draw_sha256": "7e4f851b2554cf5268d9c06ec505813c6e8596469fce5a17081e096eaf00427b",
+      "draw": "U 0.00 0.00 1280.00 816.00 0.00 640.00 0.00 640.00 816.00 4278716944 4279308313;z 0.00 0.00 1280.00 816.00 0.00 0.01 0.06 3 37.00 101388312 152507419;W 26.00;E 1168.00 48.00 42.00 42.00 383288390;E 22.00 15.00 1.10 1.10 500206165;E 215.00 62.00 0.65 0.65 567315029;E 408.00 109.00 0.65 0.65 516983381;E 601.00 156.00 0.65 0.65 399542869;E 794.00 203.00 0.65 0.65 315656789;E 987.00 250.00 1.10 1.10 349211221;E 1180.00 297.00 0.65 0.65 466651733;E 153.00 344.00 0.65 0.65 567315029;E 346.00 391.00 0.65 0.65 550537813;E 539.00 438.00 0.65 0.65 433097301;E 732.00 485.00 1.10 1.10 315656789;E 925.00 532.00 0.65 0.65 315656789;E 1118.00 579.00 0.65 0.65 433097301;E 91.00 626.00 0.65 0.65 550537813;E 284.00 673.00 0.65 0.65 567315029;E 477.00 720.00 1.10 1.10 466651733;E 670.00 767.00 0.65 0.65 349211221;E 863.00 44.00 0.65 0.65 315656789;G 24.00 84.00 1256.00 84.00 4280821809 1.00;G 24.00 84.00 235.00 84.00 4294157403 2.00;M 1240.00 39.12;L 1243.21 45.79;L 1249.88 49.00;L 1243.21 52.21;L 1240.00 58.88;L 1236.79 52.21;L 1230.12 49.00;L 1236.79 45.79;L 1240.00 39.12;Z;F 4294157403;M 31.00 34.00;L 35.23 42.77;L 44.00 47.00;L 35.23 51.23;L 31.00 60.00;L 26.77 51.23;L 18.00 47.00;L 26.77 42.77;L 31.00 34.00;Z;F 4294157403;N 54.00 52.00 26.00 4293977554 800 DejaVu Sans;EMBERDEEP;N 268.00 49.00 11.00 4294157403 700 DejaVu Sans Mono;A LIVING-CAVE ROGUELIKE;N 268.00 66.00 11.00 4288453283 400 DejaVu Sans Mono;EVERY CELL IS REAL. EVERY DESCENT IS A DIFFERENT STORY.;N 1016.00 37.00 11.00 4288453283 700 DejaVu Sans Mono;NATIVE MATERIAL ENGINE;N 1016.00 61.00 12.00 4294956442 400 DejaVu Sans Mono;40 MATERIALS  /  1 SEED;W 16.00;R 21.00 107.00 902.00 512.00 5.00 1879048192;R 23.00 103.00 898.00 506.00 3.00 4283644720;X 1 384 216 24.00 104.00 896.00 504.00;G 24.00 104.00 48.00 104.00 4294157403 2.00;G 24.00 104.00 24.00 128.00 4294157403 2.00;G 920.00 104.00 896.00 104.00 4294157403 2.00;G 920.00 104.00 920.00 128.00 4294157403 2.00;G 24.00 608.00 48.00 608.00 4294157403 2.00;G 24.00 608.00 24.00 584.00 4294157403 2.00;G 920.00 608.00 896.00 608.00 4294157403 2.00;G 920.00 608.00 920.00 584.00 4294157403 2.00;R 38.00 116.00 222.00 27.00 2.00 3590851346;E 50.00 129.00 3.50 3.50 4294157403;N 62.00 134.00 11.00 4294956442 700 DejaVu Sans Mono;LIVE MATERIAL FIELD;U 944.00 104.00 312.00 504.00 4.00 1100.00 104.00 1100.00 608.00 4196408355 4279243803;G 944.00 104.00 1256.00 104.00 4294157403 2.00;N 968.00 131.00 11.00 4294157403 700 DejaVu Sans Mono;EXPEDITION  /  CURRENT STRATUM;N 968.00 159.00 26.00 4293977554 700 DejaVu Sans;MINES;N 968.00 198.00 12.00 4288453283 700 DejaVu Sans Mono;DEPTH  102 m   /   Y 102;N 1180.00 132.00 11.00 4288453283 700 DejaVu Sans Mono;01 / 05;G 968.00 214.00 1232.00 214.00 4280821809 1.00;N 968.00 230.00 11.00 4288453283 700 DejaVu Sans Mono;THE FIVE STRATA;G 977.00 254.00 977.00 269.00 4280821809 1.00;E 977.00 250.00 4.50 4.50 4294956442;E 977.00 250.00 8.00 8.00 955491419;N 993.00 254.00 11.00 4293977554 700 DejaVu Sans Mono;01  MINES;G 977.00 277.00 977.00 292.00 4280821809 1.00;E 977.00 273.00 3.00 3.00 4288453283;N 993.00 277.00 11.00 4288453283 500 DejaVu Sans Mono;02  COAL PITS;G 977.00 300.00 977.00 315.00 4280821809 1.00;E 977.00 296.00 3.00 3.00 4288453283;N 993.00 300.00 11.00 4288453283 500 DejaVu Sans Mono;03  FUNGAL;G 977.00 323.00 977.00 338.00 4280821809 1.00;E 977.00 319.00 3.00 3.00 4288453283;N 993.00 323.00 11.00 4288453283 500 DejaVu Sans Mono;04  FROST;G 977.00 346.00 977.00 361.00 4280821809 1.00;E 977.00 342.00 3.00 3.00 4288453283;N 993.00 346.00 11.00 4288453283 500 DejaVu Sans Mono;05  EMBERLAKE;G 968.00 365.00 1232.00 365.00 4280821809 1.00;N 968.00 390.00 11.00 4293977554 700 DejaVu Sans Mono;VITAL;N 1178.00 390.00 12.00 4293491049 700 DejaVu Sans Mono;100 / 100;R 968.00 399.00 264.00 9.00 4.00 4280625203;R 968.00 399.00 264.00 9.00 4.00 4293491049;R 970.00 400.00 260.00 1.00 0.50 1627389951;N 968.00 432.00 11.00 4293977554 700 DejaVu Sans Mono;MANA;N 1178.00 432.00 12.00 4286103008 700 DejaVu San…",
+      "draw_truncated": true
+    },
+    "n3": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "01  /  MORNINGSTAR",
+        "WIDTH": 296,
+        "HEIGHT": 52,
+        "COLOR": "#684229",
+        "FONTSIZE": 12,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#FFD59A",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#FFE2B0",
+        "ABSOLUTE": 1,
+        "INSETTOP": 626,
+        "INSETLEFT": 24,
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "HOVERFILL": "#7A5133",
+        "HOVERCOLOR": "#FFE2B0",
+        "HOVERBORDER": 9076352,
+        "PRESSFILL": "#8A5C38",
+        "PRESSCOLOR": "#FFE2B0",
+        "PRESSBORDER": 9076352,
+        "FOCUSCOLOR": "#F3EAD9",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "01  /  MORNINGSTAR",
+      "parent": "n1"
+    },
+    "n4": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "02  /  PICKAXE",
+        "WIDTH": 296,
+        "HEIGHT": 52,
+        "COLOR": "#1B1E28",
+        "FONTSIZE": 12,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#8A7E80",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#E3D6C5",
+        "ABSOLUTE": 1,
+        "INSETTOP": 626,
+        "INSETLEFT": 332,
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "HOVERFILL": "#252833",
+        "HOVERCOLOR": "#F3EAD9",
+        "HOVERBORDER": 9076352,
+        "PRESSFILL": "#2C3140",
+        "PRESSCOLOR": "#F3EAD9",
+        "PRESSBORDER": 9076352,
+        "FOCUSCOLOR": "#F3EAD9",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "02  /  PICKAXE",
+      "parent": "n1"
+    },
+    "n5": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "03  /  HOLLOW",
+        "WIDTH": 296,
+        "HEIGHT": 52,
+        "COLOR": "#1B1E28",
+        "FONTSIZE": 12,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#8A7E80",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#E3D6C5",
+        "ABSOLUTE": 1,
+        "INSETTOP": 626,
+        "INSETLEFT": 640,
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "HOVERFILL": "#252833",
+        "HOVERCOLOR": "#F3EAD9",
+        "HOVERBORDER": 9076352,
+        "PRESSFILL": "#2C3140",
+        "PRESSCOLOR": "#F3EAD9",
+        "PRESSBORDER": 9076352,
+        "FOCUSCOLOR": "#F3EAD9",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "03  /  HOLLOW",
+      "parent": "n1"
+    },
+    "n6": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "04  /  HOLLOW",
+        "WIDTH": 296,
+        "HEIGHT": 52,
+        "COLOR": "#1B1E28",
+        "FONTSIZE": 12,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#8A7E80",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#E3D6C5",
+        "ABSOLUTE": 1,
+        "INSETTOP": 626,
+        "INSETLEFT": 948,
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "HOVERFILL": "#252833",
+        "HOVERCOLOR": "#F3EAD9",
+        "HOVERBORDER": 9076352,
+        "PRESSFILL": "#2C3140",
+        "PRESSCOLOR": "#F3EAD9",
+        "PRESSBORDER": 9076352,
+        "FOCUSCOLOR": "#F3EAD9",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "04  /  HOLLOW",
+      "parent": "n1"
+    },
+    "n7": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "PAUSE",
+        "WIDTH": 94,
+        "HEIGHT": 34,
+        "VISIBLE": 1,
+        "COLOR": "#1B1E28",
+        "FONTSIZE": 12,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#8A7E80",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#E3D6C5",
+        "ABSOLUTE": 1,
+        "INSETTOP": 771,
+        "INSETLEFT": 1034,
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "HOVERFILL": "#252833",
+        "HOVERCOLOR": "#F3EAD9",
+        "HOVERBORDER": 9076352,
+        "PRESSFILL": "#2C3140",
+        "PRESSCOLOR": "#F3EAD9",
+        "PRESSBORDER": 9076352,
+        "FOCUSCOLOR": "#F3EAD9",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "PAUSE",
+      "parent": "n1"
+    },
+    "n8": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "SOUND ON",
+        "WIDTH": 112,
+        "HEIGHT": 34,
+        "VISIBLE": 1,
+        "COLOR": "#1B1E28",
+        "FONTSIZE": 12,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#8A7E80",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#E3D6C5",
+        "ABSOLUTE": 1,
+        "INSETTOP": 771,
+        "INSETLEFT": 1140,
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "HOVERFILL": "#252833",
+        "HOVERCOLOR": "#F3EAD9",
+        "HOVERBORDER": 9076352,
+        "PRESSFILL": "#2C3140",
+        "PRESSCOLOR": "#F3EAD9",
+        "PRESSBORDER": 9076352,
+        "FOCUSCOLOR": "#F3EAD9",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "SOUND ON",
+      "parent": "n1"
+    },
+    "n9": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "DESCEND AGAIN",
+        "WIDTH": 240,
+        "HEIGHT": 48,
+        "VISIBLE": 0,
+        "COLOR": "#E6A15C",
+        "FONTSIZE": 14,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#FFD59A",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#151117",
+        "ABSOLUTE": 1,
+        "INSETTOP": 402,
+        "INSETLEFT": 352,
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "HOVERFILL": "#F0B070",
+        "HOVERCOLOR": "#151117",
+        "HOVERBORDER": 16766362,
+        "PRESSFILL": "#D08F4C",
+        "PRESSCOLOR": "#151117",
+        "PRESSBORDER": 16766362,
+        "FOCUSCOLOR": "#151117",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "DESCEND AGAIN",
+      "parent": "n1"
+    },
+    "n10": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "BLESSING",
+        "WIDTH": 232,
+        "HEIGHT": 42,
+        "VISIBLE": 0,
+        "COLOR": "#E6A15C",
+        "FONTSIZE": 14,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#FFD59A",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#151117",
+        "ABSOLUTE": 1,
+        "INSETTOP": 382,
+        "INSETLEFT": 98,
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "HOVERFILL": "#F0B070",
+        "HOVERCOLOR": "#151117",
+        "HOVERBORDER": 16766362,
+        "PRESSFILL": "#D08F4C",
+        "PRESSCOLOR": "#151117",
+        "PRESSBORDER": 16766362,
+        "FOCUSCOLOR": "#151117",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "BLESSING",
+      "parent": "n1"
+    },
+    "n11": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "BLESSING",
+        "WIDTH": 232,
+        "HEIGHT": 42,
+        "VISIBLE": 0,
+        "COLOR": "#E6A15C",
+        "FONTSIZE": 14,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#FFD59A",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#151117",
+        "ABSOLUTE": 1,
+        "INSETTOP": 382,
+        "INSETLEFT": 378,
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "HOVERFILL": "#F0B070",
+        "HOVERCOLOR": "#151117",
+        "HOVERBORDER": 16766362,
+        "PRESSFILL": "#D08F4C",
+        "PRESSCOLOR": "#151117",
+        "PRESSBORDER": 16766362,
+        "FOCUSCOLOR": "#151117",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "BLESSING",
+      "parent": "n1"
+    },
+    "n12": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "BLESSING",
+        "WIDTH": 232,
+        "HEIGHT": 42,
+        "VISIBLE": 0,
+        "COLOR": "#E6A15C",
+        "FONTSIZE": 14,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#FFD59A",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#151117",
+        "ABSOLUTE": 1,
+        "INSETTOP": 382,
+        "INSETLEFT": 658,
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "HOVERFILL": "#F0B070",
+        "HOVERCOLOR": "#151117",
+        "HOVERBORDER": 16766362,
+        "PRESSFILL": "#D08F4C",
+        "PRESSCOLOR": "#151117",
+        "PRESSBORDER": 16766362,
+        "FOCUSCOLOR": "#151117",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "BLESSING",
+      "parent": "n1"
+    },
+    "n13": {
+      "kind": "SYNTH",
+      "params": {
+        "VOLUME": 0.1,
+        "PLAYING": 0,
+        "WAVE": 1,
+        "FREQ": 440,
+        "ATTACK": 0.004,
+        "RELEASE": 0.07
+      },
+      "parent": "n1"
+    },
+    "n14": {
+      "kind": "SYNTH",
+      "params": {
+        "VOLUME": 0.1,
+        "PLAYING": 0,
+        "WAVE": 1,
+        "FREQ": 440,
+        "ATTACK": 0.004,
+        "RELEASE": 0.07
+      },
+      "parent": "n1"
+    },
+    "n15": {
+      "kind": "SYNTH",
+      "params": {
+        "VOLUME": 0.1,
+        "PLAYING": 0,
+        "WAVE": 1,
+        "FREQ": 440,
+        "ATTACK": 0.004,
+        "RELEASE": 0.07
+      },
+      "parent": "n1"
+    },
+    "n16": {
+      "kind": "SYNTH",
+      "params": {
+        "VOLUME": 0.1,
+        "PLAYING": 0,
+        "WAVE": 1,
+        "FREQ": 440,
+        "ATTACK": 0.004,
+        "RELEASE": 0.07
+      },
+      "parent": "n1"
+    },
+    "n17": {
+      "kind": "SYNTH",
+      "params": {
+        "VOLUME": 0.16,
+        "PLAYING": 0,
+        "WAVE": 1,
+        "FREQ": 440,
+        "ATTACK": 0.004,
+        "RELEASE": 0.16
+      },
+      "parent": "n1"
+    }
+  },
+  "provenance": {
+    "source": {
+      "path": "apps/emberdeep/app.nim",
+      "lines": 604,
+      "bytes": 26144,
+      "sha256": "323ace5766de751c3bdac74e091f5fd6d15f2afb3bfca7f2aaf3a7651d0b53fe"
+    },
+    "module": {
+      "path": "apps/emberdeep/app.wasm",
+      "bytes": 297195,
+      "sha256": "8ecca464f4b2e371604f063e89efcd70131cffc1dec0b80d04531253b003c7c1"
+    },
+    "build": "./tools/build-wasm.sh apps/emberdeep/app.nim apps/emberdeep/app.wasm --release"
+  },
+  "verify": {
+    "command": "node tools/verify-wasm.mjs apps/emberdeep",
+    "proves": "the module instantiates with no keys and no GPU, and builds a live UI tree",
+    "does_not_prove": "pixel equality against any reference render"
+  }
+}

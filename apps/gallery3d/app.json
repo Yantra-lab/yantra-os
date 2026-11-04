@@ -1,0 +1,26 @@
+{
+  "id": "gallery3d",
+  "name": "Night Gallery",
+  "icon": "N",
+  "tint": "#C9A24A",
+  "grants": [],
+  "window": {
+    "title": "Gallery3d",
+    "width": null,
+    "height": null
+  },
+  "module": {
+    "path": "apps/gallery3d/app.wasm",
+    "bytes": 164666,
+    "sha256": "6144f9e670499cbfa1c04652dccced06483c5d90c5bd2fd1ac6ecf2aae89f29b"
+  },
+  "source": {
+    "path": "apps/gallery3d/app.nim",
+    "lines": 146,
+    "bytes": 8602,
+    "sha256": "5f565195b424cff71098a39c702000678542221e302ba0e71921b25d298d2833"
+  },
+  "nodes": 90,
+  "document": "app.yantra.json",
+  "generated": "tools/export-json.mjs"
+}

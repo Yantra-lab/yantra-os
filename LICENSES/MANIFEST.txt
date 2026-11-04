@@ -1,0 +1,6 @@
+# LICENSES/MANIFEST.txt — written by yantra-os-publish.sh at publish time.
+# <sha256>  <bytes>  <path in this repo>  <-  <source in the private repo>
+4732ba7a3a1f875436bd2d26a6fafbc947b8735990a14b471cb0e8f76eb49505  1073  LICENSES/LICENSE  <-  yantra-os/LICENSE
+ff9afe384a3dd1527879de517565b754fa0b3eef818753bb0cd9f7c2eff8e174  14402  LICENSES/THIRD-PARTY.md  <-  yantra-os/docs/THIRD-PARTY.md
+cd5efa6ad260cbf8532fb7229ddc319842388ce86d6d5b2fbc8f7156cde7fd67  49500  LICENSES/SBOM.cdx.json  <-  docs/iitm/SBOM.cdx.json
+b17c2886fcafeb29f28fedea589c3e2ed9846fb78c128bdc42b7131cbfb31fa4  20717  LICENSES/LICENSE-AUDIT.md  <-  docs/iitm/LICENSE-AUDIT.md

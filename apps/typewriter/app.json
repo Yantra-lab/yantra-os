@@ -1,0 +1,26 @@
+{
+  "id": "typewriter",
+  "name": "Marlowe 44 Typewriter",
+  "icon": "M",
+  "tint": "#F4D078",
+  "grants": [],
+  "window": {
+    "title": "Typewriter",
+    "width": null,
+    "height": null
+  },
+  "module": {
+    "path": "apps/typewriter/app.wasm",
+    "bytes": 480157,
+    "sha256": "2785fa280ae84174446c9609688be9faa840cfb10f09c64738680f8e42099eb5"
+  },
+  "source": {
+    "path": "apps/typewriter/app.nim",
+    "lines": 354,
+    "bytes": 19457,
+    "sha256": "b066ee80ccf293cf9977221ca58bcd866fd9db10828e167edd8780b739344b79"
+  },
+  "nodes": 83,
+  "document": "app.yantra.json",
+  "generated": "tools/export-json.mjs"
+}

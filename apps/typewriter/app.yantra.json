@@ -1,0 +1,1321 @@
+{
+  "$yantra": "2026.11",
+  "app": "y:@yantra/typewriter",
+  "name": "Marlowe 44 Typewriter",
+  "exported": {
+    "by": "tools/export-json.mjs",
+    "from": "apps/typewriter/app.wasm, instantiated and stepped 30 frame(s)",
+    "runner": "web/runner/runner.js",
+    "protocol": "v2",
+    "frames_stepped": 30,
+    "note": "L1 structured twin: nodes, parameters and the retained draw commands, read from the running module. Not executable on its own, and not restorable to the Nim source."
+  },
+  "window": {
+    "title": "Typewriter",
+    "width": null,
+    "height": null
+  },
+  "stats": {
+    "nodes": 83,
+    "layers": 0,
+    "layer_draw_calls": 0,
+    "draw_command_bytes": 17703
+  },
+  "nodes": {
+    "n0": {
+      "kind": "WINDOW",
+      "text": "Typewriter",
+      "children": [
+        "n1"
+      ]
+    },
+    "n1": {
+      "kind": "COLUMN",
+      "parent": "n0",
+      "children": [
+        "n2"
+      ]
+    },
+    "n2": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 1280,
+        "HEIGHT": 816,
+        "COLOR": -15068660
+      },
+      "parent": "n1",
+      "children": [
+        "n3",
+        "n4",
+        "n5",
+        "n6",
+        "n7",
+        "n8",
+        "n32",
+        "n43",
+        "n54",
+        "n64",
+        "n72",
+        "n77"
+      ]
+    },
+    "n3": {
+      "kind": "CANVAS",
+      "params": {
+        "WIDTH": 1280,
+        "HEIGHT": 816
+      },
+      "parent": "n2",
+      "draw_bytes": 17703,
+      "draw_sha256": "1436774f45e401fa2e641f8455ecf2ef61d4da8ab579feb0ac505aa8bc7cd8df",
+      "draw": "I 0.00 0.00 1280.00 816.00 0 desk.jpg;M -24.00 4.00;L 320.00 5.60;L 660.00 2.88;L 980.00 4.64;L 1304.00 2.40;S 486529440 0.70;M -24.00 9.20;L 320.00 11.70;L 660.00 7.45;L 980.00 10.20;L 1304.00 6.70;S 285206462 1.25;M -24.00 16.10;L 320.00 19.50;L 660.00 13.72;L 980.00 17.46;L 1304.00 12.70;S 536870912 1.80;M -24.00 24.70;L 320.00 29.00;L 660.00 21.69;L 980.00 26.42;L 1304.00 20.40;S 243950128 0.70;M -24.00 35.00;L 320.00 40.20;L 660.00 31.36;L 980.00 37.08;L 1304.00 29.80;S 486529440 1.25;M -24.00 40.20;L 320.00 41.80;L 660.00 39.08;L 980.00 40.84;L 1304.00 38.60;S 285206462 1.80;M -24.00 47.10;L 320.00 49.60;L 660.00 45.35;L 980.00 48.10;L 1304.00 44.60;S 536870912 0.70;M -24.00 55.70;L 320.00 59.10;L 660.00 53.32;L 980.00 57.06;L 1304.00 52.30;S 243950128 1.25;M -24.00 66.00;L 320.00 70.30;L 660.00 62.99;L 980.00 67.72;L 1304.00 61.70;S 486529440 1.80;M -24.00 71.20;L 320.00 76.40;L 660.00 67.56;L 980.00 73.28;L 1304.00 66.00;S 285206462 0.70;M -24.00 78.10;L 320.00 79.70;L 660.00 76.98;L 980.00 78.74;L 1304.00 76.50;S 536870912 1.25;M -24.00 86.70;L 320.00 89.20;L 660.00 84.95;L 980.00 87.70;L 1304.00 84.20;S 243950128 1.80;M -24.00 97.00;L 320.00 100.40;L 660.00 94.62;L 980.00 98.36;L 1304.00 93.60;S 486529440 0.70;M -24.00 102.20;L 320.00 106.50;L 660.00 99.19;L 980.00 103.92;L 1304.00 97.90;S 285206462 1.25;M -24.00 109.10;L 320.00 114.30;L 660.00 105.46;L 980.00 111.18;L 1304.00 103.90;S 536870912 1.80;M -24.00 117.70;L 320.00 119.30;L 660.00 116.58;L 980.00 118.34;L 1304.00 116.10;S 243950128 0.70;M -24.00 128.00;L 320.00 130.50;L 660.00 126.25;L 980.00 129.00;L 1304.00 125.50;S 486529440 1.25;M -24.00 133.20;L 320.00 136.60;L 660.00 130.82;L 980.00 134.56;L 1304.00 129.80;S 285206462 1.80;M -24.00 140.10;L 320.00 144.40;L 660.00 137.09;L 980.00 141.82;L 1304.00 135.80;S 536870912 0.70;M -24.00 148.70;L 320.00 153.90;L 660.00 145.06;L 980.00 150.78;L 1304.00 143.50;S 243950128 1.25;M -24.00 159.00;L 320.00 160.60;L 660.00 157.88;L 980.00 159.64;L 1304.00 157.40;S 486529440 1.80;M -24.00 164.20;L 320.00 166.70;L 660.00 162.45;L 980.00 165.20;L 1304.00 161.70;S 285206462 0.70;M -24.00 171.10;L 320.00 174.50;L 660.00 168.72;L 980.00 172.46;L 1304.00 167.70;S 536870912 1.25;M -24.00 179.70;L 320.00 184.00;L 660.00 176.69;L 980.00 181.42;L 1304.00 175.40;S 243950128 1.80;M -24.00 190.00;L 320.00 195.20;L 660.00 186.36;L 980.00 192.08;L 1304.00 184.80;S 486529440 0.70;M -24.00 195.20;L 320.00 196.80;L 660.00 194.08;L 980.00 195.84;L 1304.00 193.60;S 285206462 1.25;M -24.00 202.10;L 320.00 204.60;L 660.00 200.35;L 980.00 203.10;L 1304.00 199.60;S 536870912 1.80;M -24.00 210.70;L 320.00 214.10;L 660.00 208.32;L 980.00 212.06;L 1304.00 207.30;S 243950128 0.70;M -24.00 221.00;L 320.00 225.30;L 660.00 217.99;L 980.00 222.72;L 1304.00 216.70;S 486529440 1.25;M -24.00 226.20;L 320.00 231.40;L 660.00 222.56;L 980.00 228.28;L 1304.00 221.00;S 285206462 1.80;M -24.00 233.10;L 320.00 234.70;L 660.00 231.98;L 980.00 233.74;L 1304.00 231.50;S 536870912 0.70;M -24.00 241.70;L 320.00 244.20;L 660.00 239.95;L 980.00 242.70;L 1304.00 239.20;S 243950128 1.25;M -24.00 252.00;L 320.00 255.40;L 660.00 249.62;L 980.00 253.36;L 1304.00 248.60;S 486529440 1.80;M -24.00 257.20;L 320.00 261.50;L 660.00 254.19;L 980.00 258.92;L 1304.00 252.90;S 285206462 0.70;M -24.00 264.10;L 320.00 269.30;L 660.00 260.46;L 980.00 266.18;L 1304.00 258.90;S 536870912 1.25;M -24.00 272.70;L 320.00 274.30;L 660.00 271.58;L 980.00 273.34;L 1304.00 271.10;S 243950128 1.80;M -24.00 283.00;L 320.00 285.50;L 660.00 281.25;L 980.00 284.00;L 1304.00 280.50;S 486529440 0.70;M -24.00 288.20;L 320.00 291.60;L 660.00 285.82;L 980.00 289.56;L 1304.00 284.80;S 285206462 1.25;M -24.00 295.10;L 320.00 299.40;L 660.00 292.09;L 980.00 296.82;L 1304.00 290.80;S 536870912 1.80;M -24.00 303.70;L 320.00 308.90;L 660.00 300.06;L 980.00 305.78;L 1304.00 298.50;S 243950128 0.70;M -24.00 314.00;L 320.00 315.60;L 660.00 312.88;L 980.00 314.64;L 1304.00 312.40;S 486529440 1.25;M -24.00 319.20;L …",
+      "draw_truncated": true
+    },
+    "n4": {
+      "kind": "TEXTAREA",
+      "params": {
+        "WIDTH": 512,
+        "HEIGHT": 398,
+        "COLOR": "#F4EDDB",
+        "FONTSIZE": 16,
+        "PADTOP": 32,
+        "PADRIGHT": 32,
+        "PADBOTTOM": 32,
+        "PADLEFT": 32,
+        "RADIUS": 0,
+        "BORDERWIDTH": 0,
+        "VALUE": "Dear Web,\n\nWe need to talk. You were born in\n1991 to share documents, and you\nwere wonderful at it.\n\nThen we asked you to be everything.\n\nSo we took you apart, kept the best\nof you, and built something new.\n\nThank you for thirty-five years of\ndocuments. You can keep them.\n\n                    Sanskar, IIT Madras\n",
+        "TEXTCOLOR": -13949408,
+        "ABSOLUTE": 1,
+        "INSETTOP": 32,
+        "INSETLEFT": 384,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "LINEHEIGHT": 1.3125
+      },
+      "parent": "n2"
+    },
+    "n5": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "DEAR WEB",
+        "FONTSIZE": 40,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -791853,
+        "ABSOLUTE": 1,
+        "INSETTOP": 30,
+        "INSETLEFT": 44
+      },
+      "text": "DEAR WEB",
+      "parent": "n2"
+    },
+    "n6": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "a typewriter for letters, made with Yantra",
+        "FONTSIZE": 13,
+        "TEXTCOLOR": -3886188,
+        "ABSOLUTE": 1,
+        "INSETTOP": 82,
+        "INSETLEFT": 46
+      },
+      "text": "a typewriter for letters, made with Yantra",
+      "parent": "n2"
+    },
+    "n7": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "YANTRA OS",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -7362661,
+        "ABSOLUTE": 1,
+        "INSETTOP": 108,
+        "INSETLEFT": 46
+      },
+      "text": "YANTRA OS",
+      "parent": "n2"
+    },
+    "n8": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 286,
+        "COLOR": "#D9C8A6",
+        "PADTOP": 16,
+        "PADRIGHT": 16,
+        "PADBOTTOM": 16,
+        "PADLEFT": 16,
+        "RADIUS": 3,
+        "ABSOLUTE": 1,
+        "INSETTOP": 38,
+        "INSETLEFT": 962
+      },
+      "parent": "n2",
+      "children": [
+        "n9"
+      ]
+    },
+    "n9": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 6
+      },
+      "parent": "n8",
+      "children": [
+        "n10",
+        "n11",
+        "n14",
+        "n17",
+        "n20",
+        "n23",
+        "n26",
+        "n29"
+      ]
+    },
+    "n10": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "TYPEWRITER  ·  MODEL 7",
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -5103074
+      },
+      "text": "TYPEWRITER  ·  MODEL 7",
+      "parent": "n9"
+    },
+    "n11": {
+      "kind": "ROW",
+      "parent": "n9",
+      "children": [
+        "n12",
+        "n13"
+      ]
+    },
+    "n12": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "SHEET",
+        "WIDTH": 86,
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -11648983
+      },
+      "text": "SHEET",
+      "parent": "n11"
+    },
+    "n13": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "No. 1",
+        "FONTSIZE": 14,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -13949408
+      },
+      "text": "No. 1",
+      "parent": "n11"
+    },
+    "n14": {
+      "kind": "ROW",
+      "parent": "n9",
+      "children": [
+        "n15",
+        "n16"
+      ]
+    },
+    "n15": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "LINE",
+        "WIDTH": 86,
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -11648983
+      },
+      "text": "LINE",
+      "parent": "n14"
+    },
+    "n16": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "16 of 26",
+        "FONTSIZE": 14,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -13949408
+      },
+      "text": "16 of 26",
+      "parent": "n14"
+    },
+    "n17": {
+      "kind": "ROW",
+      "parent": "n9",
+      "children": [
+        "n18",
+        "n19"
+      ]
+    },
+    "n18": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "COLUMN",
+        "WIDTH": 86,
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -11648983
+      },
+      "text": "COLUMN",
+      "parent": "n17"
+    },
+    "n19": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "0 of 48",
+        "FONTSIZE": 14,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -13949408
+      },
+      "text": "0 of 48",
+      "parent": "n17"
+    },
+    "n20": {
+      "kind": "ROW",
+      "parent": "n9",
+      "children": [
+        "n21",
+        "n22"
+      ]
+    },
+    "n21": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "LETTER",
+        "WIDTH": 86,
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -11648983
+      },
+      "text": "LETTER",
+      "parent": "n20"
+    },
+    "n22": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "314 characters",
+        "FONTSIZE": 14,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -13949408
+      },
+      "text": "314 characters",
+      "parent": "n20"
+    },
+    "n23": {
+      "kind": "ROW",
+      "parent": "n9",
+      "children": [
+        "n24",
+        "n25"
+      ]
+    },
+    "n24": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "STRIKES",
+        "WIDTH": 86,
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -11648983
+      },
+      "text": "STRIKES",
+      "parent": "n23"
+    },
+    "n25": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "0",
+        "FONTSIZE": 14,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -13949408
+      },
+      "text": "0",
+      "parent": "n23"
+    },
+    "n26": {
+      "kind": "ROW",
+      "parent": "n9",
+      "children": [
+        "n27",
+        "n28"
+      ]
+    },
+    "n27": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "LAST",
+        "WIDTH": 86,
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -11648983
+      },
+      "text": "LAST",
+      "parent": "n26"
+    },
+    "n28": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "return",
+        "FONTSIZE": 14,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -5103074
+      },
+      "text": "return",
+      "parent": "n26"
+    },
+    "n29": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 8
+      },
+      "parent": "n9",
+      "children": [
+        "n30",
+        "n31"
+      ]
+    },
+    "n30": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "New sheet",
+        "COLOR": -14536661,
+        "FONTSIZE": 12,
+        "RADIUS": 8,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804
+      },
+      "text": "New sheet",
+      "parent": "n29"
+    },
+    "n31": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Sound is on",
+        "COLOR": -14536661,
+        "FONTSIZE": 12,
+        "RADIUS": 8,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804
+      },
+      "text": "Sound is on",
+      "parent": "n29"
+    },
+    "n32": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 6,
+        "ABSOLUTE": 1,
+        "INSETTOP": 510,
+        "INSETLEFT": 373
+      },
+      "parent": "n2",
+      "children": [
+        "n33",
+        "n34",
+        "n35",
+        "n36",
+        "n37",
+        "n38",
+        "n39",
+        "n40",
+        "n41",
+        "n42"
+      ]
+    },
+    "n33": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "1",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "1",
+      "parent": "n32"
+    },
+    "n34": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "2",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "2",
+      "parent": "n32"
+    },
+    "n35": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "3",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "3",
+      "parent": "n32"
+    },
+    "n36": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "4",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "4",
+      "parent": "n32"
+    },
+    "n37": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "5",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "5",
+      "parent": "n32"
+    },
+    "n38": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "6",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "6",
+      "parent": "n32"
+    },
+    "n39": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "7",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "7",
+      "parent": "n32"
+    },
+    "n40": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "8",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "8",
+      "parent": "n32"
+    },
+    "n41": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "9",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "9",
+      "parent": "n32"
+    },
+    "n42": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "0",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "0",
+      "parent": "n32"
+    },
+    "n43": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 6,
+        "ABSOLUTE": 1,
+        "INSETTOP": 552,
+        "INSETLEFT": 373
+      },
+      "parent": "n2",
+      "children": [
+        "n44",
+        "n45",
+        "n46",
+        "n47",
+        "n48",
+        "n49",
+        "n50",
+        "n51",
+        "n52",
+        "n53"
+      ]
+    },
+    "n44": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Q",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "Q",
+      "parent": "n43"
+    },
+    "n45": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "W",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "W",
+      "parent": "n43"
+    },
+    "n46": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "E",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "E",
+      "parent": "n43"
+    },
+    "n47": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "R",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "R",
+      "parent": "n43"
+    },
+    "n48": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "T",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "T",
+      "parent": "n43"
+    },
+    "n49": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Y",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "Y",
+      "parent": "n43"
+    },
+    "n50": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "U",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "U",
+      "parent": "n43"
+    },
+    "n51": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "I",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "I",
+      "parent": "n43"
+    },
+    "n52": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "O",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "O",
+      "parent": "n43"
+    },
+    "n53": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "P",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "P",
+      "parent": "n43"
+    },
+    "n54": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 6,
+        "ABSOLUTE": 1,
+        "INSETTOP": 594,
+        "INSETLEFT": 400
+      },
+      "parent": "n2",
+      "children": [
+        "n55",
+        "n56",
+        "n57",
+        "n58",
+        "n59",
+        "n60",
+        "n61",
+        "n62",
+        "n63"
+      ]
+    },
+    "n55": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "A",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "A",
+      "parent": "n54"
+    },
+    "n56": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "S",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "S",
+      "parent": "n54"
+    },
+    "n57": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "D",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "D",
+      "parent": "n54"
+    },
+    "n58": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "F",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "F",
+      "parent": "n54"
+    },
+    "n59": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "G",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "G",
+      "parent": "n54"
+    },
+    "n60": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "H",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "H",
+      "parent": "n54"
+    },
+    "n61": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "J",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "J",
+      "parent": "n54"
+    },
+    "n62": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "K",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "K",
+      "parent": "n54"
+    },
+    "n63": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "L",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "L",
+      "parent": "n54"
+    },
+    "n64": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 6,
+        "ABSOLUTE": 1,
+        "INSETTOP": 636,
+        "INSETLEFT": 454
+      },
+      "parent": "n2",
+      "children": [
+        "n65",
+        "n66",
+        "n67",
+        "n68",
+        "n69",
+        "n70",
+        "n71"
+      ]
+    },
+    "n65": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Z",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "Z",
+      "parent": "n64"
+    },
+    "n66": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "X",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "X",
+      "parent": "n64"
+    },
+    "n67": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "C",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "C",
+      "parent": "n64"
+    },
+    "n68": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "V",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "V",
+      "parent": "n64"
+    },
+    "n69": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "B",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "B",
+      "parent": "n64"
+    },
+    "n70": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "N",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "N",
+      "parent": "n64"
+    },
+    "n71": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "M",
+        "WIDTH": 48,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 15,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "M",
+      "parent": "n64"
+    },
+    "n72": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 6,
+        "ABSOLUTE": 1,
+        "INSETTOP": 678,
+        "INSETLEFT": 427
+      },
+      "parent": "n2",
+      "children": [
+        "n73",
+        "n74",
+        "n75",
+        "n76"
+      ]
+    },
+    "n73": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "SPACE",
+        "WIDTH": 180,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 12,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "SPACE",
+      "parent": "n72"
+    },
+    "n74": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "RETURN",
+        "WIDTH": 100,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 12,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "RETURN",
+      "parent": "n72"
+    },
+    "n75": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "BACK",
+        "WIDTH": 64,
+        "HEIGHT": 36,
+        "COLOR": -14800090,
+        "FONTSIZE": 12,
+        "RADIUS": 10,
+        "BORDERCOLOR": -11766680,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1055804,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "BACK",
+      "parent": "n72"
+    },
+    "n76": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "BELL",
+        "WIDTH": 64,
+        "HEIGHT": 36,
+        "COLOR": -12898538,
+        "FONTSIZE": 12,
+        "RADIUS": 10,
+        "BORDERCOLOR": -9743584,
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -2641046,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "BELL",
+      "parent": "n72"
+    },
+    "n77": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 150,
+        "COLOR": -1055285,
+        "PADTOP": 12,
+        "PADRIGHT": 12,
+        "PADBOTTOM": 12,
+        "PADLEFT": 12,
+        "RADIUS": 3,
+        "ABSOLUTE": 1,
+        "INSETTOP": 470,
+        "INSETLEFT": 24
+      },
+      "parent": "n2",
+      "children": [
+        "n78"
+      ]
+    },
+    "n78": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 6
+      },
+      "parent": "n77",
+      "children": [
+        "n79",
+        "n80",
+        "n81",
+        "n82"
+      ]
+    },
+    "n79": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "TO TYPE",
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -5103074
+      },
+      "text": "TO TYPE",
+      "parent": "n78"
+    },
+    "n80": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Click the sheet, then type.",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -12962512
+      },
+      "text": "Click the sheet, then type.",
+      "parent": "n78"
+    },
+    "n81": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "RETURN feeds a line.",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -12962512
+      },
+      "text": "RETURN feeds a line.",
+      "parent": "n78"
+    },
+    "n82": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "The bell rings at the margin.",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -12962512
+      },
+      "text": "The bell rings at the margin.",
+      "parent": "n78"
+    }
+  },
+  "provenance": {
+    "source": {
+      "path": "apps/typewriter/app.nim",
+      "lines": 354,
+      "bytes": 19457,
+      "sha256": "b066ee80ccf293cf9977221ca58bcd866fd9db10828e167edd8780b739344b79"
+    },
+    "module": {
+      "path": "apps/typewriter/app.wasm",
+      "bytes": 480157,
+      "sha256": "2785fa280ae84174446c9609688be9faa840cfb10f09c64738680f8e42099eb5"
+    },
+    "build": "./tools/build-wasm.sh apps/typewriter/app.nim apps/typewriter/app.wasm --release"
+  },
+  "verify": {
+    "command": "node tools/verify-wasm.mjs apps/typewriter",
+    "proves": "the module instantiates with no keys and no GPU, and builds a live UI tree",
+    "does_not_prove": "pixel equality against any reference render"
+  }
+}

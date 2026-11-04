@@ -1,0 +1,26 @@
+{
+  "id": "coast",
+  "name": "Infinite Coastline",
+  "icon": "C",
+  "tint": "#D8B76E",
+  "grants": [],
+  "window": {
+    "title": "Infinite Coastline — Mandelbrot & Julia Explorer",
+    "width": 1280,
+    "height": 816
+  },
+  "module": {
+    "path": "apps/coast/app.wasm",
+    "bytes": 225927,
+    "sha256": "19222c8e619e81dbee587973bccb76183565a3b540fecd15041d49b2d9876727"
+  },
+  "source": {
+    "path": "apps/coast/app.nim",
+    "lines": 326,
+    "bytes": 15939,
+    "sha256": "eb63e2d5c0e158b5dcd9fc312c35fd6f904392666c81f32147c91dc09ac22b11"
+  },
+  "nodes": 64,
+  "document": "app.yantra.json",
+  "generated": "hand-written from the final Sutra build's own measurements"
+}

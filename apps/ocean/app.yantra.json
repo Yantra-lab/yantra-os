@@ -1,0 +1,260 @@
+{
+  "$yantra": "unpinned (newest vocabulary)",
+  "app": "y:@yantra/ocean",
+  "language": "Sutra",
+  "window": {
+    "w": 0,
+    "h": 0
+  },
+  "build": {
+    "target": "wasm32",
+    "bytes": 218129,
+    "sha256": "485239f35fb8a28e8f6badaa6a0952bd68cb4d292030c41431dc51dd7e8119b7",
+    "stripped": true
+  },
+  "proof": {
+    "png": "ocean.png",
+    "bytes": 792907
+  },
+  "cells": [
+    {
+      "cell": "ocean.night",
+      "kind": "main",
+      "version": 8012,
+      "sha256": "5394c69a8a0d426ef4e09e5f0e9a2b03",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.brass",
+      "kind": "main",
+      "version": 8013,
+      "sha256": "939841ee54b62d3b8225a13f4a55afd3",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.paper",
+      "kind": "main",
+      "version": 8014,
+      "sha256": "e85bf823db89a1c43ac3015c9890f36c",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.dim",
+      "kind": "main",
+      "version": 8015,
+      "sha256": "b268f64f83d12349dad07cd61b5934bb",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.edge",
+      "kind": "main",
+      "version": 8016,
+      "sha256": "3df29383f83c2570cdf2728b7f3a509f",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.eyeX",
+      "kind": "const",
+      "version": 8020,
+      "sha256": "08178878e4465b11644f38dccad0a0b8",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.nCasc",
+      "kind": "const",
+      "version": 7991,
+      "sha256": "52981f5a4e3dac2eff3d4d01b270e866",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.gl",
+      "kind": "proc",
+      "version": 7992,
+      "sha256": "d15a545e604b698b07c16bde29b7d434",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.waveSetup",
+      "kind": "proc",
+      "version": 7993,
+      "sha256": "d873702ef047861ecdfed51d6e60dfd5",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.fadeGlsl",
+      "kind": "proc",
+      "version": 8045,
+      "sha256": "adb8b5b23f6b32bddf83cc4cf2f16222",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.waveGlsl",
+      "kind": "proc",
+      "version": 7995,
+      "sha256": "251d80b753c53290c235c4e9f35e837d",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.seaVertexSource",
+      "kind": "proc",
+      "version": 7996,
+      "sha256": "4b8bfae20112e756ac0422d0c9a3bf81",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.skyGlsl",
+      "kind": "main",
+      "version": 8032,
+      "sha256": "b8366564204fa25ec37b7033beb624e5",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.seaFragmentSource",
+      "kind": "proc",
+      "version": 8038,
+      "sha256": "d2b7fc645b61630fcc09bc5bec860f8a",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.domeFragmentSource",
+      "kind": "proc",
+      "version": 8023,
+      "sha256": "cc3e386c07597ed6ca0b0858878f7547",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.sunX",
+      "kind": "proc",
+      "version": 8026,
+      "sha256": "a73e1ee59c3711915ced5de1f4381610",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.sunY",
+      "kind": "proc",
+      "version": 8027,
+      "sha256": "c70a8e81b930d1e4810123905b91d775",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.sunZ",
+      "kind": "proc",
+      "version": 8028,
+      "sha256": "7424dd0a48422198fb2ada19fe24017e",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.funiforms",
+      "kind": "proc",
+      "version": 8047,
+      "sha256": "87c1188951d37d2b9a2fd036f8c0473e",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.yBuf",
+      "kind": "proc",
+      "version": 8004,
+      "sha256": "4e905d6cd16c0bced80dcf70825e2464",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.ringMesh",
+      "kind": "proc",
+      "version": 8048,
+      "sha256": "8f92a863e7f7a4133c40f23a5bd93429",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.lightName",
+      "kind": "proc",
+      "version": 8008,
+      "sha256": "785a0a4fc5e77748b1b35098413544ee",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.knots",
+      "kind": "proc",
+      "version": 8040,
+      "sha256": "fddfd070c0f89f07728d9d1d790dce49",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.waveHeight",
+      "kind": "proc",
+      "version": 8041,
+      "sha256": "e46adf37c064bd9e7762646e3075547a",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.Ocean",
+      "kind": "view",
+      "version": 8049,
+      "sha256": "8468b7b1f1e216a012bd8211889947e8",
+      "lines": 1,
+      "view": {
+        "head": "Ocean",
+        "components": []
+      }
+    },
+    {
+      "cell": "ocean.glass",
+      "kind": "main",
+      "version": 8017,
+      "sha256": "0585a1d420d1bd6f44ddd22e6cfa2e0c",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.uiFont",
+      "kind": "main",
+      "version": 8018,
+      "sha256": "49437a70aeccb9ffb0ec9fe8523b9e7c",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.monoFont",
+      "kind": "main",
+      "version": 8019,
+      "sha256": "d8775e0b3be8872352b81f71299aa19d",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.periodStop",
+      "kind": "proc",
+      "version": 8035,
+      "sha256": "560188fb9ccf669ec0a14cc45256bf8b",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.sunElevation",
+      "kind": "proc",
+      "version": 8025,
+      "sha256": "ee1b695c020974134049e7cf55d27021",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.seaGeometry",
+      "kind": "main",
+      "version": 8036,
+      "sha256": "954c7c7d6246a4bdf79b5c59b97f12aa",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.angleText",
+      "kind": "proc",
+      "version": 8043,
+      "sha256": "555a135c38434ecdd31fd3f234a0f5e6",
+      "lines": 1
+    },
+    {
+      "cell": "ocean.cameraHeight",
+      "kind": "proc",
+      "version": 8046,
+      "sha256": "37f98b6c991bdf6a196838e785d67c2c",
+      "lines": 1
+    }
+  ],
+  "records": [],
+  "views": [
+    "ocean.Ocean"
+  ]
+}

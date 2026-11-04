@@ -1,0 +1,26 @@
+{
+  "id": "todo",
+  "name": "Todos",
+  "icon": "T",
+  "tint": "#0A84FF",
+  "grants": [],
+  "window": {
+    "title": "Todo",
+    "width": null,
+    "height": null
+  },
+  "module": {
+    "path": "apps/todo/app.wasm",
+    "bytes": 247017,
+    "sha256": "3875315b2cb43bb0c3b2400c0e61ca853ee092bef29e5477168566a9aee94e7a"
+  },
+  "source": {
+    "path": "apps/todo/app.nim",
+    "lines": 342,
+    "bytes": 17049,
+    "sha256": "af471b0b97c0ab271587173d943fe6786a90f07b1a693757a74d3f2534ac1397"
+  },
+  "nodes": 62,
+  "document": "app.yantra.json",
+  "generated": "tools/export-json.mjs"
+}

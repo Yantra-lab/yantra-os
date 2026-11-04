@@ -1,0 +1,26 @@
+{
+  "id": "dna",
+  "name": "Helix DNA",
+  "icon": "H",
+  "tint": "#10B981",
+  "grants": [],
+  "window": {
+    "title": "DNA Helix",
+    "width": 1280,
+    "height": 816
+  },
+  "module": {
+    "path": "apps/dna/app.wasm",
+    "bytes": 416112,
+    "sha256": "a9ccbdab927234485f945f1cfe5467ce6ebb8f8b7f96b58ae2b80f7f52fb1007"
+  },
+  "source": {
+    "path": "apps/dna/app.nim",
+    "lines": 1487,
+    "bytes": 73466,
+    "sha256": "4a01a2dc624d265921723f7b836705324062bd1e21849d594645b301ad82dbae"
+  },
+  "nodes": 2,
+  "document": "app.yantra.json",
+  "generated": "tools/export-json.mjs"
+}

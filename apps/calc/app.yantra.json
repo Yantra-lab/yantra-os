@@ -1,0 +1,620 @@
+{
+  "$yantra": "2026.11",
+  "app": "y:@yantra/calc",
+  "name": "Calculator",
+  "exported": {
+    "by": "tools/export-json.mjs",
+    "from": "apps/calc/app.wasm, instantiated and stepped 30 frame(s)",
+    "runner": "web/runner/runner.js",
+    "protocol": "v2",
+    "frames_stepped": 30,
+    "note": "L1 structured twin: nodes, parameters and the retained draw commands, read from the running module. Not executable on its own, and not restorable to the Nim source."
+  },
+  "window": {
+    "title": "Calc",
+    "width": null,
+    "height": null
+  },
+  "stats": {
+    "nodes": 40,
+    "layers": 0,
+    "layer_draw_calls": 0,
+    "draw_command_bytes": 0
+  },
+  "nodes": {
+    "n0": {
+      "kind": "WINDOW",
+      "text": "Calc",
+      "children": [
+        "n1"
+      ]
+    },
+    "n1": {
+      "kind": "COLUMN",
+      "parent": "n0",
+      "children": [
+        "n2"
+      ]
+    },
+    "n2": {
+      "kind": "COLUMN",
+      "params": {
+        "HEIGHT": 640,
+        "COLOR": -16053744,
+        "SPACING": 12,
+        "PADTOP": 20,
+        "PADRIGHT": 20,
+        "PADBOTTOM": 20,
+        "PADLEFT": 20,
+        "FLEXGROW": 1
+      },
+      "parent": "n1",
+      "children": [
+        "n3",
+        "n6",
+        "n9",
+        "n14"
+      ]
+    },
+    "n3": {
+      "kind": "ROW",
+      "params": {
+        "ALIGNITEMS": 1
+      },
+      "parent": "n2",
+      "children": [
+        "n4",
+        "n5"
+      ]
+    },
+    "n4": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Calculator",
+        "FONTSIZE": 13,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -6646869,
+        "LINEHEIGHT": 1.35
+      },
+      "text": "Calculator",
+      "parent": "n3"
+    },
+    "n5": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "SUTRA",
+        "FONTSIZE": 11,
+        "ALIGN": 2,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -7831143,
+        "LINEHEIGHT": 1.35
+      },
+      "text": "SUTRA",
+      "parent": "n3"
+    },
+    "n6": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -15396324,
+        "SPACING": 4,
+        "PADTOP": 16,
+        "PADRIGHT": 16,
+        "PADBOTTOM": 16,
+        "PADLEFT": 16,
+        "RADIUS": 20,
+        "BORDERCOLOR": -14541268,
+        "BORDERWIDTH": 1
+      },
+      "parent": "n2",
+      "children": [
+        "n7",
+        "n8"
+      ]
+    },
+    "n7": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 13,
+        "ALIGN": 2,
+        "FONTWEIGHT": 500,
+        "TEXTCOLOR": -6646869,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "LINEHEIGHT": 1.35,
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n6"
+    },
+    "n8": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "0",
+        "FONTSIZE": 48,
+        "ALIGN": 2,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "LINEHEIGHT": 1,
+        "MAXLINES": 1
+      },
+      "text": "0",
+      "parent": "n6"
+    },
+    "n9": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -15396324,
+        "SPACING": 8,
+        "PADTOP": 16,
+        "PADRIGHT": 16,
+        "PADBOTTOM": 16,
+        "PADLEFT": 16,
+        "RADIUS": 16,
+        "BORDERCOLOR": -14541268,
+        "BORDERWIDTH": 1,
+        "CLIP": 1
+      },
+      "parent": "n2",
+      "children": [
+        "n10",
+        "n13"
+      ]
+    },
+    "n10": {
+      "kind": "ROW",
+      "parent": "n9",
+      "children": [
+        "n11",
+        "n12"
+      ]
+    },
+    "n11": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "TAPE",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -6646869,
+        "LINEHEIGHT": 1.35
+      },
+      "text": "TAPE",
+      "parent": "n10"
+    },
+    "n12": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "last 3, kept as records",
+        "FONTSIZE": 11,
+        "ALIGN": 2,
+        "FLEXGROW": 1,
+        "TEXTCOLOR": -7831143,
+        "LINEHEIGHT": 1.35
+      },
+      "text": "last 3, kept as records",
+      "parent": "n10"
+    },
+    "n13": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "nothing yet — press =",
+        "FONTSIZE": 13,
+        "TEXTCOLOR": -7831143,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "LINEHEIGHT": 1.35
+      },
+      "text": "nothing yet — press =",
+      "parent": "n9"
+    },
+    "n14": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 12,
+        "FLEXGROW": 1
+      },
+      "parent": "n2",
+      "children": [
+        "n15",
+        "n20",
+        "n25",
+        "n30",
+        "n35"
+      ]
+    },
+    "n15": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 12,
+        "FLEXGROW": 1,
+        "ALIGNITEMS": 3
+      },
+      "parent": "n14",
+      "children": [
+        "n16",
+        "n17",
+        "n18",
+        "n19"
+      ]
+    },
+    "n16": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "C",
+        "COLOR": -14015178,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "C",
+      "parent": "n15"
+    },
+    "n17": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "±",
+        "COLOR": -14015178,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "±",
+      "parent": "n15"
+    },
+    "n18": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "%",
+        "COLOR": -14015178,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "%",
+      "parent": "n15"
+    },
+    "n19": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "÷",
+        "COLOR": -9675545,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "÷",
+      "parent": "n15"
+    },
+    "n20": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 12,
+        "FLEXGROW": 1,
+        "ALIGNITEMS": 3
+      },
+      "parent": "n14",
+      "children": [
+        "n21",
+        "n22",
+        "n23",
+        "n24"
+      ]
+    },
+    "n21": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "7",
+        "COLOR": -14869978,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "7",
+      "parent": "n20"
+    },
+    "n22": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "8",
+        "COLOR": -14869978,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "8",
+      "parent": "n20"
+    },
+    "n23": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "9",
+        "COLOR": -14869978,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "9",
+      "parent": "n20"
+    },
+    "n24": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "×",
+        "COLOR": -9675545,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "×",
+      "parent": "n20"
+    },
+    "n25": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 12,
+        "FLEXGROW": 1,
+        "ALIGNITEMS": 3
+      },
+      "parent": "n14",
+      "children": [
+        "n26",
+        "n27",
+        "n28",
+        "n29"
+      ]
+    },
+    "n26": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "4",
+        "COLOR": -14869978,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "4",
+      "parent": "n25"
+    },
+    "n27": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "5",
+        "COLOR": -14869978,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "5",
+      "parent": "n25"
+    },
+    "n28": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "6",
+        "COLOR": -14869978,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "6",
+      "parent": "n25"
+    },
+    "n29": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "−",
+        "COLOR": -9675545,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "−",
+      "parent": "n25"
+    },
+    "n30": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 12,
+        "FLEXGROW": 1,
+        "ALIGNITEMS": 3
+      },
+      "parent": "n14",
+      "children": [
+        "n31",
+        "n32",
+        "n33",
+        "n34"
+      ]
+    },
+    "n31": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "1",
+        "COLOR": -14869978,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "1",
+      "parent": "n30"
+    },
+    "n32": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "2",
+        "COLOR": -14869978,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "2",
+      "parent": "n30"
+    },
+    "n33": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "3",
+        "COLOR": -14869978,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "3",
+      "parent": "n30"
+    },
+    "n34": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "+",
+        "COLOR": -9675545,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "+",
+      "parent": "n30"
+    },
+    "n35": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 12,
+        "FLEXGROW": 1,
+        "ALIGNITEMS": 3
+      },
+      "parent": "n14",
+      "children": [
+        "n36",
+        "n37",
+        "n38",
+        "n39"
+      ]
+    },
+    "n36": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "0",
+        "COLOR": -14869978,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "0",
+      "parent": "n35"
+    },
+    "n37": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": ".",
+        "COLOR": -14869978,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": ".",
+      "parent": "n35"
+    },
+    "n38": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "⌫",
+        "COLOR": -14015178,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -725018
+      },
+      "text": "⌫",
+      "parent": "n35"
+    },
+    "n39": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "=",
+        "COLOR": -1005464,
+        "FONTSIZE": 22,
+        "PADTOP": 16,
+        "RADIUS": 16,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -15265526
+      },
+      "text": "=",
+      "parent": "n35"
+    }
+  },
+  "provenance": {
+    "source": {
+      "path": "apps/calc/app.nim",
+      "lines": 222,
+      "bytes": 8100,
+      "sha256": "f80a3cc971e553cc5851e397d344815e78d93b24d41c9ae42e4905aaa43cf152"
+    },
+    "module": {
+      "path": "apps/calc/app.wasm",
+      "bytes": 188962,
+      "sha256": "ad8192081c9873ba091462d62f4d7284826fd7f1c431a81f8def7335ddb5d666"
+    },
+    "build": "./tools/build-wasm.sh apps/calc/app.nim apps/calc/app.wasm --release"
+  },
+  "verify": {
+    "command": "node tools/verify-wasm.mjs apps/calc",
+    "proves": "the module instantiates with no keys and no GPU, and builds a live UI tree",
+    "does_not_prove": "pixel equality against any reference render"
+  }
+}

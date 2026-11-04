@@ -1,0 +1,27 @@
+{
+  "id": "orrery",
+  "name": "Orrery",
+  "icon": "R",
+  "tint": "#C9A24A",
+  "grants": [],
+  "window": {
+    "title": "THE CLOCKMAKER'S ORRERY",
+    "width": 1400,
+    "height": 900,
+    "bg": "#F1E5C8"
+  },
+  "module": {
+    "path": "apps/orrery/app.wasm",
+    "bytes": 183408,
+    "sha256": "5cb7072a20fd22b7140b9d850bf7949120275443b1cc9b507855ef6ac37f622f"
+  },
+  "source": {
+    "path": "apps/orrery/app.nim",
+    "lines": 697,
+    "bytes": 31811,
+    "sha256": "21efdb8e2b0b30db28dade72f68c2d39cbd2c86148a829162e8bdf8f8baa3fca"
+  },
+  "nodes": 29,
+  "document": "app.yantra.json",
+  "generated": "tools/export-json.mjs"
+}

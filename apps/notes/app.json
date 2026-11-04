@@ -1,0 +1,26 @@
+{
+  "id": "notes",
+  "name": "Notes",
+  "icon": "N",
+  "tint": "#FFD60A",
+  "grants": [],
+  "window": {
+    "title": "Notes",
+    "width": null,
+    "height": null
+  },
+  "module": {
+    "path": "apps/notes/app.wasm",
+    "bytes": 272457,
+    "sha256": "d13355821981f36ded5dc87557c128cf0df712d7021fa4dff9892c14c39f62bd"
+  },
+  "source": {
+    "path": "apps/notes/app.nim",
+    "lines": 395,
+    "bytes": 22807,
+    "sha256": "1316e5b3c3b163fe0c37c3a3a5c20b96aa11eeb2b520b456727848c2e76d7b7a"
+  },
+  "nodes": 41,
+  "document": "app.yantra.json",
+  "generated": "tools/export-json.mjs"
+}

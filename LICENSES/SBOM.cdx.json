@@ -1,0 +1,1804 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:9fee2b19-eb16-4e54-adaa-4277f66f2257",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-06T10:40:43Z",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "hand-authored generator (/tmp/gen_sbom.py, python 3.10.12)",
+          "version": "3.10.12",
+          "description": "Reads every hash and size from the real files at generation time; no value is transcribed by hand."
+        }
+      ]
+    },
+    "component": {
+      "type": "operating-system",
+      "bom-ref": "yantra-os",
+      "name": "Yantra OS",
+      "version": "unknown",
+      "description": "The public release tree /home/ubuntu/yantra/yantra-os (apps, host, libs, sdk, protocol, render, docs and 12 prebuilt .wasm modules). The tree carries no version tag; the native host is published separately as yantra-windows-x64-bin.zip on the GitHub release.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "source.tree",
+          "value": "yantra-os/ (git branch main, uncommitted work in the parent repo ignored)"
+        },
+        {
+          "name": "measurement.command",
+          "value": "sha256sum apps/*/app.wasm; stat -c %s apps/*/app.wasm; find . \\( -name '*.so' -o -name '*.dll' -o -name '*.a' \\) -printf '%s\\t%p\\n'"
+        },
+        {
+          "name": "tree.ships_no_third_party_binary",
+          "value": "the only non-.wasm binary in the tree is apps/notes/minilibc.o, 19438 bytes, wasm32 build debris of sdk/minilibc/minilibc.c"
+        },
+        {
+          "name": "tree.wasm_count",
+          "value": "13 .wasm files: 12 apps/*/app.wasm (listed below as components) plus examples/counter.wasm, which is an example, not an app module"
+        },
+        {
+          "name": "app_licence.evidence",
+          "value": "yantra-os/LICENSE:1 (MIT) — top of file"
+        },
+        {
+          "name": "third_party.inventory.source",
+          "value": "yantra-os/docs/THIRD-PARTY.md, re-measured 2026-11-06"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "compiler-rt builtins (libclang_rt.builtins.a)",
+      "version": "unknown",
+      "licenses": [
+        {
+          "license": {
+            "name": "licence not stated in this repo"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "yantra-os/tools/build-wasm.sh:95-96 links third_party/wasi-sdk-*/lib/clang/*/lib/wasm32-unknown-wasi/libclang_rt.builtins.a"
+        },
+        {
+          "name": "licence.evidence",
+          "value": "none: no third_party/wasi-sdk-* exists in this repo"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:53"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "name": "Skia",
+      "version": "143",
+      "purl": "pkg:generic/skia@143",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "third_party/skia-m143/LICENSE:1 'Copyright (c) 2011 Google Inc. All rights reserved.'"
+        },
+        {
+          "name": "version.measured_from",
+          "value": "third_party/skia-m143/include/core/SkMilestone.h:8 '#define SK_MILESTONE 143'"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:54"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "HarfBuzz (copy bundled inside the Skia checkout)",
+      "version": "unknown",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "third_party/skia-m143/third_party/harfbuzz/LICENSE:1 'Copyright (c) 2021 Google Inc. All rights reserved.'"
+        },
+        {
+          "name": "reach",
+          "value": "through Skia's SkParagraph, yantra-os/libs/nimskia/src/skia_shim.cpp"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:55"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "name": "Filament",
+      "version": "1.77.1",
+      "purl": "pkg:generic/filament@1.77.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "third_party/filament-linux/LICENSE:2 'Apache License Version 2.0, January 2004'"
+        },
+        {
+          "name": "version.measured_from",
+          "value": "yantra-os/libs/nimfilament/README.md:5 'Filament's Windows release (third_party/filament, v1.77.1)'"
+        },
+        {
+          "name": "notice",
+          "value": "the filament-linux checkout ships a LICENSE and no NOTICE file"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:56"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "SDL3",
+      "version": "3.2.16",
+      "purl": "pkg:generic/SDL3@3.2.16",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "third_party/sdl3-local/share/licenses/SDL3/LICENSE.txt:1 'Copyright (C) 1997-2025 Sam Lantinga'"
+        },
+        {
+          "name": "version.measured_from",
+          "value": "third_party/sdl3-local/include/SDL3/SDL_version.h:47,56,65 SDL_MAJOR=3 SDL_MINOR=2 SDL_MICRO=16"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:57"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "Yoga",
+      "version": "3.1.0",
+      "purl": "pkg:generic/yoga@3.1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "third_party/yoga/yoga-3.1.0/LICENSE:1 'MIT License / Copyright (c) Facebook, Inc. and its affiliates.'"
+        },
+        {
+          "name": "version.measured_from",
+          "value": "yantra-os/libs/nimyoga/README.md:6 'Version: 3.1.0'"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:58"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "Jolt Physics",
+      "version": "5.3.0",
+      "purl": "pkg:generic/jolt-physics@5.3.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "yantra-os/libs/nimjolt/README.md:3 'Jolt Physics (v5.3.0, MIT)'; third_party/jolt-local/include/Jolt/Jolt.h:1-3 SPDX-License-Identifier: MIT"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:59"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "miniaudio",
+      "version": "0.11.21",
+      "purl": "pkg:generic/miniaudio@0.11.21",
+      "licenses": [
+        {
+          "expression": "Unlicense OR MIT-0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "third_party/miniaudio/miniaudio.h:2 and the two licence statements at the end of that file; yantra-os/libs/nimminiaudio/README.md:3 'Public Domain / MIT-0'"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:61"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "name": "wasmtime",
+      "version": "19.0.2",
+      "purl": "pkg:generic/wasmtime@19.0.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "licence not stated in this repo"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "yantra-os/libs/nimwasmtime/README.md:12 names vendor/wasmtime-v19.0.2-x86_64-windows-c-api/"
+        },
+        {
+          "name": "licence.evidence",
+          "value": "none: the README states no licence and libs/nimwasmtime/vendor/ is not shipped"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:62"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "SQLite",
+      "version": "3.53.4",
+      "purl": "pkg:generic/sqlite@3.53.4",
+      "licenses": [
+        {
+          "license": {
+            "name": "Public Domain"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "yantra-os/libs/nimsqlite/README.md:3 'SQLite (v3.53.4, Public Domain)', :8 'License: Public Domain'"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:63"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "libcurl",
+      "version": "unknown",
+      "licenses": [
+        {
+          "expression": "curl"
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "yantra-os/libs/nimcurl/README.md:4 'Licence: curl (MIT-style)'"
+        },
+        {
+          "name": "note",
+          "value": "'curl' is the SPDX identifier for that licence text"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "BLAKE3",
+      "version": "1.8.7",
+      "purl": "pkg:generic/blake3@1.8.7",
+      "licenses": [
+        {
+          "expression": "CC0-1.0 OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "yantra-os/libs/nimblake3/README.md:3 'BLAKE3 (v1.8.7, CC0-1.0 / Apache-2.0)', :8"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:65"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "libdatachannel (bundling libjuice, usrsctp, libsrtp)",
+      "version": "unknown",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "yantra-os/libs/nimrtc/README.md:4 '(MPL-2.0; MSYS2 mingw-w64-x86_64-libdatachannel, bundling libjuice for ICE and usrsctp/libsrtp)'"
+        },
+        {
+          "name": "gap",
+          "value": "libjuice, usrsctp and libsrtp state no licence anywhere in this repo"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:66"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "AccessKit (accesskit-c)",
+      "version": "unknown",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "yantra-os/libs/nimaccesskit/README.md:4 '(MIT/Apache-2.0), built from source: cd third_party/accesskit-c && cargo build --release'"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:67"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "name": "Qt 6",
+      "version": "6.11.2",
+      "purl": "pkg:generic/qt@6.11.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "licence not stated in this repo"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "yantra-os/libs/nimqt/README.md:31 'verified ... against Qt 6.11.2'"
+        },
+        {
+          "name": "licence.evidence",
+          "value": "none: the README states no licence"
+        },
+        {
+          "name": "reach",
+          "value": "legacy renderer only; nothing in this tree imports libs/nimqt"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:68"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "PostgreSQL (server C API)",
+      "version": "18",
+      "purl": "pkg:generic/postgresql@18",
+      "licenses": [
+        {
+          "license": {
+            "name": "licence not stated in this repo"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "yantra-os/libs/nimpg/README.md:19 'Development Postgres 18 runs in the Arch WSL on port 5433'"
+        },
+        {
+          "name": "licence.evidence",
+          "value": "none: the README states no licence"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:69"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "name": "Nim compiler",
+      "version": "unknown",
+      "licenses": [
+        {
+          "license": {
+            "name": "licence not stated in this repo"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "yantra-os/tools/build-wasm.sh:141 runs 'nim c'"
+        },
+        {
+          "name": "licence.evidence",
+          "value": "none: no Nim checkout and no licence file in this repo"
+        },
+        {
+          "name": "reach",
+          "value": "build time only"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:70"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "name": "Nimony",
+      "version": "unknown",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "third_party/nimony/license.txt:1 'MIT License / Copyright (c) 2024 Andreas Rumpf'"
+        },
+        {
+          "name": "reach",
+          "value": "build time only; nothing Nimony produces is in this tree"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:71"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "name": "binaryen (wasm-opt)",
+      "version": "unknown",
+      "licenses": [
+        {
+          "license": {
+            "name": "licence not stated in this repo"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "yantra-os/tools/build-wasm.sh:151-172 invokes wasm-opt; optional per the script"
+        },
+        {
+          "name": "licence.evidence",
+          "value": "none: third_party/binaryen/ has bin/ lib/ include/ and no licence file"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:72"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "name": "clang / LLVM (the C backend)",
+      "version": "unknown",
+      "licenses": [
+        {
+          "license": {
+            "name": "licence not stated in this repo"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "yantra-os/tools/build-wasm.sh:89,141,147 'clang --target=wasm32-unknown-unknown', 'nim c --cc:clang'"
+        },
+        {
+          "name": "licence.evidence",
+          "value": "none: no LLVM checkout and no licence file in this repo"
+        },
+        {
+          "name": "reach",
+          "value": "build time only"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:73"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "name": "Emscripten",
+      "version": "unknown",
+      "licenses": [
+        {
+          "license": {
+            "name": "licence not stated in this repo"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "web/engine/yantra.js:1 'build/engine.js is engine.nim built with emscripten'"
+        },
+        {
+          "name": "licence.evidence",
+          "value": "none: no Emscripten checkout in this repo"
+        },
+        {
+          "name": "reach",
+          "value": "build time only, for a browser engine not shipped in this tree"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:74"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "name": "Nativenif",
+      "version": "unknown",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "third_party/nativenif/LICENSE:1 'MIT License / Copyright (c) 2025 The Nim programming language'"
+        },
+        {
+          "name": "reach",
+          "value": "not used by this tree"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:75"
+        }
+      ]
+    },
+    {
+      "type": "data",
+      "name": "Anthropic Agent Skills (8 translations)",
+      "version": "unknown",
+      "licenses": [
+        {
+          "license": {
+            "name": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "skills/yantra/translated-skills/*/SKILL.md line 4 'license: Proprietary' for 5 of 8; the other 3 state no licence"
+        },
+        {
+          "name": "gap",
+          "value": "the NOTICE.md those files reference does not exist in this tree"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:76"
+        }
+      ]
+    },
+    {
+      "type": "data",
+      "name": "Typewriter sound assets (20 .wav files)",
+      "version": "unknown",
+      "licenses": [
+        {
+          "license": {
+            "name": "licence not stated in this repo"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "yantra-os/assets/typewriter/sfx/ holds 20 .wav files totalling 367666 bytes (ls + stat, 2026-11-06)"
+        },
+        {
+          "name": "consumed_by",
+          "value": "yantra-os/apps/typewriter/app.nim:143-149 names 13 of them by bare filename through the SDK's sound(); the host resolves y_sound_load (host/host.nim, sdk/core/runtime.nim:350-352)"
+        },
+        {
+          "name": "licence.evidence",
+          "value": "none: no generator script, no source URL and no licence line for these files in this repo"
+        },
+        {
+          "name": "correction",
+          "value": "yantra-os/docs/THIRD-PARTY.md:77 lists 6 files named bell.wav/key.wav/paper.wav/return.wav/soft.wav/space.wav in apps/typewriter/; none of those names exists and the directory is empty of .wav files"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:77"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "name": "FFmpeg (Linux shared build shipped from third_party/ffmpeg-local)",
+      "version": "7.1.1",
+      "purl": "pkg:generic/ffmpeg@7.1.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "third_party/ffmpeg-local/bin/ffmpeg -version -> 'ffmpeg version 7.1.1'"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings libavutil.so.59.39.100 | grep 'license: ' -> 'libavutil license: GPL version 2 or later' (same wording in all 8 libraries)"
+        },
+        {
+          "name": "build.configuration",
+          "value": "--prefix=/tmp/vajra-wt/third_party/ffmpeg-local --libdir=/tmp/vajra-wt/third_party/ffmpeg-local/lib --shlibdir=/tmp/vajra-wt/third_party/ffmpeg-local/lib --incdir=/tmp/vajra-wt/third_party/ffmpeg-local/include --enable-shared --disable-static --enable-pic --disable-doc --disable-debug --enable-gpl --enable-libx264 --enable-libopus --extra-cflags='-I/tmp/engine-build/x264-local/include -I/tmp/engine-build/opus-local/include' --extra-ldflags='-L/tmp/engine-build/x264-local/lib -L/tmp/engine-build/opus-local/lib' --extra-libs='-lm -lpthread'"
+        },
+        {
+          "name": "build.flags_of_interest",
+          "value": "--enable-gpl present; --enable-version3 ABSENT; --enable-libx264 present"
+        },
+        {
+          "name": "directory.width",
+          "value": "third_party/ffmpeg-local ships no LICENSE/COPYING/NOTICE file"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:60"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "name": "FFmpeg (Windows shared build inside yantra-windows-x64-bin.zip)",
+      "version": "unknown",
+      "licenses": [
+        {
+          "expression": "GPL-3.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "evidence",
+          "value": "embedded licence string in every shipped DLL: 'libavutil license: GPL version 3 or later', 'libavcodec license: GPL version 3 or later', ..."
+        },
+        {
+          "name": "version.note",
+          "value": "no version string in the zip (no ffmpeg.exe); library majors measured from the filenames: avcodec-63.dll, avdevice-63.dll, avfilter-12.dll, avformat-63.dll, avutil-61.dll, swresample-7.dll, swscale-10.dll"
+        },
+        {
+          "name": "build.configuration",
+          "value": "--prefix=/mingw64 --target-os=mingw32 --arch=x86_64 --cc=gcc --cxx=g++ --disable-debug --disable-stripping --disable-doc --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-frei0r --enable-gmp --enable-gnutls --enable-gpl --enable-iconv --enable-libaom --enable-libass --enable-libbluray --enable-libcaca --enable-libdav1d --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libjxl --enable-libmodplug --enable-libmp3lame --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenjpeg --enable-libopus --enable-librtmp --enable-libssh --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libtheora --enable-libvidstab --enable-libvorbis --enable-libx264 --enable-libx265 --enable-libxvid --enable-libvpx --enable-libwebp --enable-libxml2 --enable-libzimg --enable-libzvbi --enable-openal --enable-pic --enable-runtime-cpudetect --enable-swresample --enable-version3 --enable-vulkan --enable-zlib --enable-libvpl --enable-liblc3 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-libsvtav1 --enable-whisper --enable-amf --enable-nvenc --logfile=config.log --enable-shared"
+        },
+        {
+          "name": "build.flags_of_interest",
+          "value": "--enable-gpl AND --enable-version3 BOTH present; --enable-libx264, --enable-libx265, --enable-libvpx, --enable-libsvtav1 present"
+        },
+        {
+          "name": "distribution.gap",
+          "value": "the zip ships 135 DLLs and yantra.exe and NO licence file of any kind"
+        },
+        {
+          "name": "audit.row",
+          "value": "THIRD-PARTY.md:60"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffmpeg-linux:libavutil.so.59.39.100",
+      "name": "libavutil (Linux libavutil.so.59.39.100)",
+      "version": "59.39.100",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d5f4d6290cb27040a9aef8f02317fbe889480e8c057997a70971b8d3ea49f6b5"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "GPL-2.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.size_bytes",
+          "value": "1022248"
+        },
+        {
+          "name": "file.path",
+          "value": "third_party/ffmpeg-local/lib/libavutil.so.59.39.100"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings: 'libavutil license: GPL version 2 or later'"
+        },
+        {
+          "name": "licenses.expression.rationale",
+          "value": "--enable-gpl without --enable-version3, and the library says so itself"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffmpeg-linux:libavcodec.so.61.19.101",
+      "name": "libavcodec (Linux libavcodec.so.61.19.101)",
+      "version": "61.19.101",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6c250767c86d64818420e96a0e35a62a059805c349cde2deaa9d13e95335d62e"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "GPL-2.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.size_bytes",
+          "value": "17432512"
+        },
+        {
+          "name": "file.path",
+          "value": "third_party/ffmpeg-local/lib/libavcodec.so.61.19.101"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings: 'libavcodec license: GPL version 2 or later'"
+        },
+        {
+          "name": "licenses.expression.rationale",
+          "value": "--enable-gpl without --enable-version3, and the library says so itself"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffmpeg-linux:libavformat.so.61.7.100",
+      "name": "libavformat (Linux libavformat.so.61.7.100)",
+      "version": "61.7.100",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fb7381e40fef8e5c8791b71f88d8f5e9caa8de06dd82d4c93521c288b545d7ed"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "GPL-2.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.size_bytes",
+          "value": "2725136"
+        },
+        {
+          "name": "file.path",
+          "value": "third_party/ffmpeg-local/lib/libavformat.so.61.7.100"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings: 'libavformat license: GPL version 2 or later'"
+        },
+        {
+          "name": "licenses.expression.rationale",
+          "value": "--enable-gpl without --enable-version3, and the library says so itself"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffmpeg-linux:libavdevice.so.61.3.100",
+      "name": "libavdevice (Linux libavdevice.so.61.3.100)",
+      "version": "61.3.100",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b777e85cb80c2db808177910c06f2ac9d8b91558d6f2970bab8a3d09955017f4"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "GPL-2.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.size_bytes",
+          "value": "82128"
+        },
+        {
+          "name": "file.path",
+          "value": "third_party/ffmpeg-local/lib/libavdevice.so.61.3.100"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings: 'libavdevice license: GPL version 2 or later'"
+        },
+        {
+          "name": "licenses.expression.rationale",
+          "value": "--enable-gpl without --enable-version3, and the library says so itself"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffmpeg-linux:libavfilter.so.10.4.100",
+      "name": "libavfilter (Linux libavfilter.so.10.4.100)",
+      "version": "10.4.100",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "55ea1e21fdc5e52de0aa595714d28842fd466705b58015758cb214ece0333944"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "GPL-2.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.size_bytes",
+          "value": "4543664"
+        },
+        {
+          "name": "file.path",
+          "value": "third_party/ffmpeg-local/lib/libavfilter.so.10.4.100"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings: 'libavfilter license: GPL version 2 or later'"
+        },
+        {
+          "name": "licenses.expression.rationale",
+          "value": "--enable-gpl without --enable-version3, and the library says so itself"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffmpeg-linux:libswscale.so.8.3.100",
+      "name": "libswscale (Linux libswscale.so.8.3.100)",
+      "version": "8.3.100",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6b1e9af4e443e52dedbf0ee549247dc0397f49566c7de7ce7c2b17f7ce70ae6c"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "GPL-2.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.size_bytes",
+          "value": "616696"
+        },
+        {
+          "name": "file.path",
+          "value": "third_party/ffmpeg-local/lib/libswscale.so.8.3.100"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings: 'libswscale license: GPL version 2 or later'"
+        },
+        {
+          "name": "licenses.expression.rationale",
+          "value": "--enable-gpl without --enable-version3, and the library says so itself"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffmpeg-linux:libswresample.so.5.3.100",
+      "name": "libswresample (Linux libswresample.so.5.3.100)",
+      "version": "5.3.100",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e446f03ba9748a294a8a72e30ad771fa98ed98e508230f882224e78de874b957"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "GPL-2.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.size_bytes",
+          "value": "125008"
+        },
+        {
+          "name": "file.path",
+          "value": "third_party/ffmpeg-local/lib/libswresample.so.5.3.100"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings: 'libswresample license: GPL version 2 or later'"
+        },
+        {
+          "name": "licenses.expression.rationale",
+          "value": "--enable-gpl without --enable-version3, and the library says so itself"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffmpeg-linux:libpostproc.so.58.3.100",
+      "name": "libpostproc (Linux libpostproc.so.58.3.100)",
+      "version": "58.3.100",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "743a33c6333a91ecb45af641e19ed4420260d8351e640dc5476264a44b336a92"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "GPL-2.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.size_bytes",
+          "value": "75704"
+        },
+        {
+          "name": "file.path",
+          "value": "third_party/ffmpeg-local/lib/libpostproc.so.58.3.100"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings: 'libpostproc license: GPL version 2 or later'"
+        },
+        {
+          "name": "licenses.expression.rationale",
+          "value": "--enable-gpl without --enable-version3, and the library says so itself"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffmpeg-win:avcodec-63.dll",
+      "name": "FFmpeg avcodec-63.dll",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5bb6988b6785ccc17d7f93a14ec950b08872623c9e7a74f00f1ceab4f4335877"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "GPL-3.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-windows-x64-bin.zip!/avcodec-63.dll"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "20633533"
+        },
+        {
+          "name": "library.major",
+          "value": "63 (measured from the DLL filename; no FFmpeg version string exists in the zip)"
+        },
+        {
+          "name": "hash.scope",
+          "value": "sha256 of the entry inside yantra-windows-x64-bin.zip"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings: 'license: GPL version 3 or later'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffmpeg-win:avdevice-63.dll",
+      "name": "FFmpeg avdevice-63.dll",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0672c4d72d29bda3a89780dfacf01c735d66184e2259834ca57aef9ae7781a97"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "GPL-3.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-windows-x64-bin.zip!/avdevice-63.dll"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "175052"
+        },
+        {
+          "name": "library.major",
+          "value": "63 (measured from the DLL filename; no FFmpeg version string exists in the zip)"
+        },
+        {
+          "name": "hash.scope",
+          "value": "sha256 of the entry inside yantra-windows-x64-bin.zip"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings: 'license: GPL version 3 or later'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffmpeg-win:avfilter-12.dll",
+      "name": "FFmpeg avfilter-12.dll",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9c12497075beaef2ccea82644a5bad427cb51614ebc63a6cfa61a629d2cc614d"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "GPL-3.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-windows-x64-bin.zip!/avfilter-12.dll"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "6817538"
+        },
+        {
+          "name": "library.major",
+          "value": "12 (measured from the DLL filename; no FFmpeg version string exists in the zip)"
+        },
+        {
+          "name": "hash.scope",
+          "value": "sha256 of the entry inside yantra-windows-x64-bin.zip"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings: 'license: GPL version 3 or later'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffmpeg-win:avformat-63.dll",
+      "name": "FFmpeg avformat-63.dll",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e3984fe1adfdcb61633faabb689a272408de9d099e0e0cda4098ceffe6b32fb5"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "GPL-3.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-windows-x64-bin.zip!/avformat-63.dll"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "2994130"
+        },
+        {
+          "name": "library.major",
+          "value": "63 (measured from the DLL filename; no FFmpeg version string exists in the zip)"
+        },
+        {
+          "name": "hash.scope",
+          "value": "sha256 of the entry inside yantra-windows-x64-bin.zip"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings: 'license: GPL version 3 or later'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffmpeg-win:avutil-61.dll",
+      "name": "FFmpeg avutil-61.dll",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d7aa04871268b32663372da2effbe9113aa259a8c312fec5335961d38f1f416e"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "GPL-3.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-windows-x64-bin.zip!/avutil-61.dll"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "1304143"
+        },
+        {
+          "name": "library.major",
+          "value": "61 (measured from the DLL filename; no FFmpeg version string exists in the zip)"
+        },
+        {
+          "name": "hash.scope",
+          "value": "sha256 of the entry inside yantra-windows-x64-bin.zip"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings: 'license: GPL version 3 or later'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffmpeg-win:swresample-7.dll",
+      "name": "FFmpeg swresample-7.dll",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7fce416f089f72d5b7637b9a53288d596bc066ef50b8ea5785644b08f8e755fa"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "GPL-3.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-windows-x64-bin.zip!/swresample-7.dll"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "186336"
+        },
+        {
+          "name": "library.major",
+          "value": "7 (measured from the DLL filename; no FFmpeg version string exists in the zip)"
+        },
+        {
+          "name": "hash.scope",
+          "value": "sha256 of the entry inside yantra-windows-x64-bin.zip"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings: 'license: GPL version 3 or later'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffmpeg-win:swscale-10.dll",
+      "name": "FFmpeg swscale-10.dll",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "307a2fea736687f393bcd547633cce668263b5fbccdde6827e542276a12ebcc2"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "GPL-3.0-or-later"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-windows-x64-bin.zip!/swscale-10.dll"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "2215415"
+        },
+        {
+          "name": "library.major",
+          "value": "10 (measured from the DLL filename; no FFmpeg version string exists in the zip)"
+        },
+        {
+          "name": "hash.scope",
+          "value": "sha256 of the entry inside yantra-windows-x64-bin.zip"
+        },
+        {
+          "name": "licence.measured",
+          "value": "strings: 'license: GPL version 3 or later'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "win:libx264-165.dll",
+      "name": "x264 (libx264-165.dll)",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0d814d13db7eeac0ff5264ed86d376f9260746323107cb07affb6c306b240329"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "licence not stated in this repo"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-windows-x64-bin.zip!/libx264-165.dll"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "2024174"
+        },
+        {
+          "name": "evidence",
+          "value": "named as the H.264 encoder in yantra-os/libs/nimav/README.md:4"
+        },
+        {
+          "name": "note",
+          "value": "x264's own licence text is nowhere in this repo, although it is the reason FFmpeg was built --enable-gpl"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "app:calc",
+      "name": "calc",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "174292e706f8e43892cbf013ecf416771dba418ea75e8c12f0b4bdbcd8fb8da0"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-os/apps/calc/app.wasm"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "207944"
+        },
+        {
+          "name": "part_of",
+          "value": "Yantra OS (first party, not third party)"
+        },
+        {
+          "name": "manifest.sha256_cross_check",
+          "value": "apps/calc/app.json module.sha256 MATCHES the file"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "app:chess",
+      "name": "chess",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "36a3a68f44de2ab69cfe5680f74d7ef7fb58734c424b6afef93711bf8f12d432"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-os/apps/chess/app.wasm"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "303779"
+        },
+        {
+          "name": "part_of",
+          "value": "Yantra OS (first party, not third party)"
+        },
+        {
+          "name": "manifest.sha256_cross_check",
+          "value": "apps/chess/app.json module.sha256 DIFFERS from the file"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "app:descent",
+      "name": "descent",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "777ed9e97d4960c0e45978b6d168da62dc9f16d1760b3687e1b92228ef5792b8"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-os/apps/descent/app.wasm"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "320352"
+        },
+        {
+          "name": "part_of",
+          "value": "Yantra OS (first party, not third party)"
+        },
+        {
+          "name": "manifest.sha256_cross_check",
+          "value": "apps/descent/app.json module.sha256 absent"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "app:desktop",
+      "name": "desktop",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a883f49dcfa975e588dc544d4d6696a59b573378a1571b3052343825e8c9d7eb"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-os/apps/desktop/app.wasm"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "242686"
+        },
+        {
+          "name": "part_of",
+          "value": "Yantra OS (first party, not third party)"
+        },
+        {
+          "name": "manifest.sha256_cross_check",
+          "value": "apps/desktop/app.json module.sha256 DIFFERS from the file"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "app:dna",
+      "name": "dna",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "58994a92aaab574dd7caf10e7e06c8f9f0a3a517d629c637d4b0b4d8cc01abbb"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-os/apps/dna/app.wasm"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "247202"
+        },
+        {
+          "name": "part_of",
+          "value": "Yantra OS (first party, not third party)"
+        },
+        {
+          "name": "manifest.sha256_cross_check",
+          "value": "apps/dna/app.json module.sha256 DIFFERS from the file"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "app:editor",
+      "name": "editor",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ada6aa618b281869e78bb7114dccb54dc44736105d8b16287cfbfb449a1d612e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-os/apps/editor/app.wasm"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "227220"
+        },
+        {
+          "name": "part_of",
+          "value": "Yantra OS (first party, not third party)"
+        },
+        {
+          "name": "manifest.sha256_cross_check",
+          "value": "apps/editor/app.json module.sha256 MATCHES the file"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "app:files",
+      "name": "files",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4340f003ce21c07bb5a81ed97b031529fbbe2060239955b16871ace2aeb15b2d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-os/apps/files/app.wasm"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "302539"
+        },
+        {
+          "name": "part_of",
+          "value": "Yantra OS (first party, not third party)"
+        },
+        {
+          "name": "manifest.sha256_cross_check",
+          "value": "apps/files/app.json module.sha256 MATCHES the file"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "app:gallery",
+      "name": "gallery",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "115944bcbb8a5a3eb1331b6d82ff86ac48f1cf41208ec716b70a10f1b4f9a9aa"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-os/apps/gallery/app.wasm"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "212826"
+        },
+        {
+          "name": "part_of",
+          "value": "Yantra OS (first party, not third party)"
+        },
+        {
+          "name": "manifest.sha256_cross_check",
+          "value": "apps/gallery/app.json module.sha256 MATCHES the file"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "app:gallery3d",
+      "name": "gallery3d",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "826a0f84bf01feaab43ff2b503007d12eb1747368ccff2358dd6151cb34c0511"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-os/apps/gallery3d/app.wasm"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "182808"
+        },
+        {
+          "name": "part_of",
+          "value": "Yantra OS (first party, not third party)"
+        },
+        {
+          "name": "manifest.sha256_cross_check",
+          "value": "apps/gallery3d/app.json module.sha256 MATCHES the file"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "app:notes",
+      "name": "notes",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6ba2baf60532313c6bc617f53a68d7087d9dd9a3bbbee36e855908d6a1eaad1d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-os/apps/notes/app.wasm"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "212039"
+        },
+        {
+          "name": "part_of",
+          "value": "Yantra OS (first party, not third party)"
+        },
+        {
+          "name": "manifest.sha256_cross_check",
+          "value": "apps/notes/app.json module.sha256 MATCHES the file"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "app:todo",
+      "name": "todo",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9c6645b4d5aafc01293f20ae66128f9b985da7c83f6c9b26b595d00507e9ad06"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-os/apps/todo/app.wasm"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "227216"
+        },
+        {
+          "name": "part_of",
+          "value": "Yantra OS (first party, not third party)"
+        },
+        {
+          "name": "manifest.sha256_cross_check",
+          "value": "apps/todo/app.json module.sha256 MATCHES the file"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "app:typewriter",
+      "name": "typewriter",
+      "version": "unknown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c7263e15789ac68366f8c59a30205876b4a99c180f9129866902a62c6a3bfbfa"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "file.path",
+          "value": "yantra-os/apps/typewriter/app.wasm"
+        },
+        {
+          "name": "file.size_bytes",
+          "value": "438505"
+        },
+        {
+          "name": "part_of",
+          "value": "Yantra OS (first party, not third party)"
+        },
+        {
+          "name": "manifest.sha256_cross_check",
+          "value": "apps/typewriter/app.json module.sha256 DIFFERS from the file"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "$yantra": "2026.11",
+  "app": "y:@yantra/kart",
+  "name": "Nocturne Rally",
+  "exported": {
+    "by": "tools/export-json.mjs",
+    "from": "apps/kart/app.wasm, instantiated and stepped 30 frame(s)",
+    "runner": "web/runner/runner.js",
+    "protocol": "v2",
+    "frames_stepped": 30,
+    "note": "L1 structured twin: nodes, parameters and the retained draw commands, read from the running module. Not executable on its own, and not restorable to the Nim source."
+  },
+  "window": {
+    "title": "Nocturne Rally",
+    "width": 1280,
+    "height": 816,
+    "bg": "#070A12"
+  },
+  "stats": {
+    "nodes": 10,
+    "layers": 0,
+    "layer_draw_calls": 0,
+    "draw_command_bytes": 94156
+  },
+  "nodes": {
+    "n0": {
+      "kind": "WINDOW",
+      "params": {
+        "WIDTH": 1280,
+        "HEIGHT": 816,
+        "COLOR": "#070A12",
+        "GRADANGLE": -1
+      },
+      "text": "Nocturne Rally",
+      "children": [
+        "n1"
+      ]
+    },
+    "n1": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 1280,
+        "HEIGHT": 816,
+        "COLOR": "#070A12",
+        "GRADANGLE": -1
+      },
+      "parent": "n0",
+      "children": [
+        "n2",
+        "n3"
+      ]
+    },
+    "n2": {
+      "kind": "CANVAS",
+      "params": {
+        "WIDTH": 1280,
+        "HEIGHT": 816,
+        "CANVASWIDTH": 1280,
+        "CANVASHEIGHT": 816
+      },
+      "parent": "n1",
+      "draw_bytes": 94156,
+      "draw_sha256": "a062440c642c175cb3e99e1b0a35d3bf2c42fefb7d37ea89fb8d9f9fe2c199bb",
+      "draw": "U 0.00 0.00 1280.00 390.00 0.00 640.00 0.00 640.00 390.00 4278651414 4282989392;E 12.00 20.00 1.25 1.25 1189663650;E 235.00 91.00 0.62 0.62 1692980130;E 458.00 162.00 0.62 0.62 2196296610;E 681.00 233.00 0.62 0.62 2699613090;E 904.00 84.00 0.62 0.62 1189663650;E 1127.00 155.00 0.62 0.62 1692980130;E 100.00 226.00 0.62 0.62 2196296610;E 323.00 77.00 1.25 1.25 2699613090;E 546.00 148.00 0.62 0.62 1189663650;E 769.00 219.00 0.62 0.62 1692980130;E 992.00 70.00 0.62 0.62 2196296610;E 1215.00 141.00 0.62 0.62 2699613090;E 188.00 212.00 0.62 0.62 1189663650;E 411.00 63.00 0.62 0.62 1692980130;E 634.00 134.00 1.25 1.25 2196296610;E 857.00 205.00 0.62 0.62 2699613090;E 1080.00 56.00 0.62 0.62 1189663650;E 53.00 127.00 0.62 0.62 1692980130;E 276.00 198.00 0.62 0.62 2196296610;E 499.00 49.00 0.62 0.62 2699613090;E 722.00 120.00 0.62 0.62 1189663650;E 945.00 191.00 1.25 1.25 1692980130;E 1168.00 42.00 0.62 0.62 2196296610;E 141.00 113.00 0.62 0.62 2699613090;E 364.00 184.00 0.62 0.62 1189663650;E 587.00 35.00 0.62 0.62 1692980130;E 810.00 106.00 0.62 0.62 2196296610;E 1033.00 177.00 0.62 0.62 2699613090;E 1256.00 28.00 1.25 1.25 1189663650;E 229.00 99.00 0.62 0.62 1692980130;E 452.00 170.00 0.62 0.62 2196296610;E 675.00 21.00 0.62 0.62 2699613090;E 898.00 92.00 0.62 0.62 1189663650;E 1121.00 163.00 0.62 0.62 1692980130;E 94.00 234.00 0.62 0.62 2196296610;E 317.00 85.00 1.25 1.25 2699613090;E 540.00 156.00 0.62 0.62 1189663650;E 763.00 227.00 0.62 0.62 1692980130;E 986.00 78.00 0.62 0.62 2196296610;E 1209.00 149.00 0.62 0.62 2699613090;E 182.00 220.00 0.62 0.62 1189663650;E 405.00 71.00 0.62 0.62 1692980130;E 628.00 142.00 1.25 1.25 2196296610;E 851.00 213.00 0.62 0.62 2699613090;E 1074.00 64.00 0.62 0.62 1189663650;E 47.00 135.00 0.62 0.62 1692980130;E 270.00 206.00 0.62 0.62 2196296610;E 493.00 57.00 0.62 0.62 2699613090;E 716.00 128.00 0.62 0.62 1189663650;E 939.00 199.00 1.25 1.25 1692980130;E 1162.00 50.00 0.62 0.62 2196296610;E 135.00 121.00 0.62 0.62 2699613090;E 358.00 192.00 0.62 0.62 1189663650;E 581.00 43.00 0.62 0.62 1692980130;E 804.00 114.00 0.62 0.62 2196296610;E 1027.00 185.00 0.62 0.62 2699613090;W 20.00;E 1008.00 152.00 58.00 58.00 485020578;E 1008.00 152.00 34.00 34.00 4008235938;E 996.00 143.00 7.00 7.00 617068175;E 1018.00 163.00 5.00 5.00 583513743;M -30.00 366.00;L -30.00 263.70;L -14.00 257.24;L 2.00 251.43;L 18.00 246.46;L 34.00 242.48;L 50.00 239.61;L 66.00 237.91;L 82.00 237.38;L 98.00 237.97;L 114.00 239.61;L 130.00 242.14;L 146.00 245.41;L 162.00 249.21;L 178.00 253.32;L 194.00 257.53;L 210.00 261.62;L 226.00 265.39;L 242.00 268.67;L 258.00 271.31;L 274.00 273.21;L 290.00 274.34;L 306.00 274.68;L 322.00 274.27;L 338.00 273.20;L 354.00 271.62;L 370.00 269.67;L 386.00 267.54;L 402.00 265.43;L 418.00 263.55;L 434.00 262.09;L 450.00 261.23;L 466.00 261.11;L 482.00 261.84;L 498.00 263.50;L 514.00 266.11;L 530.00 269.63;L 546.00 273.98;L 562.00 279.04;L 578.00 284.65;L 594.00 290.61;L 610.00 296.69;L 626.00 302.66;L 642.00 308.28;L 658.00 313.32;L 674.00 317.58;L 690.00 320.86;L 706.00 323.03;L 722.00 324.00;L 738.00 323.71;L 754.00 322.19;L 770.00 319.47;L 786.00 315.68;L 802.00 310.97;L 818.00 305.53;L 834.00 299.56;L 850.00 293.32;L 866.00 287.03;L 882.00 280.95;L 898.00 275.27;L 914.00 270.21;L 930.00 265.91;L 946.00 262.50;L 962.00 260.03;L 978.00 258.54;L 994.00 257.99;L 1010.00 258.31;L 1026.00 259.36;L 1042.00 261.01;L 1058.00 263.06;L 1074.00 265.32;L 1090.00 267.58;L 1106.00 269.64;L 1122.00 271.33;L 1138.00 272.48;L 1154.00 272.97;L 1170.00 272.71;L 1186.00 271.68;L 1202.00 269.89;L 1218.00 267.38;L 1234.00 264.28;L 1250.00 260.72;L 1266.00 256.88;L 1282.00 252.96;L 1298.00 249.18;L 1310.00 366.00;Z;F 4280033329;R -100.00 -100.00 0.00 0.00 0.00 0;M -30.00 372.00;L -30.00 304.29;L -14.00 306.55;L 2.00 308.43;L 18.00 309.85;L 34.00 310.79;L 50.00 311.24;L 66.00 311.23;L 82.00 310.80;L 98.00 310.05;L 114.00 309.05;L 130.00 307.92;L 146.00 306.78;L 162.00 305.74;L 178.00 304.92;L 194.00 304.42;L 210.00 304.33;…",
+      "draw_truncated": true
+    },
+    "n3": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 8,
+        "ABSOLUTE": 1,
+        "INSETBOTTOM": 22,
+        "INSETLEFT": 40
+      },
+      "parent": "n1",
+      "children": [
+        "n4",
+        "n5",
+        "n6",
+        "n7",
+        "n8",
+        "n9"
+      ]
+    },
+    "n4": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "◀",
+        "WIDTH": 54,
+        "HEIGHT": 42,
+        "COLOR": -871294937,
+        "FONTSIZE": 16,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#7C8798",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#F4F0E8",
+        "GRADANGLE": -1,
+        "HOVERFILL": -434297034,
+        "HOVERCOLOR": "#F4F0E8",
+        "HOVERBORDER": 8161176,
+        "PRESSFILL": -265866945,
+        "PRESSCOLOR": "#F4F0E8",
+        "PRESSBORDER": 8161176,
+        "FOCUSCOLOR": "#F4F0E8",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "◀",
+      "parent": "n3"
+    },
+    "n5": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "▶",
+        "WIDTH": 54,
+        "HEIGHT": 42,
+        "COLOR": -871294937,
+        "FONTSIZE": 16,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#7C8798",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#F4F0E8",
+        "GRADANGLE": -1,
+        "HOVERFILL": -434297034,
+        "HOVERCOLOR": "#F4F0E8",
+        "HOVERBORDER": 8161176,
+        "PRESSFILL": -265866945,
+        "PRESSCOLOR": "#F4F0E8",
+        "PRESSBORDER": 8161176,
+        "FOCUSCOLOR": "#F4F0E8",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "▶",
+      "parent": "n3"
+    },
+    "n6": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "GAS",
+        "WIDTH": 92,
+        "HEIGHT": 42,
+        "COLOR": -871294937,
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#7C8798",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#F4F0E8",
+        "GRADANGLE": -1,
+        "HOVERFILL": -434297034,
+        "HOVERCOLOR": "#F4F0E8",
+        "HOVERBORDER": 8161176,
+        "PRESSFILL": -265866945,
+        "PRESSCOLOR": "#F4F0E8",
+        "PRESSBORDER": 8161176,
+        "FOCUSCOLOR": "#F4F0E8",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "GAS",
+      "parent": "n3"
+    },
+    "n7": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "BRAKE",
+        "WIDTH": 92,
+        "HEIGHT": 42,
+        "COLOR": -871294937,
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#7C8798",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#F4F0E8",
+        "GRADANGLE": -1,
+        "HOVERFILL": -434297034,
+        "HOVERCOLOR": "#F4F0E8",
+        "HOVERBORDER": 8161176,
+        "PRESSFILL": -265866945,
+        "PRESSCOLOR": "#F4F0E8",
+        "PRESSBORDER": 8161176,
+        "FOCUSCOLOR": "#F4F0E8",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "BRAKE",
+      "parent": "n3"
+    },
+    "n8": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "DRIFT",
+        "WIDTH": 92,
+        "HEIGHT": 42,
+        "COLOR": -871294937,
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#7C8798",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#F4F0E8",
+        "GRADANGLE": -1,
+        "HOVERFILL": -434297034,
+        "HOVERCOLOR": "#F4F0E8",
+        "HOVERBORDER": 8161176,
+        "PRESSFILL": -265866945,
+        "PRESSCOLOR": "#F4F0E8",
+        "PRESSBORDER": 8161176,
+        "FOCUSCOLOR": "#F4F0E8",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "DRIFT",
+      "parent": "n3"
+    },
+    "n9": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "LAUNCH",
+        "WIDTH": 116,
+        "HEIGHT": 42,
+        "COLOR": "#E8D3A2",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#7C8798",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#070A12",
+        "GRADANGLE": -1,
+        "HOVERFILL": "#F0E3BC",
+        "HOVERCOLOR": "#070A12",
+        "HOVERBORDER": 8161176,
+        "PRESSFILL": "#D6BF8B",
+        "PRESSCOLOR": "#070A12",
+        "PRESSBORDER": 8161176,
+        "FOCUSCOLOR": "#F4F0E8",
+        "FOCUSBORDER": 16766362
+      },
+      "text": "LAUNCH",
+      "parent": "n3"
+    }
+  },
+  "provenance": {
+    "source": {
+      "path": "apps/kart/app.nim",
+      "lines": 648,
+      "bytes": 29011,
+      "sha256": "2b5f3ac37f76615dc0c8129c70978ff33e355f55643298f60b7b20e44fab831c"
+    },
+    "module": {
+      "path": "apps/kart/app.wasm",
+      "bytes": 132255,
+      "sha256": "920cb811956260c83aa18e253850a630fec2ce2fe6710c5f557580747cdfa81e"
+    },
+    "build": "./tools/build-wasm.sh apps/kart/app.nim apps/kart/app.wasm --release"
+  },
+  "verify": {
+    "command": "node tools/verify-wasm.mjs apps/kart",
+    "proves": "the module instantiates with no keys and no GPU, and builds a live UI tree",
+    "does_not_prove": "pixel equality against any reference render"
+  }
+}

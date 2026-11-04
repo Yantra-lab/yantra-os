@@ -1,0 +1,591 @@
+{
+  "$yantra": "2026.11",
+  "app": "y:@yantra/notes",
+  "name": "Notes",
+  "exported": {
+    "by": "tools/export-json.mjs",
+    "from": "apps/notes/app.wasm, instantiated and stepped 30 frame(s)",
+    "runner": "web/runner/runner.js",
+    "protocol": "v2",
+    "frames_stepped": 30,
+    "note": "L1 structured twin: nodes, parameters and the retained draw commands, read from the running module. Not executable on its own, and not restorable to the Nim source."
+  },
+  "window": {
+    "title": "Notes",
+    "width": null,
+    "height": null
+  },
+  "stats": {
+    "nodes": 41,
+    "layers": 0,
+    "layer_draw_calls": 0,
+    "draw_command_bytes": 0
+  },
+  "nodes": {
+    "n0": {
+      "kind": "WINDOW",
+      "text": "Notes",
+      "children": [
+        "n1"
+      ]
+    },
+    "n1": {
+      "kind": "COLUMN",
+      "parent": "n0",
+      "children": [
+        "n2"
+      ]
+    },
+    "n2": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 900,
+        "COLOR": -526606,
+        "FLEXGROW": 1,
+        "ALIGNITEMS": 3
+      },
+      "parent": "n1",
+      "children": [
+        "n3",
+        "n27",
+        "n28"
+      ]
+    },
+    "n3": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 332,
+        "COLOR": -1053209,
+        "SPACING": 14,
+        "PADTOP": 26,
+        "PADRIGHT": 20,
+        "PADBOTTOM": 18,
+        "PADLEFT": 20
+      },
+      "parent": "n2",
+      "children": [
+        "n4",
+        "n9",
+        "n10",
+        "n14",
+        "n17",
+        "n21",
+        "n26"
+      ]
+    },
+    "n4": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 10,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n3",
+      "children": [
+        "n5",
+        "n8"
+      ]
+    },
+    "n5": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 2,
+        "FLEXGROW": 1
+      },
+      "parent": "n4",
+      "children": [
+        "n6",
+        "n7"
+      ]
+    },
+    "n6": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "PERSONAL LIBRARY",
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -10722471,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "PERSONAL LIBRARY",
+      "parent": "n5"
+    },
+    "n7": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Notes",
+        "FONTSIZE": 27,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -14341594,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Notes",
+      "parent": "n5"
+    },
+    "n8": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "New note",
+        "COLOR": -12031143,
+        "FONTSIZE": 12,
+        "PADTOP": 10,
+        "PADRIGHT": 13,
+        "PADBOTTOM": 10,
+        "PADLEFT": 13,
+        "RADIUS": 9,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -1,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "New note",
+      "parent": "n4"
+    },
+    "n9": {
+      "kind": "INPUT",
+      "params": {
+        "COLOR": -329226,
+        "FONTSIZE": 13,
+        "PADTOP": 12,
+        "PADRIGHT": 12,
+        "PADBOTTOM": 12,
+        "PADLEFT": 12,
+        "RADIUS": 10,
+        "BORDERCOLOR": -2237742,
+        "BORDERWIDTH": 1,
+        "VALUE": "",
+        "PLACEHOLDER": "Search titles and text",
+        "TEXTCOLOR": -14341594,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "parent": "n3"
+    },
+    "n10": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 6
+      },
+      "parent": "n3",
+      "children": [
+        "n11",
+        "n12",
+        "n13"
+      ]
+    },
+    "n11": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "All",
+        "COLOR": -1906207,
+        "FONTSIZE": 11,
+        "PADTOP": 7,
+        "PADRIGHT": 11,
+        "PADBOTTOM": 7,
+        "PADLEFT": 11,
+        "RADIUS": 7,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -12031143,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "All",
+      "parent": "n10"
+    },
+    "n12": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Engine",
+        "COLOR": -1053209,
+        "FONTSIZE": 11,
+        "PADTOP": 7,
+        "PADRIGHT": 11,
+        "PADBOTTOM": 7,
+        "PADLEFT": 11,
+        "RADIUS": 7,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -10722471,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Engine",
+      "parent": "n10"
+    },
+    "n13": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Release",
+        "COLOR": -1053209,
+        "FONTSIZE": 11,
+        "PADTOP": 7,
+        "PADRIGHT": 11,
+        "PADBOTTOM": 7,
+        "PADLEFT": 11,
+        "RADIUS": 7,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -10722471,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Release",
+      "parent": "n10"
+    },
+    "n14": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 6,
+        "PADTOP": 2,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n3",
+      "children": [
+        "n15",
+        "n16"
+      ]
+    },
+    "n15": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "YOUR NOTES",
+        "FONTSIZE": 10,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -10722471,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "YOUR NOTES",
+      "parent": "n14"
+    },
+    "n16": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "0",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -10064798,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "0",
+      "parent": "n14"
+    },
+    "n17": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 4,
+        "FLEXGROW": 1,
+        "SCROLLY": 0,
+        "SCROLL": 1
+      },
+      "parent": "n3",
+      "children": [
+        "n18"
+      ]
+    },
+    "n18": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 6,
+        "PADTOP": 14,
+        "PADRIGHT": 2,
+        "PADBOTTOM": 14,
+        "PADLEFT": 2
+      },
+      "parent": "n17",
+      "children": [
+        "n19",
+        "n20"
+      ]
+    },
+    "n19": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "No notes yet",
+        "FONTSIZE": 13,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -14341594,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "No notes yet",
+      "parent": "n18"
+    },
+    "n20": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Anything you write is saved as your own record, not a file.",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -10722471,
+        "FONTFAMILY": "Noto Sans",
+        "LINEHEIGHT": 1.5
+      },
+      "text": "Anything you write is saved as your own record, not a file.",
+      "parent": "n18"
+    },
+    "n21": {
+      "kind": "COLUMN",
+      "params": {
+        "COLOR": -329226,
+        "SPACING": 4,
+        "PADTOP": 12,
+        "PADRIGHT": 13,
+        "PADBOTTOM": 12,
+        "PADLEFT": 13,
+        "RADIUS": 10,
+        "BORDERCOLOR": -2237742,
+        "BORDERWIDTH": 1
+      },
+      "parent": "n3",
+      "children": [
+        "n22",
+        "n25"
+      ]
+    },
+    "n22": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 7,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n21",
+      "children": [
+        "n23",
+        "n24"
+      ]
+    },
+    "n23": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 6,
+        "HEIGHT": 6,
+        "COLOR": -12031143,
+        "RADIUS": 3
+      },
+      "parent": "n22"
+    },
+    "n24": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Private by design",
+        "FONTSIZE": 12,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -14341594,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Private by design",
+      "parent": "n22"
+    },
+    "n25": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Owned records, not loose files. Every edit writes to your own row.",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -10722471,
+        "FONTFAMILY": "Noto Sans",
+        "LINEHEIGHT": 1.45
+      },
+      "text": "Owned records, not loose files. Every edit writes to your own row.",
+      "parent": "n21"
+    },
+    "n26": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "record Note  /  owner only",
+        "FONTSIZE": 10,
+        "TEXTCOLOR": -10064798,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "record Note  /  owner only",
+      "parent": "n3"
+    },
+    "n27": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 1,
+        "COLOR": -2237742
+      },
+      "parent": "n2"
+    },
+    "n28": {
+      "kind": "COLUMN",
+      "params": {
+        "COLOR": -526606,
+        "FLEXGROW": 1
+      },
+      "parent": "n2",
+      "children": [
+        "n29",
+        "n32",
+        "n33"
+      ]
+    },
+    "n29": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 62,
+        "SPACING": 12,
+        "PADRIGHT": 32,
+        "PADLEFT": 40,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n28",
+      "children": [
+        "n30",
+        "n31"
+      ]
+    },
+    "n30": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "NOTES  /  PERSONAL",
+        "FONTSIZE": 10,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -10064798,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "NOTES  /  PERSONAL",
+      "parent": "n29"
+    },
+    "n31": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Tab moves · Enter saves and opens the body · Ctrl+S saves · Delete removes",
+        "FONTSIZE": 10,
+        "TEXTCOLOR": -10064798,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Tab moves · Enter saves and opens the body · Ctrl+S saves · Delete removes",
+      "parent": "n29"
+    },
+    "n32": {
+      "kind": "PANEL",
+      "params": {
+        "HEIGHT": 1,
+        "COLOR": -2237742
+      },
+      "parent": "n28"
+    },
+    "n33": {
+      "kind": "ROW",
+      "params": {
+        "FLEXGROW": 1,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1
+      },
+      "parent": "n28",
+      "children": [
+        "n34"
+      ]
+    },
+    "n34": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 430,
+        "SPACING": 14,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n33",
+      "children": [
+        "n35",
+        "n37",
+        "n38",
+        "n39",
+        "n40"
+      ]
+    },
+    "n35": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 56,
+        "HEIGHT": 56,
+        "COLOR": -1906207,
+        "RADIUS": 28,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1
+      },
+      "parent": "n34",
+      "children": [
+        "n36"
+      ]
+    },
+    "n36": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "N",
+        "FONTSIZE": 20,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -12031143,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "N",
+      "parent": "n35"
+    },
+    "n37": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Start with one honest page",
+        "FONTSIZE": 27,
+        "ALIGN": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -14341594,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Start with one honest page",
+      "parent": "n34"
+    },
+    "n38": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Write it down, close the window, open it again: it is still here, because it is a row of yours and not a file.",
+        "FONTSIZE": 14,
+        "ALIGN": 1,
+        "TEXTCOLOR": -10722471,
+        "FONTFAMILY": "Noto Sans",
+        "LINEHEIGHT": 1.55
+      },
+      "text": "Write it down, close the window, open it again: it is still here, because it is a row of yours and not a file.",
+      "parent": "n34"
+    },
+    "n39": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Write the first note",
+        "COLOR": -12031143,
+        "FONTSIZE": 13,
+        "PADTOP": 11,
+        "PADRIGHT": 18,
+        "PADBOTTOM": 11,
+        "PADLEFT": 18,
+        "RADIUS": 9,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -1,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Write the first note",
+      "parent": "n34"
+    },
+    "n40": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Ctrl+N starts a note · Tab moves between every control",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -10064798,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Ctrl+N starts a note · Tab moves between every control",
+      "parent": "n34"
+    }
+  },
+  "provenance": {
+    "source": {
+      "path": "apps/notes/app.nim",
+      "lines": 395,
+      "bytes": 22807,
+      "sha256": "1316e5b3c3b163fe0c37c3a3a5c20b96aa11eeb2b520b456727848c2e76d7b7a"
+    },
+    "module": {
+      "path": "apps/notes/app.wasm",
+      "bytes": 272457,
+      "sha256": "d13355821981f36ded5dc87557c128cf0df712d7021fa4dff9892c14c39f62bd"
+    },
+    "build": "./tools/build-wasm.sh apps/notes/app.nim apps/notes/app.wasm --release"
+  },
+  "verify": {
+    "command": "node tools/verify-wasm.mjs apps/notes",
+    "proves": "the module instantiates with no keys and no GPU, and builds a live UI tree",
+    "does_not_prove": "pixel equality against any reference render"
+  }
+}

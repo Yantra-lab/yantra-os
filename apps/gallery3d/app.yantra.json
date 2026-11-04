@@ -1,0 +1,1426 @@
+{
+  "$yantra": "2026.11",
+  "app": "y:@yantra/gallery3d",
+  "name": "Night Gallery",
+  "exported": {
+    "by": "tools/export-json.mjs",
+    "from": "apps/gallery3d/app.wasm, instantiated and stepped 30 frame(s)",
+    "runner": "web/runner/runner.js",
+    "protocol": "v2",
+    "frames_stepped": 30,
+    "note": "L1 structured twin: nodes, parameters and the retained draw commands, read from the running module. Not executable on its own, and not restorable to the Nim source."
+  },
+  "window": {
+    "title": "Gallery3d",
+    "width": null,
+    "height": null
+  },
+  "stats": {
+    "nodes": 90,
+    "layers": 0,
+    "layer_draw_calls": 0,
+    "draw_command_bytes": 0
+  },
+  "nodes": {
+    "n0": {
+      "kind": "WINDOW",
+      "text": "Gallery3d",
+      "children": [
+        "n1"
+      ]
+    },
+    "n1": {
+      "kind": "COLUMN",
+      "parent": "n0",
+      "children": [
+        "n2"
+      ]
+    },
+    "n2": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 1280,
+        "HEIGHT": 816,
+        "COLOR": -16054008
+      },
+      "parent": "n1",
+      "children": [
+        "n3",
+        "n67",
+        "n71",
+        "n79",
+        "n87"
+      ]
+    },
+    "n3": {
+      "kind": "SCENE3D",
+      "params": {
+        "WIDTH": 1280,
+        "HEIGHT": 816,
+        "FOG": 0.035,
+        "FOGCOLOR": -16054009,
+        "SKY": -15265264,
+        "SHADOWS": 1,
+        "BLOOM": 0.3,
+        "SSAO": 1,
+        "AMBIENT": 30000,
+        "VIGNETTE": 0.35,
+        "EXPOSURE": 2
+      },
+      "parent": "n2",
+      "children": [
+        "n4",
+        "n5",
+        "n6",
+        "n7",
+        "n8",
+        "n9",
+        "n10",
+        "n11",
+        "n12",
+        "n13",
+        "n14",
+        "n15",
+        "n16",
+        "n17",
+        "n18",
+        "n19",
+        "n20",
+        "n21",
+        "n22",
+        "n23",
+        "n24",
+        "n25",
+        "n26",
+        "n27",
+        "n28",
+        "n29",
+        "n30",
+        "n31",
+        "n32",
+        "n33",
+        "n34",
+        "n35",
+        "n36",
+        "n37",
+        "n38",
+        "n39",
+        "n40",
+        "n41",
+        "n42",
+        "n43",
+        "n44",
+        "n45",
+        "n46",
+        "n47",
+        "n48",
+        "n49",
+        "n50",
+        "n51",
+        "n52",
+        "n53",
+        "n54",
+        "n55",
+        "n56",
+        "n57",
+        "n58",
+        "n59",
+        "n60",
+        "n61",
+        "n62",
+        "n63",
+        "n64",
+        "n65",
+        "n66"
+      ]
+    },
+    "n4": {
+      "kind": "CAMERA",
+      "params": {
+        "POSX": 1,
+        "POSY": 1.52,
+        "POSZ": -13.6,
+        "TARGETX": -2.44,
+        "TARGETY": 1.45,
+        "TARGETZ": -16.2,
+        "FOV": 46
+      },
+      "parent": "n3"
+    },
+    "n5": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -11910597,
+        "POSX": 0,
+        "POSY": -0.06,
+        "POSZ": -10,
+        "METALNESS": 0.08,
+        "ROUGHNESS": 0.22,
+        "SIZEX": 5.2,
+        "SIZEY": 0.12,
+        "SIZEZ": 28,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n6": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -10870508,
+        "POSX": 0,
+        "POSY": 0.012,
+        "POSZ": -10,
+        "ROUGHNESS": 0.9,
+        "SIZEX": 1.5,
+        "SIZEY": 0.012,
+        "SIZEZ": 26,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n7": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -10606044,
+        "POSX": -2.55,
+        "POSY": 1.8,
+        "POSZ": -10,
+        "ROUGHNESS": 0.9,
+        "SIZEX": 0.12,
+        "SIZEY": 3.6,
+        "SIZEZ": 28,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n8": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -10606044,
+        "POSX": 2.55,
+        "POSY": 1.8,
+        "POSZ": -10,
+        "ROUGHNESS": 0.9,
+        "SIZEX": 0.12,
+        "SIZEY": 3.6,
+        "SIZEZ": 28,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n9": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -14016743,
+        "POSY": 3.62,
+        "POSZ": -10,
+        "ROUGHNESS": 0.95,
+        "SIZEX": 5.2,
+        "SIZEY": 0.12,
+        "SIZEZ": 28,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n10": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -11919076,
+        "POSY": 1.8,
+        "POSZ": -24,
+        "ROUGHNESS": 0.9,
+        "SIZEX": 5.2,
+        "SIZEY": 3.6,
+        "SIZEZ": 0.12,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n11": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": -2.47,
+        "POSY": 0.1,
+        "POSZ": -10,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.3,
+        "SIZEX": 0.06,
+        "SIZEY": 0.2,
+        "SIZEZ": 28,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n12": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": 2.47,
+        "POSY": 0.1,
+        "POSZ": -10,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.3,
+        "SIZEX": 0.06,
+        "SIZEY": 0.2,
+        "SIZEZ": 28,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n13": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": -2.47,
+        "POSY": 3.44,
+        "POSZ": -10,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.35,
+        "SIZEX": 0.06,
+        "SIZEY": 0.08,
+        "SIZEZ": 28,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n14": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": 2.47,
+        "POSY": 3.44,
+        "POSZ": -10,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.35,
+        "SIZEX": 0.06,
+        "SIZEY": 0.08,
+        "SIZEZ": 28,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n15": {
+      "kind": "LIGHT",
+      "params": {
+        "POSY": 3.1,
+        "POSZ": 1.5,
+        "TEXTCOLOR": -8008,
+        "INTENSITY": 300000,
+        "SHADOWS": 0,
+        "LIGHTKIND": 1
+      },
+      "parent": "n3"
+    },
+    "n16": {
+      "kind": "LIGHT",
+      "params": {
+        "POSY": 3.1,
+        "POSZ": -22,
+        "TEXTCOLOR": -8008,
+        "INTENSITY": 300000,
+        "SHADOWS": 0,
+        "LIGHTKIND": 1
+      },
+      "parent": "n3"
+    },
+    "n17": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -1385280,
+        "POSX": -0.72,
+        "POSY": 0.56,
+        "POSZ": -14.9,
+        "ROUGHNESS": 0.6,
+        "SIZEX": 0.78,
+        "SIZEY": 1.12,
+        "SIZEZ": 0.62,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n18": {
+      "kind": "MODEL",
+      "params": {
+        "SOURCE": "assets/mesh-mushroom-01.glb",
+        "SCALE": 0.4,
+        "POSX": -0.72,
+        "POSY": 1.44,
+        "POSZ": -14.9
+      },
+      "parent": "n3"
+    },
+    "n19": {
+      "kind": "LIGHT",
+      "params": {
+        "POSX": -0.85,
+        "POSY": 3.4,
+        "POSZ": -3,
+        "TEXTCOLOR": -6458,
+        "TARGETX": -2.44,
+        "TARGETY": 1.6,
+        "TARGETZ": -4,
+        "INTENSITY": 500000,
+        "SHADOWS": 1,
+        "LIGHTKIND": 2
+      },
+      "parent": "n3"
+    },
+    "n20": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -14013910,
+        "POSX": -0.85,
+        "POSY": 3.52,
+        "POSZ": -3,
+        "SIZEX": 0.16,
+        "SIZEY": 0.08,
+        "SIZEZ": 0.16,
+        "SHAPE": 1,
+        "GLOW": -6458
+      },
+      "parent": "n3"
+    },
+    "n21": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -1,
+        "POSX": -2.44,
+        "POSY": 1.62,
+        "POSZ": -4,
+        "ROUGHNESS": 0.8,
+        "SIZEX": 0.05,
+        "SIZEY": 1.36,
+        "SIZEZ": 1.1,
+        "SHAPE": 0,
+        "TEXTURE": "data/ravi-varma.jpg",
+        "TILINGY": -1
+      },
+      "parent": "n3"
+    },
+    "n22": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": -2.46,
+        "POSY": 1.62,
+        "POSZ": -4.6,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 1.56,
+        "SIZEZ": 0.1,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n23": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": -2.46,
+        "POSY": 1.62,
+        "POSZ": -3.4,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 1.56,
+        "SIZEZ": 0.1,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n24": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": -2.46,
+        "POSY": 2.4,
+        "POSZ": -4,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 0.1,
+        "SIZEZ": 1.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n25": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": -2.46,
+        "POSY": 0.84,
+        "POSZ": -4,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 0.1,
+        "SIZEZ": 1.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n26": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -1385280,
+        "POSX": -2.47,
+        "POSY": 1.02,
+        "POSZ": -3.22,
+        "ROUGHNESS": 0.6,
+        "SIZEX": 0.03,
+        "SIZEY": 0.17,
+        "SIZEZ": 0.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n27": {
+      "kind": "LIGHT",
+      "params": {
+        "POSX": 0.85,
+        "POSY": 3.4,
+        "POSZ": -6,
+        "TEXTCOLOR": -6458,
+        "TARGETX": 2.44,
+        "TARGETY": 1.6,
+        "TARGETZ": -7,
+        "INTENSITY": 500000,
+        "SHADOWS": 1,
+        "LIGHTKIND": 2
+      },
+      "parent": "n3"
+    },
+    "n28": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -14013910,
+        "POSX": 0.85,
+        "POSY": 3.52,
+        "POSZ": -6,
+        "SIZEX": 0.16,
+        "SIZEY": 0.08,
+        "SIZEZ": 0.16,
+        "SHAPE": 1,
+        "GLOW": -6458
+      },
+      "parent": "n3"
+    },
+    "n29": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -1,
+        "POSX": 2.44,
+        "POSY": 1.62,
+        "POSZ": -7,
+        "ROUGHNESS": 0.8,
+        "SIZEX": 0.05,
+        "SIZEY": 1.36,
+        "SIZEZ": 1.1,
+        "SHAPE": 0,
+        "TEXTURE": "data/hokusai.jpg",
+        "TILINGY": -1
+      },
+      "parent": "n3"
+    },
+    "n30": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": 2.46,
+        "POSY": 1.62,
+        "POSZ": -7.6,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 1.56,
+        "SIZEZ": 0.1,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n31": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": 2.46,
+        "POSY": 1.62,
+        "POSZ": -6.4,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 1.56,
+        "SIZEZ": 0.1,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n32": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": 2.46,
+        "POSY": 2.4,
+        "POSZ": -7,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 0.1,
+        "SIZEZ": 1.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n33": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": 2.46,
+        "POSY": 0.84,
+        "POSZ": -7,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 0.1,
+        "SIZEZ": 1.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n34": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -1385280,
+        "POSX": 2.47,
+        "POSY": 1.02,
+        "POSZ": -6.22,
+        "ROUGHNESS": 0.6,
+        "SIZEX": 0.03,
+        "SIZEY": 0.17,
+        "SIZEZ": 0.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n35": {
+      "kind": "LIGHT",
+      "params": {
+        "POSX": -0.85,
+        "POSY": 3.4,
+        "POSZ": -9,
+        "TEXTCOLOR": -6458,
+        "TARGETX": -2.44,
+        "TARGETY": 1.6,
+        "TARGETZ": -10,
+        "INTENSITY": 500000,
+        "SHADOWS": 1,
+        "LIGHTKIND": 2
+      },
+      "parent": "n3"
+    },
+    "n36": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -14013910,
+        "POSX": -0.85,
+        "POSY": 3.52,
+        "POSZ": -9,
+        "SIZEX": 0.16,
+        "SIZEY": 0.08,
+        "SIZEZ": 0.16,
+        "SHAPE": 1,
+        "GLOW": -6458
+      },
+      "parent": "n3"
+    },
+    "n37": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -1,
+        "POSX": -2.44,
+        "POSY": 1.62,
+        "POSZ": -10,
+        "ROUGHNESS": 0.8,
+        "SIZEX": 0.05,
+        "SIZEY": 1.36,
+        "SIZEZ": 1.1,
+        "SHAPE": 0,
+        "TEXTURE": "data/vermeer.jpg",
+        "TILINGY": -1
+      },
+      "parent": "n3"
+    },
+    "n38": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": -2.46,
+        "POSY": 1.62,
+        "POSZ": -10.6,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 1.56,
+        "SIZEZ": 0.1,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n39": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": -2.46,
+        "POSY": 1.62,
+        "POSZ": -9.4,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 1.56,
+        "SIZEZ": 0.1,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n40": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": -2.46,
+        "POSY": 2.4,
+        "POSZ": -10,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 0.1,
+        "SIZEZ": 1.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n41": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": -2.46,
+        "POSY": 0.84,
+        "POSZ": -10,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 0.1,
+        "SIZEZ": 1.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n42": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -1385280,
+        "POSX": -2.47,
+        "POSY": 1.02,
+        "POSZ": -9.22,
+        "ROUGHNESS": 0.6,
+        "SIZEX": 0.03,
+        "SIZEY": 0.17,
+        "SIZEZ": 0.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n43": {
+      "kind": "LIGHT",
+      "params": {
+        "POSX": 0.85,
+        "POSY": 3.4,
+        "POSZ": -12,
+        "TEXTCOLOR": -6458,
+        "TARGETX": 2.44,
+        "TARGETY": 1.6,
+        "TARGETZ": -13,
+        "INTENSITY": 500000,
+        "SHADOWS": 1,
+        "LIGHTKIND": 2
+      },
+      "parent": "n3"
+    },
+    "n44": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -14013910,
+        "POSX": 0.85,
+        "POSY": 3.52,
+        "POSZ": -12,
+        "SIZEX": 0.16,
+        "SIZEY": 0.08,
+        "SIZEZ": 0.16,
+        "SHAPE": 1,
+        "GLOW": -6458
+      },
+      "parent": "n3"
+    },
+    "n45": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -1,
+        "POSX": 2.44,
+        "POSY": 1.62,
+        "POSZ": -13,
+        "ROUGHNESS": 0.8,
+        "SIZEX": 0.05,
+        "SIZEY": 1.36,
+        "SIZEZ": 1.1,
+        "SHAPE": 0,
+        "TEXTURE": "data/sher-gil.jpg",
+        "TILINGY": -1
+      },
+      "parent": "n3"
+    },
+    "n46": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": 2.46,
+        "POSY": 1.62,
+        "POSZ": -13.6,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 1.56,
+        "SIZEZ": 0.1,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n47": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": 2.46,
+        "POSY": 1.62,
+        "POSZ": -12.4,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 1.56,
+        "SIZEZ": 0.1,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n48": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": 2.46,
+        "POSY": 2.4,
+        "POSZ": -13,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 0.1,
+        "SIZEZ": 1.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n49": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": 2.46,
+        "POSY": 0.84,
+        "POSZ": -13,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 0.1,
+        "SIZEZ": 1.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n50": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -1385280,
+        "POSX": 2.47,
+        "POSY": 1.02,
+        "POSZ": -12.22,
+        "ROUGHNESS": 0.6,
+        "SIZEX": 0.03,
+        "SIZEY": 0.17,
+        "SIZEZ": 0.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n51": {
+      "kind": "LIGHT",
+      "params": {
+        "POSX": -0.85,
+        "POSY": 3.4,
+        "POSZ": -15,
+        "TEXTCOLOR": -6458,
+        "TARGETX": -2.44,
+        "TARGETY": 1.6,
+        "TARGETZ": -16,
+        "INTENSITY": 500000,
+        "SHADOWS": 1,
+        "LIGHTKIND": 2
+      },
+      "parent": "n3"
+    },
+    "n52": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -14013910,
+        "POSX": -0.85,
+        "POSY": 3.52,
+        "POSZ": -15,
+        "SIZEX": 0.16,
+        "SIZEY": 0.08,
+        "SIZEZ": 0.16,
+        "SHAPE": 1,
+        "GLOW": -6458
+      },
+      "parent": "n3"
+    },
+    "n53": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -1,
+        "POSX": -2.44,
+        "POSY": 1.62,
+        "POSZ": -16,
+        "ROUGHNESS": 0.8,
+        "SIZEX": 0.05,
+        "SIZEY": 1.36,
+        "SIZEZ": 1.1,
+        "SHAPE": 0,
+        "TEXTURE": "data/van-gogh.jpg",
+        "TILINGY": -1
+      },
+      "parent": "n3"
+    },
+    "n54": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": -2.46,
+        "POSY": 1.62,
+        "POSZ": -16.6,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 1.56,
+        "SIZEZ": 0.1,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n55": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": -2.46,
+        "POSY": 1.62,
+        "POSZ": -15.4,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 1.56,
+        "SIZEZ": 0.1,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n56": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": -2.46,
+        "POSY": 2.4,
+        "POSZ": -16,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 0.1,
+        "SIZEZ": 1.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n57": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": -2.46,
+        "POSY": 0.84,
+        "POSZ": -16,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 0.1,
+        "SIZEZ": 1.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n58": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -1385280,
+        "POSX": -2.47,
+        "POSY": 1.02,
+        "POSZ": -15.22,
+        "ROUGHNESS": 0.6,
+        "SIZEX": 0.03,
+        "SIZEY": 0.17,
+        "SIZEZ": 0.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n59": {
+      "kind": "LIGHT",
+      "params": {
+        "POSX": 0.85,
+        "POSY": 3.4,
+        "POSZ": -18,
+        "TEXTCOLOR": -6458,
+        "TARGETX": 2.44,
+        "TARGETY": 1.6,
+        "TARGETZ": -19,
+        "INTENSITY": 500000,
+        "SHADOWS": 1,
+        "LIGHTKIND": 2
+      },
+      "parent": "n3"
+    },
+    "n60": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -14013910,
+        "POSX": 0.85,
+        "POSY": 3.52,
+        "POSZ": -18,
+        "SIZEX": 0.16,
+        "SIZEY": 0.08,
+        "SIZEZ": 0.16,
+        "SHAPE": 1,
+        "GLOW": -6458
+      },
+      "parent": "n3"
+    },
+    "n61": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -1,
+        "POSX": 2.44,
+        "POSY": 1.62,
+        "POSZ": -19,
+        "ROUGHNESS": 0.8,
+        "SIZEX": 0.05,
+        "SIZEY": 1.36,
+        "SIZEZ": 1.1,
+        "SHAPE": 0,
+        "TEXTURE": "data/monet.jpg",
+        "TILINGY": -1
+      },
+      "parent": "n3"
+    },
+    "n62": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": 2.46,
+        "POSY": 1.62,
+        "POSZ": -19.6,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 1.56,
+        "SIZEZ": 0.1,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n63": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": 2.46,
+        "POSY": 1.62,
+        "POSZ": -18.4,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 1.56,
+        "SIZEZ": 0.1,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n64": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": 2.46,
+        "POSY": 2.4,
+        "POSZ": -19,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 0.1,
+        "SIZEZ": 1.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n65": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -3562934,
+        "POSX": 2.46,
+        "POSY": 0.84,
+        "POSZ": -19,
+        "METALNESS": 1,
+        "ROUGHNESS": 0.28,
+        "SIZEX": 0.08,
+        "SIZEY": 0.1,
+        "SIZEZ": 1.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n66": {
+      "kind": "MESH",
+      "params": {
+        "COLOR": -1385280,
+        "POSX": 2.47,
+        "POSY": 1.02,
+        "POSZ": -18.22,
+        "ROUGHNESS": 0.6,
+        "SIZEX": 0.03,
+        "SIZEY": 0.17,
+        "SIZEZ": 0.3,
+        "SHAPE": 0
+      },
+      "parent": "n3"
+    },
+    "n67": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 5,
+        "ABSOLUTE": 1,
+        "INSETTOP": 32,
+        "INSETLEFT": 40
+      },
+      "parent": "n2",
+      "children": [
+        "n68",
+        "n69",
+        "n70"
+      ]
+    },
+    "n68": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "NIGHT GALLERY",
+        "FONTSIZE": 12,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -3562934
+      },
+      "text": "NIGHT GALLERY",
+      "parent": "n67"
+    },
+    "n69": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "The Hall of Six",
+        "FONTSIZE": 34,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -594212
+      },
+      "text": "The Hall of Six",
+      "parent": "n67"
+    },
+    "n70": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "A walk-through corridor, rendered in Filament",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -5203076
+      },
+      "text": "A walk-through corridor, rendered in Filament",
+      "parent": "n67"
+    },
+    "n71": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 8,
+        "ABSOLUTE": 1,
+        "INSETTOP": 132,
+        "INSETRIGHT": 40
+      },
+      "parent": "n2",
+      "children": [
+        "n72",
+        "n73",
+        "n74",
+        "n75",
+        "n76",
+        "n77",
+        "n78"
+      ]
+    },
+    "n72": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "WALK THE HALL",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -5203076
+      },
+      "text": "WALK THE HALL",
+      "parent": "n71"
+    },
+    "n73": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "01",
+        "WIDTH": 44,
+        "HEIGHT": 34,
+        "COLOR": -14936814,
+        "RADIUS": 8,
+        "TEXTCOLOR": -5203076
+      },
+      "text": "01",
+      "parent": "n71"
+    },
+    "n74": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "02",
+        "WIDTH": 44,
+        "HEIGHT": 34,
+        "COLOR": -14936814,
+        "RADIUS": 8,
+        "TEXTCOLOR": -5203076
+      },
+      "text": "02",
+      "parent": "n71"
+    },
+    "n75": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "03",
+        "WIDTH": 44,
+        "HEIGHT": 34,
+        "COLOR": -14936814,
+        "RADIUS": 8,
+        "TEXTCOLOR": -5203076
+      },
+      "text": "03",
+      "parent": "n71"
+    },
+    "n76": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "04",
+        "WIDTH": 44,
+        "HEIGHT": 34,
+        "COLOR": -14936814,
+        "RADIUS": 8,
+        "TEXTCOLOR": -5203076
+      },
+      "text": "04",
+      "parent": "n71"
+    },
+    "n77": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "05",
+        "WIDTH": 44,
+        "HEIGHT": 34,
+        "COLOR": -3562934,
+        "RADIUS": 8,
+        "TEXTCOLOR": -15068660
+      },
+      "text": "05",
+      "parent": "n71"
+    },
+    "n78": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "06",
+        "WIDTH": 44,
+        "HEIGHT": 34,
+        "COLOR": -14936814,
+        "RADIUS": 8,
+        "TEXTCOLOR": -5203076
+      },
+      "text": "06",
+      "parent": "n71"
+    },
+    "n79": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 520,
+        "COLOR": -15462386,
+        "PADTOP": 22,
+        "PADRIGHT": 22,
+        "PADBOTTOM": 22,
+        "PADLEFT": 22,
+        "RADIUS": 14,
+        "BORDERCOLOR": -12899806,
+        "BORDERWIDTH": 1,
+        "ABSOLUTE": 1,
+        "INSETBOTTOM": 36,
+        "INSETLEFT": 40
+      },
+      "parent": "n2",
+      "children": [
+        "n80"
+      ]
+    },
+    "n80": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 7
+      },
+      "parent": "n79",
+      "children": [
+        "n81",
+        "n84",
+        "n85",
+        "n86"
+      ]
+    },
+    "n81": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 9
+      },
+      "parent": "n80",
+      "children": [
+        "n82",
+        "n83"
+      ]
+    },
+    "n82": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "No. 5 of 6",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -3562934
+      },
+      "text": "No. 5 of 6",
+      "parent": "n81"
+    },
+    "n83": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "LEFT WALL",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -5203076
+      },
+      "text": "LEFT WALL",
+      "parent": "n81"
+    },
+    "n84": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Wheat Field with Cypresses",
+        "FONTSIZE": 26,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -594212
+      },
+      "text": "Wheat Field with Cypresses",
+      "parent": "n80"
+    },
+    "n85": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Vincent van Gogh, 1889",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -2507650
+      },
+      "text": "Vincent van Gogh, 1889",
+      "parent": "n80"
+    },
+    "n86": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Public domain · Galerie Nocturne",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -7701916
+      },
+      "text": "Public domain · Galerie Nocturne",
+      "parent": "n80"
+    },
+    "n87": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 10,
+        "ABSOLUTE": 1,
+        "INSETRIGHT": 40,
+        "INSETBOTTOM": 44
+      },
+      "parent": "n2",
+      "children": [
+        "n88",
+        "n89"
+      ]
+    },
+    "n88": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Prev",
+        "WIDTH": 108,
+        "COLOR": -14411242,
+        "RADIUS": 10,
+        "TEXTCOLOR": -594212
+      },
+      "text": "Prev",
+      "parent": "n87"
+    },
+    "n89": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Next",
+        "WIDTH": 108,
+        "COLOR": -3562934,
+        "RADIUS": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -15068660
+      },
+      "text": "Next",
+      "parent": "n87"
+    }
+  },
+  "provenance": {
+    "source": {
+      "path": "apps/gallery3d/app.nim",
+      "lines": 146,
+      "bytes": 8602,
+      "sha256": "5f565195b424cff71098a39c702000678542221e302ba0e71921b25d298d2833"
+    },
+    "module": {
+      "path": "apps/gallery3d/app.wasm",
+      "bytes": 164666,
+      "sha256": "6144f9e670499cbfa1c04652dccced06483c5d90c5bd2fd1ac6ecf2aae89f29b"
+    },
+    "build": "./tools/build-wasm.sh apps/gallery3d/app.nim apps/gallery3d/app.wasm --release"
+  },
+  "verify": {
+    "command": "node tools/verify-wasm.mjs apps/gallery3d",
+    "proves": "the module instantiates with no keys and no GPU, and builds a live UI tree",
+    "does_not_prove": "pixel equality against any reference render"
+  }
+}

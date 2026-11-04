@@ -1,0 +1,26 @@
+{
+  "id": "ocean",
+  "name": "Ocean",
+  "icon": "O",
+  "tint": "#E9C887",
+  "grants": [],
+  "window": {
+    "title": "Ocean",
+    "width": null,
+    "height": null
+  },
+  "module": {
+    "path": "apps/ocean/app.wasm",
+    "bytes": 218129,
+    "sha256": "485239f35fb8a28e8f6badaa6a0952bd68cb4d292030c41431dc51dd7e8119b7"
+  },
+  "source": {
+    "path": "apps/ocean/app.nim",
+    "lines": 399,
+    "bytes": 18216,
+    "sha256": "72dd0680b8733e259e221bd45d7437d763ef738466e0eca028e7ac255c0623b3"
+  },
+  "nodes": 39,
+  "document": "app.yantra.json",
+  "generated": "measured final files; Atlas cells via tools/os-json.py"
+}

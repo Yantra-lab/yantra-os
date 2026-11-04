@@ -1,0 +1,49 @@
+# Yantra OS Git Ignore
+nimcache/
+*.tmp
+*.log
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+
+# Standalone binary release assets (distributed via GitHub Releases)
+bin/
+*.zip
+film/preview_720p.mp4
+film/verify_frames/
+
+nimcache*/
+minilibc.o
+*.wav
+*.bak*
+*.raw
+capture_*.bmp
+BUNDLE_DECODED.md
+
+
+# vendor + build outputs (never commit)
+third_party/
+libs/*/build/
+*.exe
+*.o
+render/native/yantra.ico
+
+libs/nimwasmtime/vendor/
+
+scratch/
+
+# ---- the release tree ----------------------------------------------------
+# This folder is the *release*: it ships the compiled app modules on purpose,
+# so that a reader can verify everything with node and nothing else. The
+# platform repo's root .gitignore excludes *.wasm (its own builds); the
+# negation here re-includes exactly the release artifacts. Same for the two
+# audio assets apps/typewriter plays.
+!apps/*/app.wasm
+!apps/*/desktop.wasm
+!apps/*/*.wav
+!examples/*.wasm
+
+
+# the release ships its own Foley: keep the typewriter sounds
+!assets/**/*.wav

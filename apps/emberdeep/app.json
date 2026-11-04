@@ -1,0 +1,32 @@
+{
+  "id": "emberdeep",
+  "name": "EMBERDEEP",
+  "icon": "E",
+  "tint": "#F3A45B",
+  "grants": [],
+  "window": {
+    "title": "EMBERDEEP",
+    "width": 1280,
+    "height": 816,
+    "bg": "#080A10"
+  },
+  "module": {
+    "path": "apps/emberdeep/app.wasm",
+    "bytes": 297195,
+    "sha256": "8ecca464f4b2e371604f063e89efcd70131cffc1dec0b80d04531253b003c7c1"
+  },
+  "source": {
+    "path": "apps/emberdeep/app.nim",
+    "lines": 604,
+    "bytes": 26144,
+    "sha256": "323ace5766de751c3bdac74e091f5fd6d15f2afb3bfca7f2aaf3a7651d0b53fe"
+  },
+  "simulation": {
+    "path": "apps/emberdeep/emberdeep.nim",
+    "lines": 2294,
+    "sha256": "9bb0712f201a42836688739fa0fae19b36c67885544d368c5c9267fbb119d54f"
+  },
+  "nodes": 18,
+  "document": "app.yantra.json",
+  "generated": "tools/export-json.mjs (module/source/nodes) + sha256sum app.nim, emberdeep.nim"
+}

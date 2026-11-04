@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yantra OS Web Runner</title>
+<style>
+  html, body { margin: 0; background: #050507; min-height: 100%; color: #e6e8ee; font-family: system-ui, -apple-system, sans-serif; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
+  #app { min-width: 320px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  #app > .y-window { border-radius: 14px; box-shadow: 0 30px 80px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.06); }
+  .toolbar { position: fixed; top: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; background: rgba(20,22,30,0.85); backdrop-filter: blur(10px); padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); z-index: 1000; font-size: 13px; }
+  .toolbar select { background: transparent; color: #fff; border: none; font-size: 13px; outline: none; cursor: pointer; }
+  .toolbar option { background: #1a1d26; color: #fff; }
+  .status { margin-top: 16px; font-size: 12px; color: #7a829e; }
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <span>App:</span>
+  <select id="appSelect" onchange="location.search = '?app=' + this.value">
+    <option value="typewriter">Typewriter</option>
+    <option value="desktop">Desktop Shell</option>
+    <option value="gallery">3D Gallery</option>
+    <option value="editor">Code Editor</option>
+    <option value="files">Files</option>
+    <option value="chess">Chess Study</option>
+    <option value="dna">DNA Helix</option>
+    <option value="calc">Calculator</option>
+    <option value="notes">Notes</option>
+    <option value="todo">Todo</option>
+  </select>
+</div>
+<div id="app"></div>
+<div class="status" id="status">Loading module...</div>
+
+<script type="module">
+  import { createRunner } from './runner.js';
+  const urlParams = new URLSearchParams(location.search);
+  const name = urlParams.get('app') || 'todo';
+  const select = document.getElementById('appSelect');
+  if (select) select.value = name;
+
+  const appEl = document.getElementById('app');
+  const statusEl = document.getElementById('status');
+
+  const candidates = [
+    `../../apps/${name}/app.wasm`,
+    `../../apps/${name}/${name}.wasm`,
+    `../../examples/${name}.wasm`
+  ];
+
+  let bytes = null;
+  for (const path of candidates) {
+    try {
+      const res = await fetch(path);
+      if (res.ok) {
+        bytes = await res.arrayBuffer();
+        break;
+      }
+    } catch (e) {}
+  }
+
+  if (bytes) {
+    try {
+      await createRunner({ wasmBytes: bytes, targetElement: appEl });
+      statusEl.textContent = `${name}.wasm · ${(bytes.byteLength / 1024).toFixed(0)} KB loaded`;
+      document.title = `Yantra OS · ${name}`;
+    } catch (err) {
+      statusEl.textContent = `Runner execution error: ${err.message}`;
+    }
+  } else {
+    statusEl.textContent = `Could not load WASM module for "${name}".`;
+  }
+</script>
+</body>
+</html>

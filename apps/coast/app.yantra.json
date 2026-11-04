@@ -1,0 +1,246 @@
+{
+  "$yantra": "unpinned (newest vocabulary)",
+  "app": "y:@coast-vector/coast.Coast",
+  "language": "Sutra",
+  "window": {
+    "w": 0,
+    "h": 0
+  },
+  "build": {
+    "target": "wasm32",
+    "bytes": 225927,
+    "sha256": "19222c8e619e81dbee587973bccb76183565a3b540fecd15041d49b2d9876727",
+    "stripped": true
+  },
+  "proof": {
+    "png": "coast.png",
+    "bytes": 539367
+  },
+  "cells": [
+    {
+      "cell": "coast.WW",
+      "kind": "main",
+      "version": 115,
+      "sha256": "fd5df9d8471fcfd8bdd466d0ace8ad86",
+      "lines": 1
+    },
+    {
+      "cell": "coast.night",
+      "kind": "main",
+      "version": 262,
+      "sha256": "cd83fa8e4d107a5fadd687f5cd6aad68",
+      "lines": 1
+    },
+    {
+      "cell": "coast.panelCol",
+      "kind": "main",
+      "version": 263,
+      "sha256": "70b713ad42fb41331fb940f842da2e04",
+      "lines": 1
+    },
+    {
+      "cell": "coast.panelSoft",
+      "kind": "main",
+      "version": 264,
+      "sha256": "450ee99ee725add9ed8b6e11b223a0bb",
+      "lines": 1
+    },
+    {
+      "cell": "coast.gold",
+      "kind": "main",
+      "version": 265,
+      "sha256": "f82ff3ed7012a5c0ca90003daec4243e",
+      "lines": 1
+    },
+    {
+      "cell": "coast.paleGold",
+      "kind": "main",
+      "version": 266,
+      "sha256": "2525988335ddadf23348a864ecaa6f3b",
+      "lines": 1
+    },
+    {
+      "cell": "coast.ink",
+      "kind": "main",
+      "version": 267,
+      "sha256": "6aba9a81bce21b2d584256c045edf1a5",
+      "lines": 1
+    },
+    {
+      "cell": "coast.dim",
+      "kind": "main",
+      "version": 268,
+      "sha256": "162b40e89f654263038e6c5bccbfa4fd",
+      "lines": 1
+    },
+    {
+      "cell": "coast.edge",
+      "kind": "main",
+      "version": 269,
+      "sha256": "77e2612947fb20cc3aedd4dc665d2e0b",
+      "lines": 1
+    },
+    {
+      "cell": "coast.selected",
+      "kind": "main",
+      "version": 270,
+      "sha256": "37fa41234d3706a3f311c7ead8532720",
+      "lines": 1
+    },
+    {
+      "cell": "coast.quiet",
+      "kind": "main",
+      "version": 271,
+      "sha256": "2c9d81a1e446a99424b1f5d57a2da7f9",
+      "lines": 1
+    },
+    {
+      "cell": "coast.mono",
+      "kind": "main",
+      "version": 12,
+      "sha256": "a43a50f80e8aafe61b8c447603aaceb3",
+      "lines": 1
+    },
+    {
+      "cell": "coast.places",
+      "kind": "const",
+      "version": 13,
+      "sha256": "cfaa7a0ea099fff5aeca55f054483f35",
+      "lines": 1
+    },
+    {
+      "cell": "coast.fixed",
+      "kind": "proc",
+      "version": 16,
+      "sha256": "1e9b4e917c05f793e82de9c098c90e3b",
+      "lines": 1
+    },
+    {
+      "cell": "coast.signed",
+      "kind": "proc",
+      "version": 17,
+      "sha256": "e36aec38caf88ed1fe7b69ce8dcdc636",
+      "lines": 1
+    },
+    {
+      "cell": "coast.homeSpan",
+      "kind": "proc",
+      "version": 20,
+      "sha256": "ee462e89644f361bdcae1308e3cf5b54",
+      "lines": 1
+    },
+    {
+      "cell": "coast.iterationsFor",
+      "kind": "proc",
+      "version": 21,
+      "sha256": "928dd66567562056a761b7281def429f",
+      "lines": 1
+    },
+    {
+      "cell": "coast.Coast",
+      "kind": "view",
+      "version": 287,
+      "sha256": "5ca387a4e97c23903e8bd59aee677fb2",
+      "lines": 1,
+      "view": {
+        "head": "Coast",
+        "components": []
+      }
+    },
+    {
+      "cell": "coast.rampSource",
+      "kind": "proc",
+      "version": 117,
+      "sha256": "829ff27799c2c976a942180ba62e820c",
+      "lines": 1
+    },
+    {
+      "cell": "coast.fieldSource",
+      "kind": "proc",
+      "version": 272,
+      "sha256": "c5ca0d9c6c6422799cf3a7e0af76e09b",
+      "lines": 1
+    },
+    {
+      "cell": "coast.drag",
+      "kind": "main",
+      "version": 275,
+      "sha256": "067161349bc8c730d891c1d6ac685366",
+      "lines": 1
+    },
+    {
+      "cell": "coast.downX",
+      "kind": "main",
+      "version": 276,
+      "sha256": "3c20389e3f64662c997883f5d24a35dd",
+      "lines": 1
+    },
+    {
+      "cell": "coast.downY",
+      "kind": "main",
+      "version": 277,
+      "sha256": "bc94a2752bcbe8b507ba2d3284265964",
+      "lines": 1
+    },
+    {
+      "cell": "coast.downCX",
+      "kind": "main",
+      "version": 278,
+      "sha256": "1388b6549795d6ad5a1f2aef5d0a4efc",
+      "lines": 1
+    },
+    {
+      "cell": "coast.downCY",
+      "kind": "main",
+      "version": 279,
+      "sha256": "94a96b37274eebad5b3b70cb4d3407e2",
+      "lines": 1
+    },
+    {
+      "cell": "coast.savedX",
+      "kind": "main",
+      "version": 280,
+      "sha256": "8b5d2af1cc464abb633b944288342ea0",
+      "lines": 1
+    },
+    {
+      "cell": "coast.savedY",
+      "kind": "main",
+      "version": 281,
+      "sha256": "42380dd90c074c9a23cdffd3e524b0c0",
+      "lines": 1
+    },
+    {
+      "cell": "coast.savedZoom",
+      "kind": "main",
+      "version": 282,
+      "sha256": "15390d8345332fb554f8fbfe86733ecc",
+      "lines": 1
+    },
+    {
+      "cell": "coast.savedPlace",
+      "kind": "main",
+      "version": 283,
+      "sha256": "7dc852669070f649e6e52cc9d5aa949e",
+      "lines": 1
+    },
+    {
+      "cell": "coast.heldCodes",
+      "kind": "main",
+      "version": 285,
+      "sha256": "2f7d1e880917770f632fefed5bd5b8f7",
+      "lines": 1
+    },
+    {
+      "cell": "coast.polledCodes",
+      "kind": "const",
+      "version": 286,
+      "sha256": "940475789565a5246761c7846e3b548e",
+      "lines": 1
+    }
+  ],
+  "records": [],
+  "views": [
+    "coast.Coast"
+  ]
+}

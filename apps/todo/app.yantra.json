@@ -1,0 +1,804 @@
+{
+  "$yantra": "2026.11",
+  "app": "y:@yantra/todo",
+  "name": "Todos",
+  "exported": {
+    "by": "tools/export-json.mjs",
+    "from": "apps/todo/app.wasm, instantiated and stepped 30 frame(s)",
+    "runner": "web/runner/runner.js",
+    "protocol": "v2",
+    "frames_stepped": 30,
+    "note": "L1 structured twin: nodes, parameters and the retained draw commands, read from the running module. Not executable on its own, and not restorable to the Nim source."
+  },
+  "window": {
+    "title": "Todo",
+    "width": null,
+    "height": null
+  },
+  "stats": {
+    "nodes": 62,
+    "layers": 0,
+    "layer_draw_calls": 0,
+    "draw_command_bytes": 0
+  },
+  "nodes": {
+    "n0": {
+      "kind": "WINDOW",
+      "text": "Todo",
+      "children": [
+        "n1"
+      ]
+    },
+    "n1": {
+      "kind": "COLUMN",
+      "parent": "n0",
+      "children": [
+        "n2"
+      ]
+    },
+    "n2": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 900,
+        "COLOR": -16053488,
+        "FLEXGROW": 1,
+        "ALIGNITEMS": 3
+      },
+      "parent": "n1",
+      "children": [
+        "n3",
+        "n30",
+        "n31"
+      ]
+    },
+    "n3": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 16,
+        "PADTOP": 24,
+        "PADRIGHT": 24,
+        "PADBOTTOM": 20,
+        "PADLEFT": 28,
+        "FLEXGROW": 1
+      },
+      "parent": "n2",
+      "children": [
+        "n4",
+        "n11",
+        "n14",
+        "n19",
+        "n26"
+      ]
+    },
+    "n4": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 14,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n3",
+      "children": [
+        "n5",
+        "n7",
+        "n10"
+      ]
+    },
+    "n5": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 46,
+        "HEIGHT": 46,
+        "COLOR": -10789898,
+        "RADIUS": 13,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1
+      },
+      "parent": "n4",
+      "children": [
+        "n6"
+      ]
+    },
+    "n6": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 22,
+        "TEXTCOLOR": -1,
+        "PATHDATA": "M20 6L9 17L4 12",
+        "STROKEWIDTH": 2.6
+      },
+      "parent": "n5"
+    },
+    "n7": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 3,
+        "FLEXGROW": 1
+      },
+      "parent": "n4",
+      "children": [
+        "n8",
+        "n9"
+      ]
+    },
+    "n8": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Todos",
+        "FONTSIZE": 28,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -723976
+      },
+      "text": "Todos",
+      "parent": "n7"
+    },
+    "n9": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "0 open · 0 done · 0 in all",
+        "FONTSIZE": 13,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "0 open · 0 done · 0 in all",
+      "parent": "n7"
+    },
+    "n10": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "2026-11-06",
+        "FONTSIZE": 12,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "2026-11-06",
+      "parent": "n4"
+    },
+    "n11": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 10
+      },
+      "parent": "n3",
+      "children": [
+        "n12",
+        "n13"
+      ]
+    },
+    "n12": {
+      "kind": "INPUT",
+      "params": {
+        "COLOR": -14935002,
+        "FONTSIZE": 15,
+        "PADTOP": 13,
+        "PADRIGHT": 14,
+        "PADBOTTOM": 13,
+        "PADLEFT": 14,
+        "RADIUS": 12,
+        "BORDERCOLOR": -13487554,
+        "BORDERWIDTH": 1,
+        "VALUE": "",
+        "PLACEHOLDER": "What needs doing?",
+        "FLEXGROW": 1,
+        "TEXTCOLOR": -723976
+      },
+      "parent": "n11"
+    },
+    "n13": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Add task",
+        "COLOR": -10789898,
+        "FONTSIZE": 14,
+        "PADTOP": 13,
+        "PADRIGHT": 20,
+        "PADBOTTOM": 13,
+        "PADLEFT": 20,
+        "RADIUS": 12,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -1
+      },
+      "text": "Add task",
+      "parent": "n11"
+    },
+    "n14": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 8,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n3",
+      "children": [
+        "n15",
+        "n16",
+        "n17",
+        "n18"
+      ]
+    },
+    "n15": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "All · 0",
+        "COLOR": -10789898,
+        "FONTSIZE": 13,
+        "PADTOP": 8,
+        "PADRIGHT": 14,
+        "PADBOTTOM": 8,
+        "PADLEFT": 14,
+        "RADIUS": 9,
+        "TEXTCOLOR": -1
+      },
+      "text": "All · 0",
+      "parent": "n14"
+    },
+    "n16": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Open · 0",
+        "COLOR": -14935002,
+        "FONTSIZE": 13,
+        "PADTOP": 8,
+        "PADRIGHT": 14,
+        "PADBOTTOM": 8,
+        "PADLEFT": 14,
+        "RADIUS": 9,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "Open · 0",
+      "parent": "n14"
+    },
+    "n17": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Done · 0",
+        "COLOR": -14935002,
+        "FONTSIZE": 13,
+        "PADTOP": 8,
+        "PADRIGHT": 14,
+        "PADBOTTOM": 8,
+        "PADLEFT": 14,
+        "RADIUS": 9,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "Done · 0",
+      "parent": "n14"
+    },
+    "n18": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "0 shown",
+        "FONTSIZE": 12,
+        "FLEXGROW": 1,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "0 shown",
+      "parent": "n14"
+    },
+    "n19": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 8,
+        "FLEXGROW": 1,
+        "SCROLLY": 0,
+        "SCROLL": 1
+      },
+      "parent": "n3",
+      "children": [
+        "n20"
+      ]
+    },
+    "n20": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 8,
+        "PADTOP": 26,
+        "PADBOTTOM": 20,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n19",
+      "children": [
+        "n21",
+        "n23",
+        "n24",
+        "n25"
+      ]
+    },
+    "n21": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 44,
+        "HEIGHT": 44,
+        "COLOR": -14935002,
+        "RADIUS": 22,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1
+      },
+      "parent": "n20",
+      "children": [
+        "n22"
+      ]
+    },
+    "n22": {
+      "kind": "PATH",
+      "params": {
+        "FONTSIZE": 18,
+        "TEXTCOLOR": -10789898,
+        "PATHDATA": "M20 6L9 17L4 12",
+        "STROKEWIDTH": 2.4
+      },
+      "parent": "n21"
+    },
+    "n23": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "A list with nothing on it yet",
+        "FONTSIZE": 20,
+        "ALIGN": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -723976
+      },
+      "text": "A list with nothing on it yet",
+      "parent": "n20"
+    },
+    "n24": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Type the first task in the field above and press Add task — it becomes a row you own, not a line in a file.",
+        "FONTSIZE": 13,
+        "ALIGN": 1,
+        "TEXTCOLOR": -7435110,
+        "LINEHEIGHT": 1.5,
+        "MAXLINES": 2
+      },
+      "text": "Type the first task in the field above and press Add task — it becomes a row you own, not a line in a file.",
+      "parent": "n20"
+    },
+    "n25": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Tab moves · Enter ticks a task · Ctrl+N is the field above",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "Tab moves · Enter ticks a task · Ctrl+N is the field above",
+      "parent": "n20"
+    },
+    "n26": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 7,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n3",
+      "children": [
+        "n27",
+        "n28",
+        "n29"
+      ]
+    },
+    "n27": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 6,
+        "HEIGHT": 6,
+        "COLOR": -13487554,
+        "RADIUS": 3
+      },
+      "parent": "n26"
+    },
+    "n28": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Every count on this page is a reading of the same rows.",
+        "FONTSIZE": 11,
+        "FLEXGROW": 1,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "Every count on this page is a reading of the same rows.",
+      "parent": "n26"
+    },
+    "n29": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "record Task  /  owner only",
+        "FONTSIZE": 10,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "record Task  /  owner only",
+      "parent": "n26"
+    },
+    "n30": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 1,
+        "COLOR": -13487554
+      },
+      "parent": "n2"
+    },
+    "n31": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 300,
+        "SPACING": 14,
+        "PADTOP": 24,
+        "PADRIGHT": 24,
+        "PADBOTTOM": 20
+      },
+      "parent": "n2",
+      "children": [
+        "n32",
+        "n44",
+        "n47",
+        "n61"
+      ]
+    },
+    "n32": {
+      "kind": "COLUMN",
+      "params": {
+        "COLOR": -15724521,
+        "SPACING": 10,
+        "PADTOP": 18,
+        "PADRIGHT": 18,
+        "PADBOTTOM": 18,
+        "PADLEFT": 18,
+        "RADIUS": 16,
+        "BORDERCOLOR": -13487554,
+        "BORDERWIDTH": 1
+      },
+      "parent": "n31",
+      "children": [
+        "n33",
+        "n34",
+        "n41",
+        "n43"
+      ]
+    },
+    "n33": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "YOUR LIST",
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "YOUR LIST",
+      "parent": "n32"
+    },
+    "n34": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 30
+      },
+      "parent": "n32",
+      "children": [
+        "n35",
+        "n38"
+      ]
+    },
+    "n35": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 2
+      },
+      "parent": "n34",
+      "children": [
+        "n36",
+        "n37"
+      ]
+    },
+    "n36": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "0",
+        "FONTSIZE": 32,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -723976
+      },
+      "text": "0",
+      "parent": "n35"
+    },
+    "n37": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "open",
+        "FONTSIZE": 12,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "open",
+      "parent": "n35"
+    },
+    "n38": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 2
+      },
+      "parent": "n34",
+      "children": [
+        "n39",
+        "n40"
+      ]
+    },
+    "n39": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "0",
+        "FONTSIZE": 32,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "0",
+      "parent": "n38"
+    },
+    "n40": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "done",
+        "FONTSIZE": 12,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "done",
+      "parent": "n38"
+    },
+    "n41": {
+      "kind": "PANEL",
+      "params": {
+        "HEIGHT": 6,
+        "COLOR": -14935002,
+        "RADIUS": 3
+      },
+      "parent": "n32",
+      "children": [
+        "n42"
+      ]
+    },
+    "n42": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 0,
+        "HEIGHT": 6,
+        "COLOR": -10789898,
+        "RADIUS": 3
+      },
+      "parent": "n41"
+    },
+    "n43": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "0% of the list is done",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "0% of the list is done",
+      "parent": "n32"
+    },
+    "n44": {
+      "kind": "COLUMN",
+      "params": {
+        "COLOR": -15724521,
+        "SPACING": 8,
+        "PADTOP": 18,
+        "PADRIGHT": 18,
+        "PADBOTTOM": 18,
+        "PADLEFT": 18,
+        "RADIUS": 16,
+        "BORDERCOLOR": -13487554,
+        "BORDERWIDTH": 1
+      },
+      "parent": "n31",
+      "children": [
+        "n45",
+        "n46"
+      ]
+    },
+    "n45": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "UP NEXT",
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "UP NEXT",
+      "parent": "n44"
+    },
+    "n46": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "All clear — nothing open.",
+        "FONTSIZE": 13,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "All clear — nothing open.",
+      "parent": "n44"
+    },
+    "n47": {
+      "kind": "COLUMN",
+      "params": {
+        "COLOR": -15724521,
+        "SPACING": 8,
+        "PADTOP": 18,
+        "PADRIGHT": 18,
+        "PADBOTTOM": 18,
+        "PADLEFT": 18,
+        "RADIUS": 16,
+        "BORDERCOLOR": -13487554,
+        "BORDERWIDTH": 1
+      },
+      "parent": "n31",
+      "children": [
+        "n48",
+        "n49",
+        "n53",
+        "n57"
+      ]
+    },
+    "n48": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "BY PRIORITY",
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "BY PRIORITY",
+      "parent": "n47"
+    },
+    "n49": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 9
+      },
+      "parent": "n47",
+      "children": [
+        "n50",
+        "n51",
+        "n52"
+      ]
+    },
+    "n50": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 8,
+        "HEIGHT": 8,
+        "COLOR": -19906,
+        "RADIUS": 4
+      },
+      "parent": "n49"
+    },
+    "n51": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "High priority",
+        "FONTSIZE": 13,
+        "FLEXGROW": 1,
+        "TEXTCOLOR": -723976
+      },
+      "text": "High priority",
+      "parent": "n49"
+    },
+    "n52": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "0",
+        "FONTSIZE": 13,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "0",
+      "parent": "n49"
+    },
+    "n53": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 9
+      },
+      "parent": "n47",
+      "children": [
+        "n54",
+        "n55",
+        "n56"
+      ]
+    },
+    "n54": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 8,
+        "HEIGHT": 8,
+        "COLOR": -10789898,
+        "RADIUS": 4
+      },
+      "parent": "n53"
+    },
+    "n55": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Normal",
+        "FONTSIZE": 13,
+        "FLEXGROW": 1,
+        "TEXTCOLOR": -723976
+      },
+      "text": "Normal",
+      "parent": "n53"
+    },
+    "n56": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "0",
+        "FONTSIZE": 13,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "0",
+      "parent": "n53"
+    },
+    "n57": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 9
+      },
+      "parent": "n47",
+      "children": [
+        "n58",
+        "n59",
+        "n60"
+      ]
+    },
+    "n58": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 8,
+        "HEIGHT": 8,
+        "COLOR": -13487554,
+        "RADIUS": 4
+      },
+      "parent": "n57"
+    },
+    "n59": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Later",
+        "FONTSIZE": 13,
+        "FLEXGROW": 1,
+        "TEXTCOLOR": -723976
+      },
+      "text": "Later",
+      "parent": "n57"
+    },
+    "n60": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "0",
+        "FONTSIZE": 13,
+        "TEXTCOLOR": -7435110
+      },
+      "text": "0",
+      "parent": "n57"
+    },
+    "n61": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Todos · written in Sutra, running on Yantra OS",
+        "FONTSIZE": 10,
+        "TEXTCOLOR": -7435110,
+        "LINEHEIGHT": 1.6,
+        "MAXLINES": 2
+      },
+      "text": "Todos · written in Sutra, running on Yantra OS",
+      "parent": "n31"
+    }
+  },
+  "provenance": {
+    "source": {
+      "path": "apps/todo/app.nim",
+      "lines": 342,
+      "bytes": 17049,
+      "sha256": "af471b0b97c0ab271587173d943fe6786a90f07b1a693757a74d3f2534ac1397"
+    },
+    "module": {
+      "path": "apps/todo/app.wasm",
+      "bytes": 247017,
+      "sha256": "3875315b2cb43bb0c3b2400c0e61ca853ee092bef29e5477168566a9aee94e7a"
+    },
+    "build": "./tools/build-wasm.sh apps/todo/app.nim apps/todo/app.wasm --release"
+  },
+  "verify": {
+    "command": "node tools/verify-wasm.mjs apps/todo",
+    "proves": "the module instantiates with no keys and no GPU, and builds a live UI tree",
+    "does_not_prove": "pixel equality against any reference render"
+  }
+}

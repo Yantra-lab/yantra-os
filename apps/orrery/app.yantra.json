@@ -1,0 +1,518 @@
+{
+  "$yantra": "2026.11",
+  "app": "y:@yantra/orrery",
+  "name": "Orrery",
+  "exported": {
+    "by": "tools/export-json.mjs",
+    "from": "apps/orrery/app.wasm, instantiated and stepped 30 frame(s)",
+    "runner": "web/runner/runner.js",
+    "protocol": "v2",
+    "frames_stepped": 30,
+    "note": "L1 structured twin: nodes, parameters and the retained draw commands, read from the running module. Not executable on its own, and not restorable to the Nim source."
+  },
+  "window": {
+    "title": "THE CLOCKMAKER'S ORRERY",
+    "width": 1400,
+    "height": 900,
+    "bg": "#F1E5C8"
+  },
+  "stats": {
+    "nodes": 29,
+    "layers": 1,
+    "layer_draw_calls": 1,
+    "draw_command_bytes": 67582
+  },
+  "nodes": {
+    "n0": {
+      "kind": "WINDOW",
+      "params": {
+        "WIDTH": 1400,
+        "HEIGHT": 900,
+        "COLOR": "#F1E5C8",
+        "GRADANGLE": -1
+      },
+      "text": "THE CLOCKMAKER'S ORRERY",
+      "children": [
+        "n1"
+      ]
+    },
+    "n1": {
+      "kind": "STACK",
+      "params": {
+        "WIDTH": 1400,
+        "HEIGHT": 900,
+        "COLOR": "#F1E5C8",
+        "GRADANGLE": -1
+      },
+      "parent": "n0",
+      "children": [
+        "n2",
+        "n3",
+        "n11"
+      ]
+    },
+    "n2": {
+      "kind": "CANVAS",
+      "params": {
+        "WIDTH": 1400,
+        "HEIGHT": 900
+      },
+      "parent": "n1",
+      "draw_bytes": 67582,
+      "draw_sha256": "6355c74ebf110b6ff36311d9308a40c145f0fbecfd818d3b4e972809344bfae3",
+      "draw": "Y 1 0.00 0.00 0.00 0.00;G 581.16 109.89 575.39 86.59 4281344791 1.10;G 572.84 99.63 569.75 88.04 3007722528 0.55;G 567.44 101.13 564.14 89.59 3007722528 0.55;G 562.07 102.71 558.56 91.24 3007722528 0.55;G 557.96 108.20 553.02 92.98 3007722528 0.55;G 551.41 106.17 547.50 94.83 3007722528 0.55;G 546.13 108.05 542.02 96.77 3007722528 0.55;G 540.88 110.01 536.57 98.81 3007722528 0.55;G 535.67 112.07 531.16 100.95 3007722528 0.55;G 532.07 117.90 525.79 103.18 3007722528 0.55;G 525.36 116.46 520.46 105.51 3007722528 0.55;G 520.27 118.79 515.18 107.93 3007722528 0.55;G 515.22 121.22 509.94 110.44 3007722528 0.55;G 510.22 123.73 504.74 113.05 3007722528 0.55;G 507.15 129.85 499.60 115.75 3007722528 0.55;G 500.35 129.01 494.50 118.54 3007722528 0.55;G 495.49 131.79 489.45 121.42 3007722528 0.55;G 490.68 134.65 484.46 124.38 3007722528 0.55;G 485.92 137.59 479.52 127.44 3007722528 0.55;G 483.41 143.96 474.64 130.58 3007722528 0.55;G 476.57 143.72 469.81 133.81 3007722528 0.55;G 471.98 146.91 465.05 137.12 3007722528 0.55;G 467.45 150.18 460.34 140.51 3007722528 0.55;G 462.98 153.53 455.70 143.99 3007722528 0.55;G 461.05 160.10 451.12 147.55 3007722528 0.55;G 454.21 160.46 446.60 151.18 3007722528 0.55;G 449.93 164.04 442.16 154.90 3007722528 0.55;G 445.71 167.69 437.78 158.69 3007722528 0.55;G 441.59 171.39 433.49 162.53 3007722528 0.55;G 440.39 177.97 429.40 166.34 3007722528 0.55;G 434.37 178.20 426.00 169.59 3007722528 0.55;G 437.03 192.50 419.84 175.75 4281344791 1.10;G 425.44 187.24 416.73 178.98 3007722528 0.55;G 421.80 191.15 412.95 183.04 3007722528 0.55;G 418.10 195.25 409.11 187.30 3007722528 0.55;G 417.49 202.05 405.32 191.66 3007722528 0.55;G 410.87 203.71 401.61 196.08 3007722528 0.55;G 407.37 208.04 397.98 200.57 3007722528 0.55;G 403.95 212.42 394.43 205.12 3007722528 0.55;G 400.61 216.86 390.96 209.73 3007722528 0.55;G 400.63 223.65 387.59 214.38 3007722528 0.55;G 394.29 225.75 384.39 218.96 3007722528 0.55;G 391.71 229.57 381.71 222.92 3007722528 0.55;G 387.14 236.64 376.97 230.26 3007722528 0.55;G 384.96 240.17 374.71 233.93 3007722528 0.55;G 385.70 246.73 371.89 238.64 3007722528 0.55;G 379.51 249.47 369.05 243.59 3007722528 0.55;G 376.83 254.32 366.28 248.62 3007722528 0.55;G 374.25 259.21 363.59 253.70 3007722528 0.55;G 371.74 264.15 360.99 258.83 3007722528 0.55;G 372.95 270.85 358.49 264.00 3007722528 0.55;G 367.01 274.15 356.07 269.21 3007722528 0.55;G 364.77 279.21 353.75 274.46 3007722528 0.55;G 362.63 284.30 351.53 279.74 3007722528 0.55;G 360.57 289.43 349.40 285.07 3007722528 0.55;G 362.36 295.98 347.36 290.42 3007722528 0.55;G 356.74 299.78 345.42 295.81 3007722528 0.55;G 354.96 305.00 343.57 301.23 3007722528 0.55;G 353.27 310.25 341.82 306.68 3007722528 0.55;G 363.20 318.89 340.16 312.15 4281344791 1.10;G 350.18 320.82 338.61 317.65 3007722528 0.55;G 348.77 326.14 337.15 323.18 3007722528 0.55;G 347.46 331.49 335.78 328.72 3007722528 0.55;G 350.15 337.70 334.52 334.29 3007722528 0.55;G 345.12 342.23 333.35 339.87 3007722528 0.55;G 344.09 347.62 332.28 345.47 3007722528 0.55;G 343.15 353.03 331.31 351.09 3007722528 0.55;G 342.31 358.45 330.44 356.72 3007722528 0.55;G 345.53 364.39 329.66 362.36 3007722528 0.55;G 340.91 369.33 328.99 368.00 3007722528 0.55;G 340.36 374.77 328.41 373.66 3007722528 0.55;G 339.90 380.23 327.93 379.32 3007722528 0.55;G 339.53 385.69 327.55 384.99 3007722528 0.55;G 343.26 391.31 327.27 390.66 3007722528 0.55;G 339.09 396.61 327.09 396.33 3007722528 0.55;G 339.01 402.07 327.01 402.00 3007722528 0.55;G 339.02 407.53 327.02 407.67 3007722528 0.55;G 339.13 412.99 327.13 413.33 3007722528 0.55;G 343.33 418.25 327.34 418.99 3007722528 0.55;G 339.63 423.88 327.65 424.64 3007722528 0.55;G 340.02 429.31 328.06 430.28 3007722528 0.55;G 340.50 434.73 328.56 435.90 3007722528 0.55;G 341.08 440.14 329.16 441.52 3007722528 0.55;G 345.72 445.01 329.86 447.12 3007722528 0.55;G 342.51 450.92 330.65 452.71 3007722528 0.55;G 343.37 456.28 331.54 458.27 3007722528 0.55;G 344.32 461.63 332.52 463.82…",
+      "draw_truncated": true
+    },
+    "n3": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 8,
+        "ABSOLUTE": 1,
+        "INSETTOP": 792,
+        "INSETLEFT": 22
+      },
+      "parent": "n1",
+      "children": [
+        "n4",
+        "n5",
+        "n6",
+        "n7",
+        "n8",
+        "n9",
+        "n10"
+      ]
+    },
+    "n4": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "HALT",
+        "WIDTH": 104,
+        "HEIGHT": 42,
+        "COLOR": "#F1E5C8",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#77500D",
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#302317",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans",
+        "HOVERFILL": "#E4D2A6",
+        "PRESSFILL": "#D6C293",
+        "FOCUSBORDER": 9516317
+      },
+      "text": "HALT",
+      "parent": "n3"
+    },
+    "n5": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "1 DAY / S",
+        "WIDTH": 128,
+        "HEIGHT": 42,
+        "COLOR": "#FFE29A",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#77500D",
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#302317",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans",
+        "HOVERFILL": "#E4D2A6",
+        "PRESSFILL": "#D6C293",
+        "FOCUSBORDER": 9516317
+      },
+      "text": "1 DAY / S",
+      "parent": "n3"
+    },
+    "n6": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "1 MONTH / S",
+        "WIDTH": 150,
+        "HEIGHT": 42,
+        "COLOR": "#F1E5C8",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#77500D",
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#302317",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans",
+        "HOVERFILL": "#E4D2A6",
+        "PRESSFILL": "#D6C293",
+        "FOCUSBORDER": 9516317
+      },
+      "text": "1 MONTH / S",
+      "parent": "n3"
+    },
+    "n7": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "1 YEAR / S",
+        "WIDTH": 138,
+        "HEIGHT": 42,
+        "COLOR": "#F1E5C8",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#77500D",
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#302317",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans",
+        "HOVERFILL": "#E4D2A6",
+        "PRESSFILL": "#D6C293",
+        "FOCUSBORDER": 9516317
+      },
+      "text": "1 YEAR / S",
+      "parent": "n3"
+    },
+    "n8": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "- 7 DAYS",
+        "WIDTH": 124,
+        "HEIGHT": 42,
+        "COLOR": "#F1E5C8",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#77500D",
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#302317",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans",
+        "HOVERFILL": "#E4D2A6",
+        "PRESSFILL": "#D6C293",
+        "FOCUSBORDER": 9516317
+      },
+      "text": "- 7 DAYS",
+      "parent": "n3"
+    },
+    "n9": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "+ 7 DAYS",
+        "WIDTH": 124,
+        "HEIGHT": 42,
+        "COLOR": "#F1E5C8",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#77500D",
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#302317",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans",
+        "HOVERFILL": "#E4D2A6",
+        "PRESSFILL": "#D6C293",
+        "FOCUSBORDER": 9516317
+      },
+      "text": "+ 7 DAYS",
+      "parent": "n3"
+    },
+    "n10": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "1774 EPOCH",
+        "WIDTH": 138,
+        "HEIGHT": 42,
+        "COLOR": "#231A13",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#CC9635",
+        "BORDERWIDTH": 2,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#FFE29A",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans",
+        "HOVERFILL": "#2E2419",
+        "PRESSFILL": "#392C1E",
+        "FOCUSBORDER": 16769690
+      },
+      "text": "1774 EPOCH",
+      "parent": "n3"
+    },
+    "n11": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 8,
+        "ABSOLUTE": 1,
+        "INSETTOP": 844,
+        "INSETLEFT": 22
+      },
+      "parent": "n1",
+      "children": [
+        "n12"
+      ]
+    },
+    "n12": {
+      "kind": "GROUP",
+      "parent": "n11",
+      "children": [
+        "n13",
+        "n15",
+        "n17",
+        "n19",
+        "n21",
+        "n23",
+        "n25",
+        "n27"
+      ]
+    },
+    "n13": {
+      "kind": "GROUP",
+      "parent": "n12",
+      "children": [
+        "n14"
+      ]
+    },
+    "n14": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "MERCURY",
+        "WIDTH": 116,
+        "HEIGHT": 39,
+        "COLOR": "#E7D3AA",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#77500D",
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#302317",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans",
+        "HOVERFILL": "#E4D2A6",
+        "PRESSFILL": "#D6C293",
+        "FOCUSBORDER": 9516317
+      },
+      "text": "MERCURY",
+      "parent": "n13"
+    },
+    "n15": {
+      "kind": "GROUP",
+      "parent": "n12",
+      "children": [
+        "n16"
+      ]
+    },
+    "n16": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "VENUS",
+        "WIDTH": 116,
+        "HEIGHT": 39,
+        "COLOR": "#E7D3AA",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#77500D",
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#302317",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans",
+        "HOVERFILL": "#E4D2A6",
+        "PRESSFILL": "#D6C293",
+        "FOCUSBORDER": 9516317
+      },
+      "text": "VENUS",
+      "parent": "n15"
+    },
+    "n17": {
+      "kind": "GROUP",
+      "parent": "n12",
+      "children": [
+        "n18"
+      ]
+    },
+    "n18": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "EARTH",
+        "WIDTH": 116,
+        "HEIGHT": 39,
+        "COLOR": "#FFE29A",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#91351D",
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#302317",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans",
+        "HOVERFILL": "#E4D2A6",
+        "PRESSFILL": "#D6C293",
+        "FOCUSBORDER": 9516317
+      },
+      "text": "EARTH",
+      "parent": "n17"
+    },
+    "n19": {
+      "kind": "GROUP",
+      "parent": "n12",
+      "children": [
+        "n20"
+      ]
+    },
+    "n20": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "MARS",
+        "WIDTH": 116,
+        "HEIGHT": 39,
+        "COLOR": "#E7D3AA",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#77500D",
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#302317",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans",
+        "HOVERFILL": "#E4D2A6",
+        "PRESSFILL": "#D6C293",
+        "FOCUSBORDER": 9516317
+      },
+      "text": "MARS",
+      "parent": "n19"
+    },
+    "n21": {
+      "kind": "GROUP",
+      "parent": "n12",
+      "children": [
+        "n22"
+      ]
+    },
+    "n22": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "JUPITER",
+        "WIDTH": 116,
+        "HEIGHT": 39,
+        "COLOR": "#E7D3AA",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#77500D",
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#302317",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans",
+        "HOVERFILL": "#E4D2A6",
+        "PRESSFILL": "#D6C293",
+        "FOCUSBORDER": 9516317
+      },
+      "text": "JUPITER",
+      "parent": "n21"
+    },
+    "n23": {
+      "kind": "GROUP",
+      "parent": "n12",
+      "children": [
+        "n24"
+      ]
+    },
+    "n24": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "SATURN",
+        "WIDTH": 116,
+        "HEIGHT": 39,
+        "COLOR": "#E7D3AA",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#77500D",
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#302317",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans",
+        "HOVERFILL": "#E4D2A6",
+        "PRESSFILL": "#D6C293",
+        "FOCUSBORDER": 9516317
+      },
+      "text": "SATURN",
+      "parent": "n23"
+    },
+    "n25": {
+      "kind": "GROUP",
+      "parent": "n12",
+      "children": [
+        "n26"
+      ]
+    },
+    "n26": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "URANUS",
+        "WIDTH": 116,
+        "HEIGHT": 39,
+        "COLOR": "#E7D3AA",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#77500D",
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#302317",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans",
+        "HOVERFILL": "#E4D2A6",
+        "PRESSFILL": "#D6C293",
+        "FOCUSBORDER": 9516317
+      },
+      "text": "URANUS",
+      "parent": "n25"
+    },
+    "n27": {
+      "kind": "GROUP",
+      "parent": "n12",
+      "children": [
+        "n28"
+      ]
+    },
+    "n28": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "NEPTUNE",
+        "WIDTH": 116,
+        "HEIGHT": 39,
+        "COLOR": "#E7D3AA",
+        "FONTSIZE": 11,
+        "RADIUS": 10,
+        "BORDERCOLOR": "#77500D",
+        "BORDERWIDTH": 1,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": "#302317",
+        "GRADANGLE": -1,
+        "FONTFAMILY": "DejaVu Sans",
+        "HOVERFILL": "#E4D2A6",
+        "PRESSFILL": "#D6C293",
+        "FOCUSBORDER": 9516317
+      },
+      "text": "NEPTUNE",
+      "parent": "n27"
+    }
+  },
+  "provenance": {
+    "source": {
+      "path": "apps/orrery/app.nim",
+      "lines": 697,
+      "bytes": 31811,
+      "sha256": "21efdb8e2b0b30db28dade72f68c2d39cbd2c86148a829162e8bdf8f8baa3fca"
+    },
+    "module": {
+      "path": "apps/orrery/app.wasm",
+      "bytes": 183408,
+      "sha256": "5cb7072a20fd22b7140b9d850bf7949120275443b1cc9b507855ef6ac37f622f"
+    },
+    "build": "./tools/build-wasm.sh apps/orrery/app.nim apps/orrery/app.wasm --release"
+  },
+  "verify": {
+    "command": "node tools/verify-wasm.mjs apps/orrery",
+    "proves": "the module instantiates with no keys and no GPU, and builds a live UI tree",
+    "does_not_prove": "pixel equality against any reference render"
+  }
+}

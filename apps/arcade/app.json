@@ -1,0 +1,34 @@
+{
+  "id": "arcade",
+  "name": "Neon Breaker",
+  "icon": "N",
+  "tint": "#35E7FF",
+  "grants": [],
+  "window": {
+    "title": "Neon Breaker",
+    "width": 1280,
+    "height": 816,
+    "bg": "#05070E"
+  },
+  "module": {
+    "path": "apps/arcade/app.wasm",
+    "bytes": 193852,
+    "sha256": "74e498d98729dfcbb910d9bbb2012eb861b72fb633370a6d0b1aef926f649749"
+  },
+  "source": {
+    "path": "apps/arcade/app.nim",
+    "lines": 594,
+    "bytes": 20852,
+    "sha256": "c755e20b801ee8d7cd0f1f00a3bf2ac9450027ed4ab46f38d1004d0371f6d044"
+  },
+  "nodes": 24,
+  "document": "app.yantra.json",
+  "proof": {
+    "path": "proofs/arcade.png",
+    "width": 1280,
+    "height": 816,
+    "bytes": 45746,
+    "sha256": "b4c97c46205608ee02c4c0bf27fb445c39872e66f5392ce7e2af084ce3426a5b"
+  },
+  "generated": "render/native/t_arcade_native --export"
+}

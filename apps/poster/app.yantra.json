@@ -1,0 +1,309 @@
+{
+  "$yantra": "unpinned (newest vocabulary)",
+  "app": "y:@poster-export-test/poster.Poster",
+  "language": "Sutra",
+  "window": {
+    "w": 1280,
+    "h": 960
+  },
+  "build": {
+    "target": "wasm32",
+    "bytes": 313116,
+    "sha256": "6779633c7d76284d8db60eff8e90d9b6f6f7b927d51854ab504e38da4f7a21ec",
+    "stripped": true
+  },
+  "proof": {
+    "png": "poster-export-final.png",
+    "bytes": 111502
+  },
+  "cells": [
+    {
+      "cell": "poster.SheetW",
+      "kind": "main",
+      "version": 22,
+      "sha256": "12a96a422640bb013da2ec8dfe635238",
+      "lines": 1
+    },
+    {
+      "cell": "poster.studio",
+      "kind": "main",
+      "version": 23,
+      "sha256": "da9ba0c78cdab38794cfea9a531e5ebb",
+      "lines": 1
+    },
+    {
+      "cell": "poster.Chance",
+      "kind": "type",
+      "version": 24,
+      "sha256": "c6e1272c286786f6d8a799c6f8ef9725",
+      "lines": 1
+    },
+    {
+      "cell": "poster.chance",
+      "kind": "proc",
+      "version": 25,
+      "sha256": "7cb5c3fba78d76c6f46d92290dbc6420",
+      "lines": 1
+    },
+    {
+      "cell": "poster.next",
+      "kind": "proc",
+      "version": 26,
+      "sha256": "1ee9da3e07d0268f807dda8ee7de993f",
+      "lines": 1
+    },
+    {
+      "cell": "poster.pick",
+      "kind": "proc",
+      "version": 27,
+      "sha256": "4174b5b2d6e88b9667b235232ec756ae",
+      "lines": 1
+    },
+    {
+      "cell": "poster.padded",
+      "kind": "proc",
+      "version": 28,
+      "sha256": "338884c08ba60176d6d65279f9fadc26",
+      "lines": 1
+    },
+    {
+      "cell": "poster.editionLine",
+      "kind": "proc",
+      "version": 29,
+      "sha256": "9ae8d8e5dc4596e6af443bffb114f7a0",
+      "lines": 1
+    },
+    {
+      "cell": "poster.fit",
+      "kind": "proc",
+      "version": 30,
+      "sha256": "4b14b51bf653368606a5efdfe6a2b3bf",
+      "lines": 1
+    },
+    {
+      "cell": "poster.argb",
+      "kind": "proc",
+      "version": 31,
+      "sha256": "48b45c3981873e5b345e9fdff83eff96",
+      "lines": 1
+    },
+    {
+      "cell": "poster.inkAlpha",
+      "kind": "proc",
+      "version": 32,
+      "sha256": "fafd14437d84368b03c46396d2ca3adb",
+      "lines": 1
+    },
+    {
+      "cell": "poster.paperOf",
+      "kind": "proc",
+      "version": 33,
+      "sha256": "6fa7d51d07698d63aa5ad6c8095174fd",
+      "lines": 1
+    },
+    {
+      "cell": "poster.inkOf",
+      "kind": "proc",
+      "version": 34,
+      "sha256": "ac782e1d5bf1474eddd0340ba9fc2fac",
+      "lines": 1
+    },
+    {
+      "cell": "poster.accentOf",
+      "kind": "proc",
+      "version": 35,
+      "sha256": "d59285ebdd459a46b4a2090b28ca2ad4",
+      "lines": 1
+    },
+    {
+      "cell": "poster.paletteName",
+      "kind": "proc",
+      "version": 36,
+      "sha256": "f9c8708e979750075bad29036a85014f",
+      "lines": 1
+    },
+    {
+      "cell": "poster.motifName",
+      "kind": "proc",
+      "version": 37,
+      "sha256": "7f9c135d3148a5c0f762722bcbc72c76",
+      "lines": 1
+    },
+    {
+      "cell": "poster.layoutName",
+      "kind": "proc",
+      "version": 38,
+      "sha256": "47df8311cfd27c765dfbe800a8ee927d",
+      "lines": 1
+    },
+    {
+      "cell": "poster.words",
+      "kind": "proc",
+      "version": 39,
+      "sha256": "a6028b6e293da2c28d5561f2297bb43c",
+      "lines": 1
+    },
+    {
+      "cell": "poster.gx",
+      "kind": "proc",
+      "version": 40,
+      "sha256": "0aaab26f60e738051a1e2b59563daa5d",
+      "lines": 1
+    },
+    {
+      "cell": "poster.gy",
+      "kind": "proc",
+      "version": 41,
+      "sha256": "9b6c0090d177a1d829c9436e5091a641",
+      "lines": 1
+    },
+    {
+      "cell": "poster.mirrorX",
+      "kind": "proc",
+      "version": 42,
+      "sha256": "7f4d9a3468415bc710903a7d6e68cd5a",
+      "lines": 1
+    },
+    {
+      "cell": "poster.txt",
+      "kind": "proc",
+      "version": 43,
+      "sha256": "de03be1588211fedab25bdba14c572d9",
+      "lines": 1
+    },
+    {
+      "cell": "poster.micro",
+      "kind": "proc",
+      "version": 44,
+      "sha256": "214c095a62614408a7b6aae177b66c84",
+      "lines": 1
+    },
+    {
+      "cell": "poster.bigWord",
+      "kind": "proc",
+      "version": 45,
+      "sha256": "359b453e2ed927e94b5795eda579e48c",
+      "lines": 1
+    },
+    {
+      "cell": "poster.quarter",
+      "kind": "proc",
+      "version": 46,
+      "sha256": "a4d62bfa4ecbe47a890d0ad10b496721",
+      "lines": 1
+    },
+    {
+      "cell": "poster.editionFurniture",
+      "kind": "proc",
+      "version": 47,
+      "sha256": "411bf622c61ade72383f0f27e6eded4b",
+      "lines": 1
+    },
+    {
+      "cell": "poster.motifZahl",
+      "kind": "proc",
+      "version": 48,
+      "sha256": "b9c54741defa015cbca4a511f5795ee1",
+      "lines": 1
+    },
+    {
+      "cell": "poster.motifLanguages",
+      "kind": "proc",
+      "version": 49,
+      "sha256": "4f3a3eaba60e9f6e32de1c6c1df34789",
+      "lines": 1
+    },
+    {
+      "cell": "poster.motifArcs",
+      "kind": "proc",
+      "version": 50,
+      "sha256": "d233e7c9101214b62fff99698c4720bb",
+      "lines": 1
+    },
+    {
+      "cell": "poster.motifCircle",
+      "kind": "proc",
+      "version": 51,
+      "sha256": "9bb3664711a37120e8a5b2dc2fabcd7d",
+      "lines": 1
+    },
+    {
+      "cell": "poster.motifBars",
+      "kind": "proc",
+      "version": 52,
+      "sha256": "6fa7468b4d60b48df1c69c2c612be179",
+      "lines": 1
+    },
+    {
+      "cell": "poster.motifField",
+      "kind": "proc",
+      "version": 53,
+      "sha256": "50db70a78358b2bcd2c72e5be7665d07",
+      "lines": 1
+    },
+    {
+      "cell": "poster.motifDiagonal",
+      "kind": "proc",
+      "version": 54,
+      "sha256": "8a5ed975fb42d56ff3b7cd25ce051ad4",
+      "lines": 1
+    },
+    {
+      "cell": "poster.posterDraw",
+      "kind": "proc",
+      "version": 55,
+      "sha256": "f4f755f0d21cd822f7452acf96856a9a",
+      "lines": 1
+    },
+    {
+      "cell": "poster.posterCommands",
+      "kind": "proc",
+      "version": 56,
+      "sha256": "a12ef635a4c88d656049e9997d88fe45",
+      "lines": 1
+    },
+    {
+      "cell": "poster.selected",
+      "kind": "proc",
+      "version": 57,
+      "sha256": "7021bd95e0017cb3f0a95b44567bf194",
+      "lines": 1
+    },
+    {
+      "cell": "poster.selectedInk",
+      "kind": "proc",
+      "version": 58,
+      "sha256": "5af937715b72e600a1011681c5dfb6ea",
+      "lines": 1
+    },
+    {
+      "cell": "poster.motifFor",
+      "kind": "proc",
+      "version": 59,
+      "sha256": "e62b30ee99f009f2f43458e6c345a13b",
+      "lines": 1
+    },
+    {
+      "cell": "poster.applyEdition",
+      "kind": "proc",
+      "version": 60,
+      "sha256": "44d255bf931e543ef547365b8ce979b8",
+      "lines": 1
+    },
+    {
+      "cell": "poster.Poster",
+      "kind": "view",
+      "version": 61,
+      "sha256": "404fb7965c50ea9c7123a4732e6d02ca",
+      "lines": 1,
+      "view": {
+        "head": "Poster",
+        "components": []
+      }
+    }
+  ],
+  "records": [],
+  "views": [
+    "poster.Poster"
+  ]
+}

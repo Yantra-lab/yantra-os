@@ -1,0 +1,12 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yantra</title>
+<style>html,body{margin:0;height:100%;background:#0b0b10}canvas{display:block;width:100vw;height:100vh;outline:none}</style>
+<canvas id="c"></canvas>
+<script type="module">
+  // The Yantra engine itself, built for the browser (tools/build-web.sh). ?app=counter opens build/apps/counter.wasm
+  const {runYantra} = await import('./yantra.js?' + Date.now());   // always the latest build
+  const app = new URLSearchParams(location.search).get('app') || 'counter';
+  window.yantra = await runYantra(document.getElementById('c'), 'build/apps/' + app + '.wasm');
+</script>

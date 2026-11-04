@@ -1,0 +1,21 @@
+{
+  "$yantra": "2026.11",
+  "app": "y:@yantra/chess",
+  "name": "Grandmaster's Study",
+  "export_failed": "wasm://wasm/00128a8e:1 |  | ",
+  "nodes": {},
+  "provenance": {
+    "source": {
+      "path": "apps/chess/app.nim",
+      "lines": 649,
+      "bytes": 26865,
+      "sha256": "6b5362d6a8100548bdcfa81704dd25462c3dfe548bcbecdbd45a88a207576796"
+    },
+    "module": {
+      "path": "apps/chess/app.wasm",
+      "bytes": 303779,
+      "sha256": "36a3a68f44de2ab69cfe5680f74d7ef7fb58734c424b6afef93711bf8f12d432"
+    }
+  },
+  "note": "This module traps in the host, so nothing was read from it. The document records the module it failed on, not a tree."
+}

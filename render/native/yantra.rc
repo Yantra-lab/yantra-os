@@ -1,0 +1,2 @@
+// Yantra OS exe icon + version stamp (built by tools/make-icon.mjs + windres).
+1 ICON "yantra.ico"

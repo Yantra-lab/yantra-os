@@ -1,0 +1,27 @@
+{
+  "id": "desktop",
+  "name": "Desktop",
+  "icon": "D",
+  "tint": "#0A84FF",
+  "grants": [],
+  "window": {
+    "title": "Yantra",
+    "width": 1280,
+    "height": 800,
+    "bg": "#0C0E14"
+  },
+  "module": {
+    "path": "apps/desktop/app.wasm",
+    "bytes": 817042,
+    "sha256": "fbcd44f6a5894c56b04907c7eeb377a3f3ba656a19357d19cb0205d8f732d03d"
+  },
+  "source": {
+    "path": "apps/desktop/app.nim",
+    "lines": 2388,
+    "bytes": 116862,
+    "sha256": "7af9646345ef758b954b1a21903c5ea41aeabdec0cc491f879617a15ee84dee8"
+  },
+  "nodes": 242,
+  "document": "app.yantra.json",
+  "generated": "tools/export-json.mjs"
+}

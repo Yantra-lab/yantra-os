@@ -1,0 +1,6752 @@
+{
+  "$yantra": "2026.11",
+  "app": "y:@yantra/editor",
+  "name": "Yantra Studio IDE",
+  "exported": {
+    "by": "tools/export-json.mjs",
+    "from": "apps/editor/app.wasm, instantiated and stepped 30 frame(s)",
+    "runner": "web/runner/runner.js",
+    "protocol": "v2",
+    "frames_stepped": 30,
+    "note": "L1 structured twin: nodes, parameters and the retained draw commands, read from the running module. Not executable on its own, and not restorable to the Nim source."
+  },
+  "window": {
+    "title": "Editor",
+    "width": null,
+    "height": null
+  },
+  "stats": {
+    "nodes": 512,
+    "layers": 0,
+    "layer_draw_calls": 0,
+    "draw_command_bytes": 0
+  },
+  "nodes": {
+    "n0": {
+      "kind": "WINDOW",
+      "text": "Editor",
+      "children": [
+        "n1"
+      ]
+    },
+    "n1": {
+      "kind": "COLUMN",
+      "parent": "n0",
+      "children": [
+        "n2"
+      ]
+    },
+    "n2": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 1280,
+        "HEIGHT": 816,
+        "COLOR": -16052192
+      },
+      "parent": "n1",
+      "children": [
+        "n3",
+        "n19",
+        "n20",
+        "n504"
+      ]
+    },
+    "n3": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 58,
+        "COLOR": -15854298,
+        "SPACING": 12,
+        "PADRIGHT": 20,
+        "PADLEFT": 20,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n2",
+      "children": [
+        "n4",
+        "n6",
+        "n9",
+        "n10",
+        "n13",
+        "n14",
+        "n15",
+        "n16",
+        "n17",
+        "n18"
+      ]
+    },
+    "n4": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 34,
+        "HEIGHT": 34,
+        "COLOR": -14669237,
+        "RADIUS": 9,
+        "ALIGNITEMS": 1,
+        "JUSTIFY": 1
+      },
+      "parent": "n3",
+      "children": [
+        "n5"
+      ]
+    },
+    "n5": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Y",
+        "FONTSIZE": 17,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -3682817,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Y",
+      "parent": "n4"
+    },
+    "n6": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 1
+      },
+      "parent": "n3",
+      "children": [
+        "n7",
+        "n8"
+      ]
+    },
+    "n7": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "YANTRA",
+        "FONTSIZE": 14,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "YANTRA",
+      "parent": "n6"
+    },
+    "n8": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "CODE STUDIO",
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -3682817,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "CODE STUDIO",
+      "parent": "n6"
+    },
+    "n9": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 1,
+        "HEIGHT": 28,
+        "COLOR": -14076595
+      },
+      "parent": "n3"
+    },
+    "n10": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 2,
+        "PADLEFT": 2
+      },
+      "parent": "n3",
+      "children": [
+        "n11",
+        "n12"
+      ]
+    },
+    "n11": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "WORKSPACE",
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "WORKSPACE",
+      "parent": "n10"
+    },
+    "n12": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "editor / documents",
+        "FONTSIZE": 13,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "editor / documents",
+      "parent": "n10"
+    },
+    "n13": {
+      "kind": "SPACER",
+      "params": {
+        "FLEXGROW": 1
+      },
+      "parent": "n3"
+    },
+    "n14": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Command",
+        "COLOR": -15195592,
+        "FONTSIZE": 12,
+        "PADTOP": 9,
+        "PADRIGHT": 13,
+        "PADBOTTOM": 9,
+        "PADLEFT": 13,
+        "RADIUS": 8,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Command",
+      "parent": "n3"
+    },
+    "n15": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Comment",
+        "COLOR": -15195592,
+        "FONTSIZE": 12,
+        "PADTOP": 9,
+        "PADRIGHT": 13,
+        "PADBOTTOM": 9,
+        "PADLEFT": 13,
+        "RADIUS": 8,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Comment",
+      "parent": "n3"
+    },
+    "n16": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Revert",
+        "COLOR": -15195592,
+        "FONTSIZE": 12,
+        "PADTOP": 9,
+        "PADRIGHT": 13,
+        "PADBOTTOM": 9,
+        "PADLEFT": 13,
+        "RADIUS": 8,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Revert",
+      "parent": "n3"
+    },
+    "n17": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Build",
+        "COLOR": -15195592,
+        "FONTSIZE": 12,
+        "PADTOP": 9,
+        "PADRIGHT": 15,
+        "PADBOTTOM": 9,
+        "PADLEFT": 15,
+        "RADIUS": 8,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -3682817,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Build",
+      "parent": "n3"
+    },
+    "n18": {
+      "kind": "BUTTON",
+      "params": {
+        "TEXT": "Save",
+        "COLOR": -7168776,
+        "FONTSIZE": 12,
+        "PADTOP": 9,
+        "PADRIGHT": 17,
+        "PADBOTTOM": 9,
+        "PADLEFT": 17,
+        "RADIUS": 8,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -15723483,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Save",
+      "parent": "n3"
+    },
+    "n19": {
+      "kind": "PANEL",
+      "params": {
+        "HEIGHT": 1,
+        "COLOR": -14076595
+      },
+      "parent": "n2"
+    },
+    "n20": {
+      "kind": "ROW",
+      "params": {
+        "FLEXGROW": 1,
+        "ALIGNITEMS": 3
+      },
+      "parent": "n2",
+      "children": [
+        "n21",
+        "n49"
+      ]
+    },
+    "n21": {
+      "kind": "COLUMN",
+      "params": {
+        "WIDTH": 242,
+        "COLOR": -15854298,
+        "SPACING": 12,
+        "PADTOP": 18,
+        "PADRIGHT": 14,
+        "PADBOTTOM": 16,
+        "PADLEFT": 14
+      },
+      "parent": "n20",
+      "children": [
+        "n22",
+        "n26",
+        "n27",
+        "n31",
+        "n44",
+        "n45"
+      ]
+    },
+    "n22": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 20,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n21",
+      "children": [
+        "n23",
+        "n24",
+        "n25"
+      ]
+    },
+    "n23": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "EXPLORER",
+        "FONTSIZE": 12,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "EXPLORER",
+      "parent": "n22"
+    },
+    "n24": {
+      "kind": "SPACER",
+      "params": {
+        "FLEXGROW": 1
+      },
+      "parent": "n22"
+    },
+    "n25": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "3",
+        "FONTSIZE": 12,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "3",
+      "parent": "n22"
+    },
+    "n26": {
+      "kind": "INPUT",
+      "params": {
+        "COLOR": -15195592,
+        "FONTSIZE": 13,
+        "PADTOP": 10,
+        "PADRIGHT": 10,
+        "PADBOTTOM": 10,
+        "PADLEFT": 10,
+        "RADIUS": 8,
+        "BORDERCOLOR": -14076595,
+        "BORDERWIDTH": 1,
+        "VALUE": "",
+        "PLACEHOLDER": "Search files",
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "parent": "n21"
+    },
+    "n27": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 18,
+        "PADTOP": 3,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n21",
+      "children": [
+        "n28",
+        "n29",
+        "n30"
+      ]
+    },
+    "n28": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "DOCUMENTS",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "DOCUMENTS",
+      "parent": "n27"
+    },
+    "n29": {
+      "kind": "SPACER",
+      "params": {
+        "FLEXGROW": 1
+      },
+      "parent": "n27"
+    },
+    "n30": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "3 sheets",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "3 sheets",
+      "parent": "n27"
+    },
+    "n31": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 4,
+        "FLEXGROW": 1,
+        "SCROLL": 1
+      },
+      "parent": "n21",
+      "children": [
+        "n32",
+        "n36",
+        "n40"
+      ]
+    },
+    "n32": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -14669237,
+        "PADTOP": 11,
+        "PADRIGHT": 11,
+        "PADBOTTOM": 11,
+        "PADLEFT": 11,
+        "RADIUS": 7
+      },
+      "parent": "n31",
+      "children": [
+        "n33"
+      ]
+    },
+    "n33": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 9,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n32",
+      "children": [
+        "n34",
+        "n35"
+      ]
+    },
+    "n34": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 2,
+        "HEIGHT": 16,
+        "COLOR": -7168776,
+        "RADIUS": 1
+      },
+      "parent": "n33"
+    },
+    "n35": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "app.nim",
+        "FONTSIZE": 13,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -3682817,
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 1
+      },
+      "text": "app.nim",
+      "parent": "n33"
+    },
+    "n36": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -15854298,
+        "PADTOP": 11,
+        "PADRIGHT": 11,
+        "PADBOTTOM": 11,
+        "PADLEFT": 11,
+        "RADIUS": 7
+      },
+      "parent": "n31",
+      "children": [
+        "n37"
+      ]
+    },
+    "n37": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 9,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n36",
+      "children": [
+        "n38",
+        "n39"
+      ]
+    },
+    "n38": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 2,
+        "HEIGHT": 16,
+        "COLOR": -15854298,
+        "RADIUS": 1
+      },
+      "parent": "n37"
+    },
+    "n39": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "highlight.nim",
+        "FONTSIZE": 13,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 400,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 1
+      },
+      "text": "highlight.nim",
+      "parent": "n37"
+    },
+    "n40": {
+      "kind": "PANEL",
+      "params": {
+        "COLOR": -15854298,
+        "PADTOP": 11,
+        "PADRIGHT": 11,
+        "PADBOTTOM": 11,
+        "PADLEFT": 11,
+        "RADIUS": 7
+      },
+      "parent": "n31",
+      "children": [
+        "n41"
+      ]
+    },
+    "n41": {
+      "kind": "ROW",
+      "params": {
+        "SPACING": 9,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n40",
+      "children": [
+        "n42",
+        "n43"
+      ]
+    },
+    "n42": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 2,
+        "HEIGHT": 16,
+        "COLOR": -15854298,
+        "RADIUS": 1
+      },
+      "parent": "n41"
+    },
+    "n43": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "theme.nim",
+        "FONTSIZE": 13,
+        "FLEXGROW": 1,
+        "FONTWEIGHT": 400,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 1
+      },
+      "text": "theme.nim",
+      "parent": "n41"
+    },
+    "n44": {
+      "kind": "PANEL",
+      "params": {
+        "HEIGHT": 1,
+        "COLOR": -14076595
+      },
+      "parent": "n21"
+    },
+    "n45": {
+      "kind": "COLUMN",
+      "params": {
+        "SPACING": 6,
+        "PADRIGHT": 2,
+        "PADLEFT": 2
+      },
+      "parent": "n21",
+      "children": [
+        "n46",
+        "n47",
+        "n48"
+      ]
+    },
+    "n46": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "DOCUMENT STORAGE",
+        "FONTSIZE": 10,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "DOCUMENT STORAGE",
+      "parent": "n45"
+    },
+    "n47": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "record Doc · search name",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono"
+      },
+      "text": "record Doc · search name",
+      "parent": "n45"
+    },
+    "n48": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Owned by you · read / write",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Owned by you · read / write",
+      "parent": "n45"
+    },
+    "n49": {
+      "kind": "COLUMN",
+      "params": {
+        "COLOR": -16052192,
+        "FLEXGROW": 1
+      },
+      "parent": "n20",
+      "children": [
+        "n50",
+        "n57",
+        "n58"
+      ]
+    },
+    "n50": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 48,
+        "COLOR": -15854298,
+        "SPACING": 11,
+        "PADRIGHT": 22,
+        "PADLEFT": 20,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n49",
+      "children": [
+        "n51",
+        "n52",
+        "n53",
+        "n54",
+        "n55",
+        "n56"
+      ]
+    },
+    "n51": {
+      "kind": "PANEL",
+      "params": {
+        "WIDTH": 3,
+        "HEIGHT": 22,
+        "COLOR": -7168776,
+        "RADIUS": 2
+      },
+      "parent": "n50"
+    },
+    "n52": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "app.nim",
+        "FONTSIZE": 14,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 1
+      },
+      "text": "app.nim",
+      "parent": "n50"
+    },
+    "n53": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Saved",
+        "FONTSIZE": 12,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -7351370,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Saved",
+      "parent": "n50"
+    },
+    "n54": {
+      "kind": "SPACER",
+      "params": {
+        "FLEXGROW": 1
+      },
+      "parent": "n50"
+    },
+    "n55": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Sutra",
+        "FONTSIZE": 12,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -3682817,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Sutra",
+      "parent": "n50"
+    },
+    "n56": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "UTF-8",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "UTF-8",
+      "parent": "n50"
+    },
+    "n57": {
+      "kind": "PANEL",
+      "params": {
+        "HEIGHT": 1,
+        "COLOR": -14076595
+      },
+      "parent": "n49"
+    },
+    "n58": {
+      "kind": "COLUMN",
+      "params": {
+        "COLOR": -16052192,
+        "SPACING": 10,
+        "PADTOP": 14,
+        "PADRIGHT": 18,
+        "PADBOTTOM": 14,
+        "PADLEFT": 18,
+        "FLEXGROW": 1
+      },
+      "parent": "n49",
+      "children": [
+        "n59",
+        "n64",
+        "n497"
+      ]
+    },
+    "n59": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 20,
+        "SPACING": 8,
+        "PADRIGHT": 2,
+        "PADLEFT": 2,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n58",
+      "children": [
+        "n60",
+        "n61",
+        "n62",
+        "n63"
+      ]
+    },
+    "n60": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "SOURCE",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "SOURCE",
+      "parent": "n59"
+    },
+    "n61": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "· live syntax",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "· live syntax",
+      "parent": "n59"
+    },
+    "n62": {
+      "kind": "SPACER",
+      "params": {
+        "FLEXGROW": 1
+      },
+      "parent": "n59"
+    },
+    "n63": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "33 lines · 908 characters",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "33 lines · 908 characters",
+      "parent": "n59"
+    },
+    "n64": {
+      "kind": "COLUMN",
+      "params": {
+        "COLOR": -16052192,
+        "SPACING": 0,
+        "PADTOP": 11,
+        "PADRIGHT": 16,
+        "PADBOTTOM": 11,
+        "PADLEFT": 13,
+        "RADIUS": 10,
+        "BORDERCOLOR": -14076595,
+        "BORDERWIDTH": 1,
+        "FLEXGROW": 1,
+        "SCROLL": 1,
+        "CLIP": 1
+      },
+      "parent": "n58",
+      "children": [
+        "n65",
+        "n69",
+        "n79",
+        "n89",
+        "n92",
+        "n98",
+        "n106",
+        "n114",
+        "n126",
+        "n139",
+        "n153",
+        "n160",
+        "n163",
+        "n179",
+        "n184",
+        "n202",
+        "n209",
+        "n212",
+        "n224",
+        "n260",
+        "n284",
+        "n308",
+        "n320",
+        "n338",
+        "n341",
+        "n347",
+        "n358",
+        "n386",
+        "n408",
+        "n422",
+        "n444",
+        "n461",
+        "n481"
+      ]
+    },
+    "n65": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n66",
+        "n67",
+        "n68"
+      ]
+    },
+    "n66": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "▸ 1 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -3682817,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "▸ 1 ",
+      "parent": "n65"
+    },
+    "n67": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n65"
+    },
+    "n68": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "## app.nim — the note app this studio ships.",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8680796,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "## app.nim — the note app this studio ships.",
+      "parent": "n65"
+    },
+    "n69": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n70",
+        "n71",
+        "n72",
+        "n73",
+        "n74",
+        "n75",
+        "n76",
+        "n77",
+        "n78"
+      ]
+    },
+    "n70": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  2 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  2 ",
+      "parent": "n69"
+    },
+    "n71": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n69"
+    },
+    "n72": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "let",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -3885571,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "let",
+      "parent": "n69"
+    },
+    "n73": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n69"
+    },
+    "n74": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "paper",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "paper",
+      "parent": "n69"
+    },
+    "n75": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n69"
+    },
+    "n76": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n69"
+    },
+    "n77": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n69"
+    },
+    "n78": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "#14131A",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1005888,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "#14131A",
+      "parent": "n69"
+    },
+    "n79": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n80",
+        "n81",
+        "n82",
+        "n83",
+        "n84",
+        "n85",
+        "n86",
+        "n87",
+        "n88"
+      ]
+    },
+    "n80": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  3 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  3 ",
+      "parent": "n79"
+    },
+    "n81": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n79"
+    },
+    "n82": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "let",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -3885571,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "let",
+      "parent": "n79"
+    },
+    "n83": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n79"
+    },
+    "n84": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "accent",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "accent",
+      "parent": "n79"
+    },
+    "n85": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n79"
+    },
+    "n86": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n79"
+    },
+    "n87": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n79"
+    },
+    "n88": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "#5B5BF6",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1005888,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "#5B5BF6",
+      "parent": "n79"
+    },
+    "n89": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n90",
+        "n91"
+      ]
+    },
+    "n90": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  4 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  4 ",
+      "parent": "n89"
+    },
+    "n91": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n89"
+    },
+    "n92": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n93",
+        "n94",
+        "n95",
+        "n96",
+        "n97"
+      ]
+    },
+    "n93": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  5 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  5 ",
+      "parent": "n92"
+    },
+    "n94": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n92"
+    },
+    "n95": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "record",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -3885571,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "record",
+      "parent": "n92"
+    },
+    "n96": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n92"
+    },
+    "n97": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Note",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "Note",
+      "parent": "n92"
+    },
+    "n98": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n99",
+        "n100",
+        "n101",
+        "n102",
+        "n103",
+        "n104",
+        "n105"
+      ]
+    },
+    "n99": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  6 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  6 ",
+      "parent": "n98"
+    },
+    "n100": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n98"
+    },
+    "n101": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  ",
+      "parent": "n98"
+    },
+    "n102": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "title",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "title",
+      "parent": "n98"
+    },
+    "n103": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ":",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ":",
+      "parent": "n98"
+    },
+    "n104": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n98"
+    },
+    "n105": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "string",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -7745552,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "string",
+      "parent": "n98"
+    },
+    "n106": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n107",
+        "n108",
+        "n109",
+        "n110",
+        "n111",
+        "n112",
+        "n113"
+      ]
+    },
+    "n107": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  7 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  7 ",
+      "parent": "n106"
+    },
+    "n108": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n106"
+    },
+    "n109": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  ",
+      "parent": "n106"
+    },
+    "n110": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "body",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "body",
+      "parent": "n106"
+    },
+    "n111": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ":",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ":",
+      "parent": "n106"
+    },
+    "n112": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n106"
+    },
+    "n113": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "string",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -7745552,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "string",
+      "parent": "n106"
+    },
+    "n114": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n115",
+        "n116",
+        "n117",
+        "n118",
+        "n119",
+        "n120",
+        "n121",
+        "n122",
+        "n123",
+        "n124",
+        "n125"
+      ]
+    },
+    "n115": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  8 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  8 ",
+      "parent": "n114"
+    },
+    "n116": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n114"
+    },
+    "n117": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  ",
+      "parent": "n114"
+    },
+    "n118": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "owner",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "owner",
+      "parent": "n114"
+    },
+    "n119": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ":",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ":",
+      "parent": "n114"
+    },
+    "n120": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n114"
+    },
+    "n121": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "User",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -7745552,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "User",
+      "parent": "n114"
+    },
+    "n122": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n114"
+    },
+    "n123": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n114"
+    },
+    "n124": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n114"
+    },
+    "n125": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "me",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "me",
+      "parent": "n114"
+    },
+    "n126": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n127",
+        "n128",
+        "n129",
+        "n130",
+        "n131",
+        "n132",
+        "n133",
+        "n134",
+        "n135",
+        "n136",
+        "n137",
+        "n138"
+      ]
+    },
+    "n127": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  9 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  9 ",
+      "parent": "n126"
+    },
+    "n128": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n126"
+    },
+    "n129": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  ",
+      "parent": "n126"
+    },
+    "n130": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "can",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "can",
+      "parent": "n126"
+    },
+    "n131": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n126"
+    },
+    "n132": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "read",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "read",
+      "parent": "n126"
+    },
+    "n133": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n126"
+    },
+    "n134": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n126"
+    },
+    "n135": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "write",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "write",
+      "parent": "n126"
+    },
+    "n136": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ":",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ":",
+      "parent": "n126"
+    },
+    "n137": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n126"
+    },
+    "n138": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "owner",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "owner",
+      "parent": "n126"
+    },
+    "n139": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n140",
+        "n141",
+        "n142",
+        "n143",
+        "n144",
+        "n145",
+        "n146",
+        "n147",
+        "n148",
+        "n149",
+        "n150",
+        "n151",
+        "n152"
+      ]
+    },
+    "n140": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 10 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 10 ",
+      "parent": "n139"
+    },
+    "n141": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n139"
+    },
+    "n142": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  ",
+      "parent": "n139"
+    },
+    "n143": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "check",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "check",
+      "parent": "n139"
+    },
+    "n144": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n139"
+    },
+    "n145": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "title",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "title",
+      "parent": "n139"
+    },
+    "n146": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n139"
+    },
+    "n147": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "!=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "!=",
+      "parent": "n139"
+    },
+    "n148": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n139"
+    },
+    "n149": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "\"\"",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6367566,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "\"\"",
+      "parent": "n139"
+    },
+    "n150": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n139"
+    },
+    "n151": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n139"
+    },
+    "n152": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "\"a note needs a title\"",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6367566,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "\"a note needs a title\"",
+      "parent": "n139"
+    },
+    "n153": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n154",
+        "n155",
+        "n156",
+        "n157",
+        "n158",
+        "n159"
+      ]
+    },
+    "n154": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 11 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 11 ",
+      "parent": "n153"
+    },
+    "n155": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n153"
+    },
+    "n156": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  ",
+      "parent": "n153"
+    },
+    "n157": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "search",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "search",
+      "parent": "n153"
+    },
+    "n158": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n153"
+    },
+    "n159": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "title",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "title",
+      "parent": "n153"
+    },
+    "n160": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n161",
+        "n162"
+      ]
+    },
+    "n161": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 12 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 12 ",
+      "parent": "n160"
+    },
+    "n162": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n160"
+    },
+    "n163": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n164",
+        "n165",
+        "n166",
+        "n167",
+        "n168",
+        "n169",
+        "n170",
+        "n171",
+        "n172",
+        "n173",
+        "n174",
+        "n175",
+        "n176",
+        "n177",
+        "n178"
+      ]
+    },
+    "n164": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 13 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 13 ",
+      "parent": "n163"
+    },
+    "n165": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n163"
+    },
+    "n166": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "proc",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -3885571,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "proc",
+      "parent": "n163"
+    },
+    "n167": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n163"
+    },
+    "n168": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "words",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "words",
+      "parent": "n163"
+    },
+    "n169": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "(",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "(",
+      "parent": "n163"
+    },
+    "n170": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "note",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "note",
+      "parent": "n163"
+    },
+    "n171": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ":",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ":",
+      "parent": "n163"
+    },
+    "n172": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n163"
+    },
+    "n173": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Note",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "Note",
+      "parent": "n163"
+    },
+    "n174": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "):",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "):",
+      "parent": "n163"
+    },
+    "n175": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n163"
+    },
+    "n176": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "int",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -7745552,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "int",
+      "parent": "n163"
+    },
+    "n177": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n163"
+    },
+    "n178": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n163"
+    },
+    "n179": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n180",
+        "n181",
+        "n182",
+        "n183"
+      ]
+    },
+    "n180": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 14 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 14 ",
+      "parent": "n179"
+    },
+    "n181": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n179"
+    },
+    "n182": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  ",
+      "parent": "n179"
+    },
+    "n183": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "## the body, in words",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8680796,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "## the body, in words",
+      "parent": "n179"
+    },
+    "n184": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n185",
+        "n186",
+        "n187",
+        "n188",
+        "n189",
+        "n190",
+        "n191",
+        "n192",
+        "n193",
+        "n194",
+        "n195",
+        "n196",
+        "n197",
+        "n198",
+        "n199",
+        "n200",
+        "n201"
+      ]
+    },
+    "n185": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 15 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 15 ",
+      "parent": "n184"
+    },
+    "n186": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n184"
+    },
+    "n187": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  ",
+      "parent": "n184"
+    },
+    "n188": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "for",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -3885571,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "for",
+      "parent": "n184"
+    },
+    "n189": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n184"
+    },
+    "n190": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "w",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "w",
+      "parent": "n184"
+    },
+    "n191": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n184"
+    },
+    "n192": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "in",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -3885571,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "in",
+      "parent": "n184"
+    },
+    "n193": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n184"
+    },
+    "n194": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "note",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "note",
+      "parent": "n184"
+    },
+    "n195": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ".",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ".",
+      "parent": "n184"
+    },
+    "n196": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "body",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "body",
+      "parent": "n184"
+    },
+    "n197": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ".",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ".",
+      "parent": "n184"
+    },
+    "n198": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "split",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "split",
+      "parent": "n184"
+    },
+    "n199": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "(",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "(",
+      "parent": "n184"
+    },
+    "n200": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "\" \"",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6367566,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "\" \"",
+      "parent": "n184"
+    },
+    "n201": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "):",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "):",
+      "parent": "n184"
+    },
+    "n202": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n203",
+        "n204",
+        "n205",
+        "n206",
+        "n207",
+        "n208"
+      ]
+    },
+    "n203": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 16 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 16 ",
+      "parent": "n202"
+    },
+    "n204": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n202"
+    },
+    "n205": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "    ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "    ",
+      "parent": "n202"
+    },
+    "n206": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "inc",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "inc",
+      "parent": "n202"
+    },
+    "n207": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n202"
+    },
+    "n208": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "result",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "result",
+      "parent": "n202"
+    },
+    "n209": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n210",
+        "n211"
+      ]
+    },
+    "n210": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 17 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 17 ",
+      "parent": "n209"
+    },
+    "n211": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n209"
+    },
+    "n212": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n213",
+        "n214",
+        "n215",
+        "n216",
+        "n217",
+        "n218",
+        "n219",
+        "n220",
+        "n221",
+        "n222",
+        "n223"
+      ]
+    },
+    "n213": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 18 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 18 ",
+      "parent": "n212"
+    },
+    "n214": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n212"
+    },
+    "n215": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "view",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -3885571,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "view",
+      "parent": "n212"
+    },
+    "n216": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n212"
+    },
+    "n217": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "NoteRow",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "NoteRow",
+      "parent": "n212"
+    },
+    "n218": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "(",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "(",
+      "parent": "n212"
+    },
+    "n219": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "note",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "note",
+      "parent": "n212"
+    },
+    "n220": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ":",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ":",
+      "parent": "n212"
+    },
+    "n221": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n212"
+    },
+    "n222": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Note",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "Note",
+      "parent": "n212"
+    },
+    "n223": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ")",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ")",
+      "parent": "n212"
+    },
+    "n224": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n225",
+        "n226",
+        "n227",
+        "n228",
+        "n229",
+        "n230",
+        "n231",
+        "n232",
+        "n233",
+        "n234",
+        "n235",
+        "n236",
+        "n237",
+        "n238",
+        "n239",
+        "n240",
+        "n241",
+        "n242",
+        "n243",
+        "n244",
+        "n245",
+        "n246",
+        "n247",
+        "n248",
+        "n249",
+        "n250",
+        "n251",
+        "n252",
+        "n253",
+        "n254",
+        "n255",
+        "n256",
+        "n257",
+        "n258",
+        "n259"
+      ]
+    },
+    "n225": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 19 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 19 ",
+      "parent": "n224"
+    },
+    "n226": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n224"
+    },
+    "n227": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  ",
+      "parent": "n224"
+    },
+    "n228": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Row",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "Row",
+      "parent": "n224"
+    },
+    "n229": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "(",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "(",
+      "parent": "n224"
+    },
+    "n230": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "gap",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "gap",
+      "parent": "n224"
+    },
+    "n231": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n224"
+    },
+    "n232": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n224"
+    },
+    "n233": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n224"
+    },
+    "n234": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "10",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -866948,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "10",
+      "parent": "n224"
+    },
+    "n235": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "px",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "px",
+      "parent": "n224"
+    },
+    "n236": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n224"
+    },
+    "n237": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n224"
+    },
+    "n238": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "pad",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "pad",
+      "parent": "n224"
+    },
+    "n239": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n224"
+    },
+    "n240": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n224"
+    },
+    "n241": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n224"
+    },
+    "n242": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "8",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -866948,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "8",
+      "parent": "n224"
+    },
+    "n243": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "px",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "px",
+      "parent": "n224"
+    },
+    "n244": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n224"
+    },
+    "n245": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n224"
+    },
+    "n246": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "fill",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "fill",
+      "parent": "n224"
+    },
+    "n247": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n224"
+    },
+    "n248": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n224"
+    },
+    "n249": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n224"
+    },
+    "n250": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "paper",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "paper",
+      "parent": "n224"
+    },
+    "n251": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n224"
+    },
+    "n252": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n224"
+    },
+    "n253": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "radius",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "radius",
+      "parent": "n224"
+    },
+    "n254": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n224"
+    },
+    "n255": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n224"
+    },
+    "n256": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n224"
+    },
+    "n257": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "8",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -866948,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "8",
+      "parent": "n224"
+    },
+    "n258": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "px",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "px",
+      "parent": "n224"
+    },
+    "n259": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "):",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "):",
+      "parent": "n224"
+    },
+    "n260": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n261",
+        "n262",
+        "n263",
+        "n264",
+        "n265",
+        "n266",
+        "n267",
+        "n268",
+        "n269",
+        "n270",
+        "n271",
+        "n272",
+        "n273",
+        "n274",
+        "n275",
+        "n276",
+        "n277",
+        "n278",
+        "n279",
+        "n280",
+        "n281",
+        "n282",
+        "n283"
+      ]
+    },
+    "n261": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 20 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 20 ",
+      "parent": "n260"
+    },
+    "n262": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n260"
+    },
+    "n263": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "    ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "    ",
+      "parent": "n260"
+    },
+    "n264": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Text",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "Text",
+      "parent": "n260"
+    },
+    "n265": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n260"
+    },
+    "n266": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "note",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "note",
+      "parent": "n260"
+    },
+    "n267": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ".",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ".",
+      "parent": "n260"
+    },
+    "n268": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "title",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "title",
+      "parent": "n260"
+    },
+    "n269": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n260"
+    },
+    "n270": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n260"
+    },
+    "n271": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "size",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "size",
+      "parent": "n260"
+    },
+    "n272": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n260"
+    },
+    "n273": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n260"
+    },
+    "n274": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n260"
+    },
+    "n275": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "15",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -866948,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "15",
+      "parent": "n260"
+    },
+    "n276": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "px",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "px",
+      "parent": "n260"
+    },
+    "n277": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n260"
+    },
+    "n278": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n260"
+    },
+    "n279": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "weight",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "weight",
+      "parent": "n260"
+    },
+    "n280": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n260"
+    },
+    "n281": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n260"
+    },
+    "n282": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n260"
+    },
+    "n283": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "600",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -866948,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "600",
+      "parent": "n260"
+    },
+    "n284": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n285",
+        "n286",
+        "n287",
+        "n288",
+        "n289",
+        "n290",
+        "n291",
+        "n292",
+        "n293",
+        "n294",
+        "n295",
+        "n296",
+        "n297",
+        "n298",
+        "n299",
+        "n300",
+        "n301",
+        "n302",
+        "n303",
+        "n304",
+        "n305",
+        "n306",
+        "n307"
+      ]
+    },
+    "n285": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 21 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 21 ",
+      "parent": "n284"
+    },
+    "n286": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n284"
+    },
+    "n287": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "    ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "    ",
+      "parent": "n284"
+    },
+    "n288": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Text",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "Text",
+      "parent": "n284"
+    },
+    "n289": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n284"
+    },
+    "n290": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "note",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "note",
+      "parent": "n284"
+    },
+    "n291": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ".",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ".",
+      "parent": "n284"
+    },
+    "n292": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "body",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "body",
+      "parent": "n284"
+    },
+    "n293": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n284"
+    },
+    "n294": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n284"
+    },
+    "n295": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "size",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "size",
+      "parent": "n284"
+    },
+    "n296": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n284"
+    },
+    "n297": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n284"
+    },
+    "n298": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n284"
+    },
+    "n299": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "13",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -866948,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "13",
+      "parent": "n284"
+    },
+    "n300": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "px",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "px",
+      "parent": "n284"
+    },
+    "n301": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n284"
+    },
+    "n302": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n284"
+    },
+    "n303": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "color",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "color",
+      "parent": "n284"
+    },
+    "n304": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n284"
+    },
+    "n305": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n284"
+    },
+    "n306": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n284"
+    },
+    "n307": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "#8A8698",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1005888,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "#8A8698",
+      "parent": "n284"
+    },
+    "n308": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n309",
+        "n310",
+        "n311",
+        "n312",
+        "n313",
+        "n314",
+        "n315",
+        "n316",
+        "n317",
+        "n318",
+        "n319"
+      ]
+    },
+    "n309": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 22 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 22 ",
+      "parent": "n308"
+    },
+    "n310": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n308"
+    },
+    "n311": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "    ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "    ",
+      "parent": "n308"
+    },
+    "n312": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Spacer",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "Spacer",
+      "parent": "n308"
+    },
+    "n313": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "(",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "(",
+      "parent": "n308"
+    },
+    "n314": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "grow",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "grow",
+      "parent": "n308"
+    },
+    "n315": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n308"
+    },
+    "n316": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n308"
+    },
+    "n317": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n308"
+    },
+    "n318": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "1",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -866948,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "1",
+      "parent": "n308"
+    },
+    "n319": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ")",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ")",
+      "parent": "n308"
+    },
+    "n320": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n321",
+        "n322",
+        "n323",
+        "n324",
+        "n325",
+        "n326",
+        "n327",
+        "n328",
+        "n329",
+        "n330",
+        "n331",
+        "n332",
+        "n333",
+        "n334",
+        "n335",
+        "n336",
+        "n337"
+      ]
+    },
+    "n321": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 23 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 23 ",
+      "parent": "n320"
+    },
+    "n322": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n320"
+    },
+    "n323": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "    ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "    ",
+      "parent": "n320"
+    },
+    "n324": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Text",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "Text",
+      "parent": "n320"
+    },
+    "n325": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n320"
+    },
+    "n326": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "$",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "$",
+      "parent": "n320"
+    },
+    "n327": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "words",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "words",
+      "parent": "n320"
+    },
+    "n328": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "(",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "(",
+      "parent": "n320"
+    },
+    "n329": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "note",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "note",
+      "parent": "n320"
+    },
+    "n330": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "),",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "),",
+      "parent": "n320"
+    },
+    "n331": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n320"
+    },
+    "n332": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "size",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "size",
+      "parent": "n320"
+    },
+    "n333": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n320"
+    },
+    "n334": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n320"
+    },
+    "n335": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n320"
+    },
+    "n336": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "12",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -866948,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "12",
+      "parent": "n320"
+    },
+    "n337": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "px",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "px",
+      "parent": "n320"
+    },
+    "n338": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n339",
+        "n340"
+      ]
+    },
+    "n339": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 24 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 24 ",
+      "parent": "n338"
+    },
+    "n340": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n338"
+    },
+    "n341": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n342",
+        "n343",
+        "n344",
+        "n345",
+        "n346"
+      ]
+    },
+    "n342": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 25 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 25 ",
+      "parent": "n341"
+    },
+    "n343": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n341"
+    },
+    "n344": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "view",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -3885571,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "view",
+      "parent": "n341"
+    },
+    "n345": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n341"
+    },
+    "n346": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Notes",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "Notes",
+      "parent": "n341"
+    },
+    "n347": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n348",
+        "n349",
+        "n350",
+        "n351",
+        "n352",
+        "n353",
+        "n354",
+        "n355",
+        "n356",
+        "n357"
+      ]
+    },
+    "n348": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 26 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 26 ",
+      "parent": "n347"
+    },
+    "n349": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n347"
+    },
+    "n350": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  ",
+      "parent": "n347"
+    },
+    "n351": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "state",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -3885571,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "state",
+      "parent": "n347"
+    },
+    "n352": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n347"
+    },
+    "n353": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "draft",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "draft",
+      "parent": "n347"
+    },
+    "n354": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n347"
+    },
+    "n355": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n347"
+    },
+    "n356": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n347"
+    },
+    "n357": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "\"\"",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6367566,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "\"\"",
+      "parent": "n347"
+    },
+    "n358": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n359",
+        "n360",
+        "n361",
+        "n362",
+        "n363",
+        "n364",
+        "n365",
+        "n366",
+        "n367",
+        "n368",
+        "n369",
+        "n370",
+        "n371",
+        "n372",
+        "n373",
+        "n374",
+        "n375",
+        "n376",
+        "n377",
+        "n378",
+        "n379",
+        "n380",
+        "n381",
+        "n382",
+        "n383",
+        "n384",
+        "n385"
+      ]
+    },
+    "n359": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 27 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 27 ",
+      "parent": "n358"
+    },
+    "n360": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n358"
+    },
+    "n361": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "  ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "  ",
+      "parent": "n358"
+    },
+    "n362": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Column",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "Column",
+      "parent": "n358"
+    },
+    "n363": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "(",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "(",
+      "parent": "n358"
+    },
+    "n364": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "gap",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "gap",
+      "parent": "n358"
+    },
+    "n365": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n358"
+    },
+    "n366": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n358"
+    },
+    "n367": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n358"
+    },
+    "n368": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "12",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -866948,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "12",
+      "parent": "n358"
+    },
+    "n369": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "px",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "px",
+      "parent": "n358"
+    },
+    "n370": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n358"
+    },
+    "n371": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n358"
+    },
+    "n372": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "pad",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "pad",
+      "parent": "n358"
+    },
+    "n373": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n358"
+    },
+    "n374": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n358"
+    },
+    "n375": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n358"
+    },
+    "n376": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "24",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -866948,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "24",
+      "parent": "n358"
+    },
+    "n377": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "px",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "px",
+      "parent": "n358"
+    },
+    "n378": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n358"
+    },
+    "n379": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n358"
+    },
+    "n380": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "fill",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "fill",
+      "parent": "n358"
+    },
+    "n381": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n358"
+    },
+    "n382": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n358"
+    },
+    "n383": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n358"
+    },
+    "n384": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "paper",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "paper",
+      "parent": "n358"
+    },
+    "n385": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "):",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "):",
+      "parent": "n358"
+    },
+    "n386": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n387",
+        "n388",
+        "n389",
+        "n390",
+        "n391",
+        "n392",
+        "n393",
+        "n394",
+        "n395",
+        "n396",
+        "n397",
+        "n398",
+        "n399",
+        "n400",
+        "n401",
+        "n402",
+        "n403",
+        "n404",
+        "n405",
+        "n406",
+        "n407"
+      ]
+    },
+    "n387": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 28 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 28 ",
+      "parent": "n386"
+    },
+    "n388": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n386"
+    },
+    "n389": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "    ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "    ",
+      "parent": "n386"
+    },
+    "n390": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Text",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "Text",
+      "parent": "n386"
+    },
+    "n391": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n386"
+    },
+    "n392": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "\"Notes\"",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6367566,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "\"Notes\"",
+      "parent": "n386"
+    },
+    "n393": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n386"
+    },
+    "n394": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n386"
+    },
+    "n395": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "size",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "size",
+      "parent": "n386"
+    },
+    "n396": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n386"
+    },
+    "n397": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n386"
+    },
+    "n398": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n386"
+    },
+    "n399": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "28",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -866948,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "28",
+      "parent": "n386"
+    },
+    "n400": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "px",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "px",
+      "parent": "n386"
+    },
+    "n401": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n386"
+    },
+    "n402": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n386"
+    },
+    "n403": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "weight",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "weight",
+      "parent": "n386"
+    },
+    "n404": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n386"
+    },
+    "n405": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n386"
+    },
+    "n406": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n386"
+    },
+    "n407": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "700",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -866948,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "700",
+      "parent": "n386"
+    },
+    "n408": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n409",
+        "n410",
+        "n411",
+        "n412",
+        "n413",
+        "n414",
+        "n415",
+        "n416",
+        "n417",
+        "n418",
+        "n419",
+        "n420",
+        "n421"
+      ]
+    },
+    "n409": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 29 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 29 ",
+      "parent": "n408"
+    },
+    "n410": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n408"
+    },
+    "n411": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "    ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "    ",
+      "parent": "n408"
+    },
+    "n412": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Input",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "Input",
+      "parent": "n408"
+    },
+    "n413": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n408"
+    },
+    "n414": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "draft",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "draft",
+      "parent": "n408"
+    },
+    "n415": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n408"
+    },
+    "n416": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n408"
+    },
+    "n417": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "placeholder",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "placeholder",
+      "parent": "n408"
+    },
+    "n418": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n408"
+    },
+    "n419": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n408"
+    },
+    "n420": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n408"
+    },
+    "n421": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "\"Search title\"",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6367566,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "\"Search title\"",
+      "parent": "n408"
+    },
+    "n422": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n423",
+        "n424",
+        "n425",
+        "n426",
+        "n427",
+        "n428",
+        "n429",
+        "n430",
+        "n431",
+        "n432",
+        "n433",
+        "n434",
+        "n435",
+        "n436",
+        "n437",
+        "n438",
+        "n439",
+        "n440",
+        "n441",
+        "n442",
+        "n443"
+      ]
+    },
+    "n423": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 30 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 30 ",
+      "parent": "n422"
+    },
+    "n424": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n422"
+    },
+    "n425": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "    ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "    ",
+      "parent": "n422"
+    },
+    "n426": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Button",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "Button",
+      "parent": "n422"
+    },
+    "n427": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n422"
+    },
+    "n428": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "\"New note\"",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6367566,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "\"New note\"",
+      "parent": "n422"
+    },
+    "n429": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n422"
+    },
+    "n430": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n422"
+    },
+    "n431": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "fill",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "fill",
+      "parent": "n422"
+    },
+    "n432": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n422"
+    },
+    "n433": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n422"
+    },
+    "n434": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n422"
+    },
+    "n435": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "accent",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "accent",
+      "parent": "n422"
+    },
+    "n436": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n422"
+    },
+    "n437": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n422"
+    },
+    "n438": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "color",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "color",
+      "parent": "n422"
+    },
+    "n439": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n422"
+    },
+    "n440": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n422"
+    },
+    "n441": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n422"
+    },
+    "n442": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "#FFFFFF",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1005888,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "#FFFFFF",
+      "parent": "n422"
+    },
+    "n443": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ":",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ":",
+      "parent": "n422"
+    },
+    "n444": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n445",
+        "n446",
+        "n447",
+        "n448",
+        "n449",
+        "n450",
+        "n451",
+        "n452",
+        "n453",
+        "n454",
+        "n455",
+        "n456",
+        "n457",
+        "n458",
+        "n459",
+        "n460"
+      ]
+    },
+    "n445": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 31 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 31 ",
+      "parent": "n444"
+    },
+    "n446": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n444"
+    },
+    "n447": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "      ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "      ",
+      "parent": "n444"
+    },
+    "n448": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "on",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -3885571,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "on",
+      "parent": "n444"
+    },
+    "n449": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n444"
+    },
+    "n450": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "tap",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -3885571,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "tap",
+      "parent": "n444"
+    },
+    "n451": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ":",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ":",
+      "parent": "n444"
+    },
+    "n452": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n444"
+    },
+    "n453": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "discard",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -3885571,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "discard",
+      "parent": "n444"
+    },
+    "n454": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n444"
+    },
+    "n455": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Note",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "Note",
+      "parent": "n444"
+    },
+    "n456": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ".",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ".",
+      "parent": "n444"
+    },
+    "n457": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "create",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "create",
+      "parent": "n444"
+    },
+    "n458": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "(",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "(",
+      "parent": "n444"
+    },
+    "n459": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "\"Untitled\"",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6367566,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "\"Untitled\"",
+      "parent": "n444"
+    },
+    "n460": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ")",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ")",
+      "parent": "n444"
+    },
+    "n461": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n462",
+        "n463",
+        "n464",
+        "n465",
+        "n466",
+        "n467",
+        "n468",
+        "n469",
+        "n470",
+        "n471",
+        "n472",
+        "n473",
+        "n474",
+        "n475",
+        "n476",
+        "n477",
+        "n478",
+        "n479",
+        "n480"
+      ]
+    },
+    "n462": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 32 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 32 ",
+      "parent": "n461"
+    },
+    "n463": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n461"
+    },
+    "n464": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "    ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "    ",
+      "parent": "n461"
+    },
+    "n465": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "for",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -3885571,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "for",
+      "parent": "n461"
+    },
+    "n466": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n461"
+    },
+    "n467": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "n",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "n",
+      "parent": "n461"
+    },
+    "n468": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n461"
+    },
+    "n469": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "in",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -3885571,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "in",
+      "parent": "n461"
+    },
+    "n470": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n461"
+    },
+    "n471": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Note",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "Note",
+      "parent": "n461"
+    },
+    "n472": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ".",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ".",
+      "parent": "n461"
+    },
+    "n473": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "sort",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "sort",
+      "parent": "n461"
+    },
+    "n474": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "(",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "(",
+      "parent": "n461"
+    },
+    "n475": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "title",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "title",
+      "parent": "n461"
+    },
+    "n476": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ").",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ").",
+      "parent": "n461"
+    },
+    "n477": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "take",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "take",
+      "parent": "n461"
+    },
+    "n478": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "(",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "(",
+      "parent": "n461"
+    },
+    "n479": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "5",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -866948,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "5",
+      "parent": "n461"
+    },
+    "n480": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "):",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "):",
+      "parent": "n461"
+    },
+    "n481": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 24,
+        "SPACING": 0,
+        "PADTOP": 0,
+        "PADRIGHT": 0,
+        "PADBOTTOM": 0,
+        "PADLEFT": 0
+      },
+      "parent": "n64",
+      "children": [
+        "n482",
+        "n483",
+        "n484",
+        "n485",
+        "n486",
+        "n487",
+        "n488",
+        "n489",
+        "n490",
+        "n491",
+        "n492",
+        "n493",
+        "n494",
+        "n495",
+        "n496"
+      ]
+    },
+    "n482": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " 33 ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " 33 ",
+      "parent": "n481"
+    },
+    "n483": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "│",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -14076595,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "│",
+      "parent": "n481"
+    },
+    "n484": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "      ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "      ",
+      "parent": "n481"
+    },
+    "n485": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "NoteRow",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "NoteRow",
+      "parent": "n481"
+    },
+    "n486": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n481"
+    },
+    "n487": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "n",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "n",
+      "parent": "n481"
+    },
+    "n488": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ",",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ",",
+      "parent": "n481"
+    },
+    "n489": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n481"
+    },
+    "n490": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "key",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "key",
+      "parent": "n481"
+    },
+    "n491": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n481"
+    },
+    "n492": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "=",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "=",
+      "parent": "n481"
+    },
+    "n493": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": " ",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": " ",
+      "parent": "n481"
+    },
+    "n494": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "n",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "n",
+      "parent": "n481"
+    },
+    "n495": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": ".",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": ".",
+      "parent": "n481"
+    },
+    "n496": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "id",
+        "FONTSIZE": 14,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "MAXLINES": 1
+      },
+      "text": "id",
+      "parent": "n481"
+    },
+    "n497": {
+      "kind": "COLUMN",
+      "params": {
+        "HEIGHT": 184,
+        "COLOR": -15854298,
+        "SPACING": 9,
+        "PADTOP": 11,
+        "PADRIGHT": 12,
+        "PADBOTTOM": 11,
+        "PADLEFT": 12,
+        "RADIUS": 10,
+        "BORDERCOLOR": -14076595,
+        "BORDERWIDTH": 1
+      },
+      "parent": "n58",
+      "children": [
+        "n498",
+        "n503"
+      ]
+    },
+    "n498": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 18,
+        "SPACING": 12,
+        "PADRIGHT": 2,
+        "PADLEFT": 2,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n497",
+      "children": [
+        "n499",
+        "n500",
+        "n501",
+        "n502"
+      ]
+    },
+    "n499": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "EDIT BUFFER",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 700,
+        "TEXTCOLOR": -3682817,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "EDIT BUFFER",
+      "parent": "n498"
+    },
+    "n500": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Changes re-tokenise above",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Changes re-tokenise above",
+      "parent": "n498"
+    },
+    "n501": {
+      "kind": "SPACER",
+      "params": {
+        "FLEXGROW": 1
+      },
+      "parent": "n498"
+    },
+    "n502": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "app.nim",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "Noto Sans",
+        "MAXLINES": 1
+      },
+      "text": "app.nim",
+      "parent": "n498"
+    },
+    "n503": {
+      "kind": "TEXTAREA",
+      "params": {
+        "COLOR": -15195592,
+        "FONTSIZE": 13,
+        "PADTOP": 10,
+        "PADRIGHT": 10,
+        "PADBOTTOM": 10,
+        "PADLEFT": 10,
+        "RADIUS": 8,
+        "BORDERCOLOR": -14076595,
+        "BORDERWIDTH": 1,
+        "VALUE": "## app.nim — the note app this studio ships.\nlet paper = #14131A\nlet accent = #5B5BF6\n\nrecord Note\n  title: string\n  body: string\n  owner: User = me\n  can read, write: owner\n  check title != \"\", \"a note needs a title\"\n  search title\n\nproc words(note: Note): int =\n  ## the body, in words\n  for w in note.body.split(\" \"):\n    inc result\n\nview NoteRow(note: Note)\n  Row(gap = 10px, pad = 8px, fill = paper, radius = 8px):\n    Text note.title, size = 15px, weight = 600\n    Text note.body, size = 13px, color = #8A8698\n    Spacer(grow = 1)\n    Text $words(note), size = 12px\n\nview Notes\n  state draft = \"\"\n  Column(gap = 12px, pad = 24px, fill = paper):\n    Text \"Notes\", size = 28px, weight = 700\n    Input draft, placeholder = \"Search title\"\n    Button \"New note\", fill = accent, color = #FFFFFF:\n      on tap: discard Note.create(\"Untitled\")\n    for n in Note.sort(title).take(5):\n      NoteRow n, key = n.id",
+        "FLEXGROW": 1,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "DejaVu Sans Mono",
+        "LINEHEIGHT": 1.35
+      },
+      "parent": "n497"
+    },
+    "n504": {
+      "kind": "ROW",
+      "params": {
+        "HEIGHT": 34,
+        "COLOR": -15854298,
+        "SPACING": 18,
+        "PADRIGHT": 20,
+        "PADLEFT": 20,
+        "ALIGNITEMS": 1
+      },
+      "parent": "n2",
+      "children": [
+        "n505",
+        "n506",
+        "n507",
+        "n508",
+        "n509",
+        "n510",
+        "n511"
+      ]
+    },
+    "n505": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Saved",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -7351370,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Saved",
+      "parent": "n504"
+    },
+    "n506": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Ln 1, Col 1",
+        "FONTSIZE": 11,
+        "FONTWEIGHT": 600,
+        "TEXTCOLOR": -1511944,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Ln 1, Col 1",
+      "parent": "n504"
+    },
+    "n507": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "33 lines",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "33 lines",
+      "parent": "n504"
+    },
+    "n508": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "908 characters",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "908 characters",
+      "parent": "n504"
+    },
+    "n509": {
+      "kind": "SPACER",
+      "params": {
+        "FLEXGROW": 1
+      },
+      "parent": "n504"
+    },
+    "n510": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "3 sheets",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -8483674,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "3 sheets",
+      "parent": "n504"
+    },
+    "n511": {
+      "kind": "TEXT",
+      "params": {
+        "TEXT": "Sutra · UTF-8",
+        "FONTSIZE": 11,
+        "TEXTCOLOR": -6050110,
+        "FONTFAMILY": "Noto Sans"
+      },
+      "text": "Sutra · UTF-8",
+      "parent": "n504"
+    }
+  },
+  "provenance": {
+    "source": {
+      "path": "apps/editor/app.nim",
+      "lines": 487,
+      "bytes": 20864,
+      "sha256": "163291504b2498c43063ed66c4234695606bb9d4265edf25285e77f289c8ad4e"
+    },
+    "module": {
+      "path": "apps/editor/app.wasm",
+      "bytes": 282767,
+      "sha256": "eb1db547661a3f5fc1987937994f5cf77f9c715596b8d9baa5e42276276789e0"
+    },
+    "build": "./tools/build-wasm.sh apps/editor/app.nim apps/editor/app.wasm --release"
+  },
+  "verify": {
+    "command": "node tools/verify-wasm.mjs apps/editor",
+    "proves": "the module instantiates with no keys and no GPU, and builds a live UI tree",
+    "does_not_prove": "pixel equality against any reference render"
+  }
+}

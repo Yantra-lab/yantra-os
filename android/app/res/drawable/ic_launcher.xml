@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Yantra's mark as a vector: a "Y" whose two arms are the two platforms. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#0B0E14"
+        android:pathData="M0,0h108v108h-108z" />
+    <path
+        android:fillColor="#F2B705"
+        android:pathData="M30,26h13l11,18 11,-18h13L60,52v30H48V52z" />
+    <path
+        android:fillColor="#4CC9F0"
+        android:pathData="M20,88h68v4h-68z" />
+</vector>

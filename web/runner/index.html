@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yantra Web Runner — apps/calc/app.wasm</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0f1117; color: #e6e8ee; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+    .card { background: #1a1d26; border: 1px solid #2a2e3d; border-radius: 12px; padding: 28px; width: 380px; box-shadow: 0 8px 30px rgba(0,0,0,0.4); text-align: center; }
+    h1 { font-size: 18px; margin: 0 0 6px 0; }
+    p { font-size: 12px; color: #8b92a5; margin: 0 0 20px 0; }
+    #app { min-height: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px dashed #2a2e3d; border-radius: 8px; padding: 20px; background: rgba(0,0,0,0.2); }
+    #app button { background: #4f8ff7; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; font-size: 15px; cursor: pointer; }
+    #app button:hover { background: #3a7be0; }
+    .status { margin-top: 14px; font-size: 12px; color: #8b92a5; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Yantra Web Runner</h1>
+    <p>Sandboxed wasm UI in browser DOM</p>
+    <div id="app">Loading apps/calc/app.wasm...</div>
+    <div class="status" id="status">Connecting host imports...</div>
+    <input type="file" id="picker" style="display:none;margin-top:10px;" accept=".wasm">
+  </div>
+  <script type="module">
+    import { createRunner } from './runner.js';
+    const appEl = document.getElementById('app'), statusEl = document.getElementById('status'), picker = document.getElementById('picker');
+    async function load(bytes) {
+      appEl.textContent = '';
+      await createRunner({ wasmBytes: bytes, targetElement: appEl });
+      statusEl.textContent = `Running apps/calc/app.wasm (${bytes.byteLength} bytes)`;
+    }
+    try {
+      const resp = await fetch('../../apps/calc/app.wasm');
+      if (!resp.ok) throw new Error(resp.statusText);
+      await load(await resp.arrayBuffer());
+    } catch {
+      statusEl.textContent = 'Auto-fetch blocked (CORS). Select a .wasm module:';
+      picker.style.display = 'block';
+      appEl.textContent = 'Waiting for file...';
+    }
+    picker.onchange = async (e) => { if (e.target.files[0]) { await load(await e.target.files[0].arrayBuffer()); picker.style.display = 'none'; } };
+  </script>
+</body>
+</html>

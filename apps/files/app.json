@@ -1,0 +1,26 @@
+{
+  "id": "files",
+  "name": "Yantra File Manager",
+  "icon": "F",
+  "tint": "#8E8E93",
+  "grants": [],
+  "window": {
+    "title": "Yantra File Manager",
+    "width": 1100,
+    "height": 720
+  },
+  "module": {
+    "path": "apps/files/app.wasm",
+    "bytes": 102389,
+    "sha256": "791a7a526dfad1b886e14a4a69738db04d0037c3be5421421617feaff71767e1"
+  },
+  "source": {
+    "path": "apps/files/app.nim",
+    "lines": 239,
+    "bytes": 9717,
+    "sha256": "5bac17c19445e8b1d15243d779a97c654612c2adb495c472d2dc8e3b0bec89d1"
+  },
+  "nodes": 3,
+  "document": "app.yantra.json",
+  "generated": "tools/export-json.mjs"
+}

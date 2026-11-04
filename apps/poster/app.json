@@ -1,0 +1,25 @@
+{
+  "id": "poster",
+  "name": "Raster / Form",
+  "icon": "R",
+  "tint": "#F06442",
+  "grants": [],
+  "window": {
+    "title": "Raster / Form",
+    "width": 1280,
+    "height": 960
+  },
+  "module": {
+    "path": "apps/poster/app.wasm",
+    "bytes": 313116,
+    "sha256": "6779633c7d76284d8db60eff8e90d9b6f6f7b927d51854ab504e38da4f7a21ec"
+  },
+  "source": {
+    "path": "apps/poster/app.nim",
+    "lines": 441,
+    "bytes": 25067,
+    "sha256": "539afb8e943b08abd0bcb29cd2b1c3d0c50bf1d882af21fa62c0b8e5ae94cb43"
+  },
+  "nodes": 77,
+  "document": "app.yantra.json"
+}
